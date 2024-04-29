@@ -1,0 +1,44 @@
+---
+galaxy_info:
+  role_name: gh_role_installer
+  author: gh_role_installer
+  namespace: sgaunet
+  description: Install gh_role_installer
+  company: ""
+  license: "MIT"
+  min_ansible_version: "2.10"
+  issue_tracker_url: https://github.com/sgaunet/ansible-role-gh_role_installer/issues
+  platforms:
+    # I begrudgingly support EL here, only because remi is also
+    # critical to use of many projects on downstream projects.
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: GenericLinux
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+  # To view available platforms and versions (or releases), visit:
+  # https://galaxy.ansible.com/api/v1/platforms/
+  #
+  # platforms:
+  # - name: Fedora
+  #   versions:
+  #   - all
+  #   - 25
+  # - name: SomePlatform
+  #   versions:
+  #   - all
+  #   - 1.0
+  #   - 7
+  #   - 99.99
+  galaxy_tags:
+    - gh_role_installer
+    - cli
+    - redhat
+    - rhel

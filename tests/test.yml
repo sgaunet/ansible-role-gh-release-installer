@@ -1,0 +1,6 @@
+---
+- name: Install gh_role_installer
+  hosts: localhost
+  remote_user: root
+  roles:
+    - sgaunet.gh_role_installer

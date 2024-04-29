@@ -1,0 +1,17 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Stat gh_role_installer
+      ansible.builtin.stat:
+        path: "/usr/bin/{{ gh_role_installer_binary_name }}"
+      register: gh_role_installer_present
+    - name: Check gh_role_installer is present
+      ansible.builtin.assert:
+        that:
+          - gh_role_installer_present.stat.exists
+        fail_msg: "gh_role_installer not setup"
+        success_msg: "gh_role_installer is setup"

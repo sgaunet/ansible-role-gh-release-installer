@@ -1,0 +1,145 @@
+---
+
+- name: Ensure unzip is installed.
+  ansible.builtin.package:
+    name: ["unzip", "bzip2"]
+    state: present
+  # only for redhat distribution
+  when: ansible_os_family == 'RedHat'
+
+- name: Retrieve latest release information
+  ansible.builtin.uri:
+    url: "https://api.github.com/repos/{{ gh_role_installer_repository }}/releases/latest"
+    headers:
+      Authorization: "Bearer {{ lookup('env', 'GITHUB_TOKEN') }}"
+      X-GitHub-Api-Version: "2022-11-28"
+    return_content: true
+  register: project_info
+  changed_when: false
+  check_mode: false
+
+- name: Print project_info
+  ansible.builtin.debug:
+    msg: "{{ project_info.content | from_json | json_query('tag_name') | replace('v', '') }}"
+  changed_when: false
+  check_mode: false
+
+- name: Set gh_role_installer_version 
+  ansible.builtin.set_fact:
+    gh_role_installer_version: "{{ project_info.content | from_json | json_query('tag_name') | replace('v', '') }}"
+    cacheable: yes
+  changed_when: false
+  check_mode: false
+  when:
+    - gh_role_installer_version == "latest"
+
+- name: Print gh_role_installer_version
+  ansible.builtin.debug:
+    msg: "{{ gh_role_installer_version }}"
+  # changed_when: false
+  # check_mode: false
+
+- name: Get version of the binary actually installed
+  become: false
+  ansible.builtin.shell: "{{ gh_role_installer_cmd_to_get_version }}"
+  args:
+    executable: /bin/bash
+  register: gh_role_installer_version_client_installed
+  changed_when: false
+  failed_when: false
+
+- name: Install the binary
+  when:
+    - not ansible_check_mode
+    - gh_role_installer_version_client_installed.stdout != gh_role_installer_version
+  block:
+    - name: Create a temporary directory if it does not exist
+      ansible.builtin.file:
+        path: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/"
+        state: directory
+        mode: '0755'
+
+    - name: Download the release
+      ansible.builtin.get_url:
+        url: "{{ gh_role_installer_release }}"
+        dest: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/"
+        mode: '0750'
+      when:
+        - not ansible_check_mode
+        - gh_role_installer_version_client_installed.stdout != gh_role_installer_version
+
+    - name: Get basename from URL
+      set_fact:
+        filename: "{{ gh_role_installer_release | urlsplit('path') | basename }}"
+        
+    - name: Decompress the archive
+      ansible.builtin.unarchive:
+        src: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/{{ filename }}"
+        dest: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/"
+        remote_src: true
+      when:
+        - gh_role_installer_release_is_archive
+
+    - name: Find and install the binary
+      ansible.builtin.find:
+        paths: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/"
+        patterns: "{{ gh_role_installer_binary_name }}"
+        recurse: true
+      register: gh_role_installer_binary
+      when:
+        - gh_role_installer_release_is_archive
+
+    - name: Debug gh_role_installer_binary
+      ansible.builtin.debug:
+        var: gh_role_installer_binary
+      when:
+        - gh_role_installer_release_is_archive
+
+    - name: Install the binary
+      ansible.builtin.copy:
+        src: "{{ gh_role_installer_binary.files[0].path }}"
+        dest: "/usr/bin/{{ gh_role_installer_binary_name }}"
+        owner: root
+        group: root
+        mode: "0755"
+      when:
+        - gh_role_installer_release_is_archive
+
+    - name: Install the binary
+      ansible.builtin.copy:
+        src: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/{{ filename }}"
+        dest: "/usr/bin/{{ gh_role_installer_binary_name }}"
+        owner: root
+        group: root
+        mode: "0755"
+        remote_src: true
+      when:
+        - not gh_role_installer_release_is_archive
+
+    # - name: Install gh_role_installer
+    #   ansible.builtin.copy:
+    #     src: /tmp/gh_role_installer
+    #     dest: /usr/bin/gh_role_installer
+    #     owner: root
+    #     group: root
+    #     mode: "0755"
+    #     remote_src: true
+    #   when:
+    #     - not ansible_check_mode
+    #     - gh_role_installer_version_client_installed.stdout != gh_role_installer_version
+
+    - name: Delete temporary gh_role_installer files
+      ansible.builtin.file:
+        path: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/"
+        state: absent
+    #   when:
+    #     - not ansible_check_mode
+    #     - gh_role_installer_version_client_installed.stdout != gh_role_installer_version
+
+    # - name: Delete temporary gh_role_installer files
+    #   ansible.builtin.file:
+    #     path: /tmp/gh_role_installer.bz2
+    #     state: absent
+    #   when:
+    #     - not ansible_check_mode
+    #     - gh_role_installer_version_client_installed.stdout != gh_role_installer_version

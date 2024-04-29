@@ -1,0 +1,39 @@
+# https://taskfile.dev
+version: '3'
+# vars:
+#   key: value
+tasks:
+  default:
+    desc: "List tasks"
+    cmds:
+      - task -a
+
+  prereq:
+    desc: "creates venv and install prerequisites"
+    preconditions:
+      - test ! -d venv
+    cmds:
+      - python3 -m venv venv
+      - source venv/bin/activate && pip install -r requirements.txt
+
+  linter:
+    desc: "execute linter"
+    cmds:
+      # - ansible-lint *.yml --skip-list name[template],meta-no-info,yaml[line-length],package-latest,latest[git]
+      - ansible-lint .
+
+  test:
+    desc: "execute molecule tests"
+    cmds:
+      - source venv/bin/activate && molecule destroy
+      - source venv/bin/activate && molecule converge
+      - source venv/bin/activate && molecule converge
+
+  test-ubuntu2204:
+    desc: "execute molecule tests on ubuntu2204"
+    env:
+      MOLECULE_DISTRO: ubuntu2204
+    cmds:
+      - source venv/bin/activate && molecule destroy
+      - source venv/bin/activate && molecule converge
+      - source venv/bin/activate && molecule converge
