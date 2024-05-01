@@ -26,16 +26,29 @@
 
 - name: Set gh_role_installer_version 
   ansible.builtin.set_fact:
-    gh_role_installer_version: "{{ project_info.content | from_json | json_query('tag_name') | replace('v', '') }}"
+    version_to_install: "{{ project_info.content | from_json | json_query('tag_name') | replace('v', '') }}"
     cacheable: yes
   changed_when: false
   check_mode: false
   when:
     - gh_role_installer_version == "latest"
 
-- name: Print gh_role_installer_version
+- name: Print version_to_install
   ansible.builtin.debug:
-    msg: "{{ gh_role_installer_version }}"
+    msg: "{{ version_to_install }}"
+
+- name: Set gh_role_installer_version 
+  ansible.builtin.set_fact:
+    version_to_install: "{{ gh_role_installer_version }}"
+    cacheable: yes
+  changed_when: false
+  check_mode: false
+  when:
+    - gh_role_installer_version != "latest"
+
+- name: Print version_to_install
+  ansible.builtin.debug:
+    msg: "{{ version_to_install }}"
   # changed_when: false
   # check_mode: false
 
@@ -51,7 +64,7 @@
 - name: Install the binary
   when:
     - not ansible_check_mode
-    - gh_role_installer_version_client_installed.stdout != gh_role_installer_version
+    - gh_role_installer_version_client_installed.stdout != version_to_install
   block:
     - name: Create a temporary directory if it does not exist
       ansible.builtin.file:
@@ -102,6 +115,7 @@
         owner: root
         group: root
         mode: "0755"
+        remote_src: true
       when:
         - gh_role_installer_release_is_archive
 
