@@ -5,6 +5,13 @@
   hosts: all
   gather_facts: false
   tasks:
+    - name: Include default vars
+      ansible.builtin.include_vars:
+        # dir: '{{ lookup("env", "MOLECULE_PROJECT_DIRECTORY") }}/defaults/'
+        file: '{{ lookup("env", "MOLECULE_PROJECT_DIRECTORY") }}/defaults/jwt-cli.yml'
+        # extensions:
+        #   - 'yml'
+
     - name: Stat gh_role_installer
       ansible.builtin.stat:
         path: "/usr/bin/{{ gh_role_installer_binary_name }}"

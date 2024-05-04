@@ -1,0 +1,11 @@
+---
+
+gh_role_installer_version: "latest"
+gh_role_installer_os: "linux"
+gh_role_installer_arch: "amd64"
+gh_role_installer_repository: "sgaunet/jwt-cli"
+gh_role_installer_release: "https://github.com/{{ gh_role_installer_repository }}/releases/download/v{{ version_to_install }}/jwt-cli_{{ version_to_install }}_{{ gh_role_installer_os }}_{{ gh_role_installer_arch }}"
+gh_role_installer_release_is_archive: false
+gh_role_installer_binary_name: "jwt-cli"
+gh_role_installer_cmd_to_get_version: "jwt-cli version"
+gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
