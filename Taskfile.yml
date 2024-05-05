@@ -25,15 +25,15 @@ tasks:
   test:
     desc: "execute molecule tests"
     cmds:
+      - rm -rf ~/.ansible/roles/sgaunet.gh_role_installer
       - source venv/bin/activate && molecule destroy
-      - source venv/bin/activate && molecule converge
-      - source venv/bin/activate && molecule converge
+      - source venv/bin/activate && molecule test
 
   test-ubuntu2204:
     desc: "execute molecule tests on ubuntu2204"
     env:
       MOLECULE_DISTRO: ubuntu2204
     cmds:
+      - rm -rf ~/.ansible/roles/sgaunet.gh_role_installer
       - source venv/bin/activate && molecule destroy
-      - source venv/bin/activate && molecule converge
-      - source venv/bin/activate && molecule converge
+      - source venv/bin/activate && molecule test
