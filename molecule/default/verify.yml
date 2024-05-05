@@ -12,11 +12,29 @@
         # extensions:
         #   - 'yml'
 
-    - name: Stat gh_role_installer
+    - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
         path: "/usr/bin/{{ gh_role_installer_binary_name }}"
       register: gh_role_installer_present
-    - name: Check gh_role_installer is present
+    - name: Check binary is present {{ gh_role_installer_binary_name }}
+      ansible.builtin.assert:
+        that:
+          - gh_role_installer_present.stat.exists
+        fail_msg: "gh_role_installer not setup"
+        success_msg: "gh_role_installer is setup"
+
+    - name: Include default vars
+      ansible.builtin.include_vars:
+        # dir: '{{ lookup("env", "MOLECULE_PROJECT_DIRECTORY") }}/defaults/'
+        file: '{{ lookup("env", "MOLECULE_PROJECT_DIRECTORY") }}/defaults/gum.yml'
+        # extensions:
+        #   - 'yml'
+
+    - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
+      ansible.builtin.stat:
+        path: "/usr/bin/{{ gh_role_installer_binary_name }}"
+      register: gh_role_installer_present
+    - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
         that:
           - gh_role_installer_present.stat.exists
