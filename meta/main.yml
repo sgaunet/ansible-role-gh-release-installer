@@ -38,7 +38,11 @@ galaxy_info:
   #   - 7
   #   - 99.99
   galaxy_tags:
-    - gh_role_installer
-    - cli
-    - redhat
+    - github
+    - release
+    - installer
+    - generic
+    - linux
     - rhel
+    - fedora
+    - ubuntu
