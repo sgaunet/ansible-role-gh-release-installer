@@ -3,6 +3,11 @@
   hosts: all
   become: true
   tasks:
+    - name: "Install gum"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "gum.yml"
+
     - name: "Install jwt-cli"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
@@ -27,7 +32,7 @@
         gh_role_installer_arch: "x86_64"
         gh_role_installer_repository: "nektos/act"
         gh_role_installer_release: "https://github.com/{{ gh_role_installer_repository }}/releases/download/v{{ version_to_install }}/act_{{ gh_role_installer_os }}_{{ gh_role_installer_arch }}.tar.gz"
-        gh_role_installer_release_is_archive: false
+        gh_role_installer_release_is_archive: true
         gh_role_installer_binary_name: "act"
         gh_role_installer_cmd_to_get_version: "act --version | awk '{ print $3 }'"
         gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
