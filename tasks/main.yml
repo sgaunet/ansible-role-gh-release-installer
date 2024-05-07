@@ -42,11 +42,9 @@
   when:
     - gh_role_installer_version != "latest"
 
-- name: Version of {{ gh_role_installer_repository }} to install
+- name: Version to install {{ gh_role_installer_repository }}
   ansible.builtin.debug:
     msg: "{{ version_to_install }}"
-  # changed_when: false
-  # check_mode: false
 
 - name: Get version of the binary actually installed ({{ gh_role_installer_repository }})
   become: false
@@ -130,7 +128,7 @@
       when:
         - not gh_role_installer_release_is_archive
 
-    - name: Remove temporary directory {{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}
+    - name: Remove temporary directory
       ansible.builtin.file:
         path: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}"
         state: absent
