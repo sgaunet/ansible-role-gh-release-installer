@@ -1,0 +1,8 @@
+---
+# .ansible-lint (example https://github.com/ansible/ansible-lint/blob/main/.ansible-lint)
+# This file is used to configure ansible-lint to ignore certain rules or to enable additional rules.
+# docs https://ansible.readthedocs.io/projects/lint/
+warn_list:  # or 'skip_list' to silence them completely
+  - yaml  # Violations reported by yamllint
+skip_list:
+  - "yaml[line-length]"
