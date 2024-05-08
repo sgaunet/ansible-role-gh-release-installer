@@ -22,7 +22,7 @@ None.
 
 ## Role Variables
 
-Available variables are listed below, **there is no default values**:
+Available variables are listed below, only gh_role_installer_tmp_directory is set by default:
 
     gh_role_installer_version: "latest"   # latest is a special value to get the latest release (github api will be used to get the latest release)
     gh_role_installer_os: "linux"         # os name, used to download the release
@@ -57,6 +57,8 @@ None.
         gh_role_installer_cmd_to_get_version: 'zellij --version | sed "s#zellij ##g"'
         gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
 ```
+
+The role contains also variables to install miscelleanous tools. [See the list of available tools in this documentation.](docs/available_tools.md)
 
 ## License
 
