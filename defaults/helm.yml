@@ -9,3 +9,4 @@ gh_role_installer_release_is_archive: true
 gh_role_installer_binary_name: "helm"
 gh_role_installer_cmd_to_get_version: " helm version --template '{{ '{{' }} .Version {{ '}}' }}' | sed 's#v##g'"
 gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
+gh_role_install_directory: "/usr/local/bin"

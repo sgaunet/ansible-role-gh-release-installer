@@ -13,7 +13,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "/usr/bin/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -28,7 +28,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "/usr/bin/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -43,7 +43,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "/usr/bin/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:

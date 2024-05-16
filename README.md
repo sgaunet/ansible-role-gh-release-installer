@@ -22,7 +22,7 @@ None.
 
 ## Role Variables
 
-Available variables are listed below, only gh_role_installer_tmp_directory is set by default:
+Available variables are listed below, only gh_role_installer_tmp_directory and gh_role_install_directory are set by default:
 
     gh_role_installer_version: "latest"   # latest is a special value to get the latest release (github api will be used to get the latest release)
     gh_role_installer_os: "linux"         # os name, used to download the release
@@ -34,6 +34,7 @@ Available variables are listed below, only gh_role_installer_tmp_directory is se
     gh_role_installer_binary_name: "jwt-cli"     # binary name to install
     gh_role_installer_cmd_to_get_version: "jwt-cli version"  # command to get the version of the installed binary
     gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}" # temporary directory to download the release
+    gh_role_install_directory: "/usr/local/bin"  # directory where the binary will be installed
 
 
 ## Dependencies
@@ -55,7 +56,8 @@ None.
         gh_role_installer_release_is_archive: true
         gh_role_installer_binary_name: "zellij"
         gh_role_installer_cmd_to_get_version: 'zellij --version | sed "s#zellij ##g"'
-        gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
+        # gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
+        # gh_role_install_directory: "/usr/local/bin"
 ```
 
 The role contains also variables to install miscelleanous tools. [See the list of available tools in this documentation.](docs/available_tools.md)
