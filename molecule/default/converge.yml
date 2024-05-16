@@ -3,6 +3,7 @@
   hosts: all
   become: true
   tasks:
+
     - name: "Install gum"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"

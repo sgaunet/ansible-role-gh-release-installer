@@ -1,5 +1,4 @@
 ---
-# This is an example playbook to execute Ansible tests.
 
 - name: Verify
   hosts: all
@@ -25,10 +24,7 @@
 
     - name: Include default vars
       ansible.builtin.include_vars:
-        # dir: '{{ lookup("env", "MOLECULE_PROJECT_DIRECTORY") }}/defaults/'
         file: '{{ lookup("env", "MOLECULE_PROJECT_DIRECTORY") }}/defaults/gum.yml'
-        # extensions:
-        #   - 'yml'
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
