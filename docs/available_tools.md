@@ -44,3 +44,18 @@ Here is a list of available tools that can be installed with self contained vari
         name: "sgaunet.gh_role_installer"
         defaults_from: "jwt-cli.yml"
 ```
+
+## k9s
+
+[Github repository](https://github.com/derailed/k9s)
+
+```
+- name: Install k9s
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install k9s"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "k9s.yml"
+```
