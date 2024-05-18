@@ -3,6 +3,11 @@
   hosts: all
   become: true
   tasks:
+    - name: "Install eksctl"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "eksctl.yml"
+
     - name: "Install task"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"

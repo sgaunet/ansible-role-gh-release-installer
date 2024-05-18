@@ -1,5 +1,20 @@
 Here is a list of available tools that can be installed with self contained variables:
 
+## eksctl
+
+[Github repository](https://github.com/eksctl-io/eksctl)
+
+```
+- name: Install eksctl
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install eksctl"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "eksctl.yml"
+```
+
 ## gum
 
 [Github repository](https://github.com/charmbracelet/gum)
