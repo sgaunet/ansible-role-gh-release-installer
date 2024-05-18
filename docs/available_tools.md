@@ -15,6 +15,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "eksctl.yml"
 ```
 
+## gocrypt
+
+[Github repository](https://github.com/sgaunet/gocrypt)
+
+```
+- name: Install gocrypt
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install gocrypt"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "gocrypt.yml"
+```
+
 ## gum
 
 [Github repository](https://github.com/charmbracelet/gum)
