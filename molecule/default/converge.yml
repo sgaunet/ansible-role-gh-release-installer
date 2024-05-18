@@ -3,6 +3,10 @@
   hosts: all
   become: true
   tasks:
+    - name: "Install task"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "task.yml"
 
     - name: "Install k9s"
       ansible.builtin.include_role:

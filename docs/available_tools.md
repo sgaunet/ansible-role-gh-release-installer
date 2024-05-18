@@ -59,3 +59,18 @@ Here is a list of available tools that can be installed with self contained vari
         name: "sgaunet.gh_role_installer"
         defaults_from: "k9s.yml"
 ```
+
+## task
+
+[Github repository](https://github.com/go-task/task)
+
+```
+- name: Install task
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install task"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "task.yml"
+```
