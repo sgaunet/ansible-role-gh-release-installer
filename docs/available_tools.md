@@ -45,6 +45,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "helm.yml"
 ```
 
+## helmdocs
+
+[Github repository](https://github.com/norwoodj/helm-docs)
+
+```
+- name: Install helmdocs
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install helmdocs"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "helmdocs.yml"
+```
+
 ## jwt-cli
 
 [Github repository](https://github.com/sgaunet/jwt-cli)
