@@ -4,6 +4,11 @@
   become: true
   tasks:
 
+    - name: "Install helmfile"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "helmfile.yml"
+
     - name: "Install helmdocs"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
