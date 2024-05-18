@@ -105,6 +105,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "k9s.yml"
 ```
 
+## kfilt
+
+[Github repository](https://github.com/ryane/kfilt)
+
+```
+- name: Install kfilt
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kfilt"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "kfilt.yml"
+```
+
 ## task
 
 [Github repository](https://github.com/go-task/task)
