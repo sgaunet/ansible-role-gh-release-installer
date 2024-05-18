@@ -135,6 +135,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "kfilt.yml"
 ```
 
+## osv-scanner
+
+[Github repository](https://github.com/google/osv-scanner)
+
+```
+- name: Install osv-scanner
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install osv-scanner"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "osv-scanner.yml"
+```
+
 ## task
 
 [Github repository](https://github.com/go-task/task)
