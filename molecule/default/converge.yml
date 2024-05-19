@@ -9,10 +9,11 @@
         name: "sgaunet.gh_role_installer"
         defaults_from: "stern.yml"
 
-    - name: "Install pre-commit"
-      ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "pre-commit.yml"
+    # do not work on old OS because of the python version...
+    # - name: "Install pre-commit"
+    #   ansible.builtin.include_role:
+    #     name: "sgaunet.gh_role_installer"
+    #     defaults_from: "pre-commit.yml"
 
     - name: "Install popeye"
       ansible.builtin.include_role:
