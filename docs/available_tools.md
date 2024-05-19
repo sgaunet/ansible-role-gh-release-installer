@@ -165,6 +165,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "osv-scanner.yml"
 ```
 
+## popeye
+
+[Github repository](https://github.com/derailed/popeye)
+
+```
+- name: Install popeye
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install popeye"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "popeye.yml"
+```
+
 ## task
 
 [Github repository](https://github.com/go-task/task)
