@@ -1,5 +1,20 @@
 Here is a list of available tools that can be installed with self contained variables:
 
+## chglog
+
+[Github repository](https://github.com/goreleaser/chglog)
+
+```
+- name: Install chglog
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install chglog"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "chglog.yml"
+```
+
 ## eksctl
 
 [Github repository](https://github.com/eksctl-io/eksctl)
