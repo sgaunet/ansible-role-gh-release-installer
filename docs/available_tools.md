@@ -195,6 +195,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "pre-commit.yml"
 ```
 
+## stern
+
+[Github repository](https://github.com/stern/stern)
+
+```
+- name: Install stern
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install stern"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "stern.yml"
+```
+
 ## task
 
 [Github repository](https://github.com/go-task/task)
