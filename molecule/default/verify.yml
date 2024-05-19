@@ -186,3 +186,19 @@
           - gh_role_installer_present.stat.exists
         fail_msg: "gh_role_installer not setup"
         success_msg: "gh_role_installer is setup"
+
+    # do not work on old OS because of the python version...
+    # - name: Include pre-commit vars
+    #   ansible.builtin.include_vars:
+    #     file: '{{ lookup("env", "MOLECULE_PROJECT_DIRECTORY") }}/defaults/pre-commit.yml'
+
+    # - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
+    #   ansible.builtin.stat:
+    #     path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+    #   register: gh_role_installer_present
+    # - name: Check binary is present {{ gh_role_installer_binary_name }}
+    #   ansible.builtin.assert:
+    #     that:
+    #       - gh_role_installer_present.stat.exists
+    #     fail_msg: "gh_role_installer not setup"
+    #     success_msg: "gh_role_installer is setup"

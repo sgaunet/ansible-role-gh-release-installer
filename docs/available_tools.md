@@ -180,6 +180,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "popeye.yml"
 ```
 
+## pre-commit
+
+[Github repository](https://github.com/pre-commit/pre-commit)
+
+```
+- name: Install pre-commit
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install pre-commit"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "pre-commit.yml"
+```
+
 ## task
 
 [Github repository](https://github.com/go-task/task)

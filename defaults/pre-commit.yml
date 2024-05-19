@@ -1,0 +1,12 @@
+---
+
+gh_role_installer_version: "latest"
+gh_role_installer_os: "Linux"     # unused
+gh_role_installer_arch: "x86_64"  # unused
+gh_role_installer_repository: "pre-commit/pre-commit"
+gh_role_installer_release: "https://github.com/{{ gh_role_installer_repository }}/releases/download/v{{ version_to_install }}/pre-commit-{{ version_to_install }}.pyz"
+gh_role_installer_release_is_archive: false
+gh_role_installer_binary_name: "pre-commit"
+gh_role_installer_cmd_to_get_version: "pre-commit -V  | sed 's#pre-commit ##g'"
+gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
+gh_role_install_directory: "/usr/local/bin"
