@@ -4,6 +4,11 @@
   become: true
   tasks:
 
+    - name: "Install lsd"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "lsd.yml"
+
     - name: "Install chglog"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"

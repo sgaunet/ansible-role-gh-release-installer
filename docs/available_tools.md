@@ -165,6 +165,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "kfilt.yml"
 ```
 
+## lsd
+
+[Github repository](https://github.com/lsd-rs/lsd)
+
+```
+- name: Install lsd
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install lsd"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "lsd.yml"
+```
+
 ## osv-scanner
 
 [Github repository](https://github.com/google/osv-scanner)

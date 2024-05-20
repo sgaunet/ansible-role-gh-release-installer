@@ -1,0 +1,12 @@
+---
+
+gh_role_installer_version: "latest"
+gh_role_installer_os: "unknown-linux-gnu"
+gh_role_installer_arch: "x86_64"
+gh_role_installer_repository: "lsd-rs/lsd"
+gh_role_installer_release: "https://github.com/{{ gh_role_installer_repository }}/releases/download/v{{ version_to_install }}/lsd-v{{ version_to_install }}-{{ gh_role_installer_arch }}-{{ gh_role_installer_os }}.tar.gz"
+gh_role_installer_release_is_archive: true
+gh_role_installer_binary_name: "lsd"
+gh_role_installer_cmd_to_get_version: "lsd -V | awk '{ print $2 }'"
+gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
+gh_role_install_directory: "/usr/local/bin"
