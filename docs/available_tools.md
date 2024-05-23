@@ -15,6 +15,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "bat.yml"
 ```
 
+## calcdate
+
+[Github repository](https://github.com/sgaunet/calcdate)
+
+```
+- name: Install calcdate
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install calcdate"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "calcdate.yml"
+```
+
 ## chglog
 
 [Github repository](https://github.com/goreleaser/chglog)
