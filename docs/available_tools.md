@@ -75,6 +75,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "ekspodlogs.yml"
 ```
 
+## gini
+
+[Github repository](https://github.com/sgaunet/gini)
+
+```
+- name: Install gini
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install gini"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "gini.yml"
+```
+
 ## gocrypt
 
 [Github repository](https://github.com/sgaunet/gocrypt)
