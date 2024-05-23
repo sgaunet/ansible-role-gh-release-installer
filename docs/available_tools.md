@@ -1,5 +1,20 @@
 Here is a list of available tools that can be installed with self contained variables:
 
+## bat
+
+[Github repository](https://github.com/sharkdp/bat)
+
+```
+- name: Install bat
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install bat"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "bat.yml"
+```
+
 ## chglog
 
 [Github repository](https://github.com/goreleaser/chglog)
