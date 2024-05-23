@@ -6,7 +6,7 @@ gh_role_installer_arch: "x86_64"
 gh_role_installer_repository: "sgaunet/calcdate"
 gh_role_installer_release: "https://github.com/{{ gh_role_installer_repository }}/releases/download/v{{ version_to_install }}/calcdate_{{ version_to_install }}_{{ gh_role_installer_os }}_{{ gh_role_installer_arch }}"
 gh_role_installer_release_is_archive: false
-gh_role_installer_binary_name: "caldate"
+gh_role_installer_binary_name: "calcdate"
 gh_role_installer_cmd_to_get_version: "calcdate -v"
 gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
 gh_role_install_directory: "/usr/local/bin"
