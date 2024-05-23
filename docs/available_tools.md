@@ -225,6 +225,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "lsd.yml"
 ```
 
+## mdtohtml
+
+[Github repository](https://github.com/sgaunet/mdtohtml)
+
+```
+- name: Install mdtohtml
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install mdtohtml"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "mdtohtml.yml"
+```
+
 ## osv-scanner
 
 [Github repository](https://github.com/google/osv-scanner)
