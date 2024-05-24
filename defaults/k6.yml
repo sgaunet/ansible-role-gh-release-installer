@@ -1,0 +1,12 @@
+---
+
+gh_role_installer_version: "latest"
+gh_role_installer_os: "linux"
+gh_role_installer_arch: "amd64"
+gh_role_installer_repository: "grafana/k6"
+gh_role_installer_release: "https://github.com/{{ gh_role_installer_repository }}/releases/download/v{{ version_to_install }}/k6-v{{ version_to_install }}-{{ gh_role_installer_os }}-{{ gh_role_installer_arch }}.tar.gz"
+gh_role_installer_release_is_archive: true
+gh_role_installer_binary_name: "k6"
+gh_role_installer_cmd_to_get_version: "k6 version | awk '{ print $2 }' | sed 's#v##g'"
+gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
+gh_role_install_directory: "/usr/local/bin"

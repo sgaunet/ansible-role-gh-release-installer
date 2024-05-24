@@ -226,6 +226,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "jwt-cli.yml"
 ```
 
+## k6
+
+[Github repository](https://github.com/grafana/k6)
+
+```
+- name: Install k6
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install k6"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "k6.yml"
+```
+
 ## k9s
 
 [Github repository](https://github.com/derailed/k9s)
