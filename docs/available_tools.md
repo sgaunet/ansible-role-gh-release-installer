@@ -121,6 +121,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "gocrypt.yml"
 ```
 
+## goreleaser
+
+[Github repository](https://github.com/goreleaser/goreleaser)
+
+```
+- name: Install goreleaser
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install goreleaser"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "goreleaser.yml"
+```
+
 ## gum
 
 [Github repository](https://github.com/charmbracelet/gum)
