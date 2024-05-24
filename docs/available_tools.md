@@ -45,6 +45,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "chglog.yml"
 ```
 
+## d2
+
+[Github repository](https://github.com/terrastruct/d2)
+
+```
+- name: Install d2
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install d2"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "d2.yml"
+```
+
 ## eksctl
 
 [Github repository](https://github.com/eksctl-io/eksctl)
