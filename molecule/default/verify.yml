@@ -13,7 +13,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -28,7 +28,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -43,7 +43,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -58,7 +58,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -73,7 +73,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -88,7 +88,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -103,7 +103,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -118,7 +118,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -133,7 +133,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -148,7 +148,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -163,7 +163,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -178,7 +178,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -194,7 +194,7 @@
 
     # - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
     #   ansible.builtin.stat:
-    #     path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+    #     path: "{{ gh_role_installer_binary_path }}"
     #   register: gh_role_installer_present
     # - name: Check binary is present {{ gh_role_installer_binary_name }}
     #   ansible.builtin.assert:
@@ -209,7 +209,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -224,7 +224,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -239,7 +239,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -254,7 +254,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -269,7 +269,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -284,7 +284,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -299,7 +299,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -314,7 +314,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -329,7 +329,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -344,7 +344,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -359,7 +359,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -374,7 +374,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -389,7 +389,7 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:
@@ -404,7 +404,22 @@
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
-        path: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        path: "{{ gh_role_installer_binary_path }}"
+      register: gh_role_installer_present
+    - name: Check binary is present {{ gh_role_installer_binary_name }}
+      ansible.builtin.assert:
+        that:
+          - gh_role_installer_present.stat.exists
+        fail_msg: "gh_role_installer not setup"
+        success_msg: "gh_role_installer is setup"
+
+    - name: Include pgweb vars
+      ansible.builtin.include_vars:
+        file: '{{ lookup("env", "MOLECULE_PROJECT_DIRECTORY") }}/defaults/pgweb.yml'
+
+    - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
+      ansible.builtin.stat:
+        path: "{{ gh_role_installer_binary_path }}"
       register: gh_role_installer_present
     - name: Check binary is present {{ gh_role_installer_binary_name }}
       ansible.builtin.assert:

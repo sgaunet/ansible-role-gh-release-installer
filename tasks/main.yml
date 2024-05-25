@@ -109,7 +109,7 @@
     - name: Install the binary {{ gh_role_installer_binary_name }}
       ansible.builtin.copy:
         src: "{{ gh_role_installer_binary.files[0].path }}"
-        dest: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        dest: "{{ gh_role_installer_binary_path }}"
         owner: root
         group: root
         mode: "0755"
@@ -120,7 +120,7 @@
     - name: Install the binary {{ gh_role_installer_binary_name }}
       ansible.builtin.copy:
         src: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/{{ filename }}"
-        dest: "{{ gh_role_install_directory }}/{{ gh_role_installer_binary_name }}"
+        dest: "{{ gh_role_installer_binary_path }}"
         owner: root
         group: root
         mode: "0755"

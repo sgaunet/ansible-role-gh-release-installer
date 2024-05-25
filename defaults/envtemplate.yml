@@ -9,4 +9,4 @@ gh_role_installer_release_is_archive: false
 gh_role_installer_binary_name: "envtemplate"
 gh_role_installer_cmd_to_get_version: "envtemplate -v"
 gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
-gh_role_install_directory: "/usr/local/bin"
+gh_role_installer_binary_path: "/usr/local/bin/{{ gh_role_installer_binary_name }}"
