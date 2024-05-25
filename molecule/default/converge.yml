@@ -24,11 +24,6 @@
         name: "sgaunet.gh_role_installer"
         defaults_from: "kind.yml"
 
-    - name: "Install pgweb"
-      ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "pgweb.yml"
-
     - name: "Install k6"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
