@@ -315,6 +315,7 @@ Here is a list of available tools that can be installed with self contained vari
         name: "sgaunet.gh_role_installer"
         defaults_from: "mdtohtml.yml"
 ```
+
 ## nfpm
 
 [Github repository](https://github.com/goreleaser/nfpm)
@@ -343,6 +344,21 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
         defaults_from: "osv-scanner.yml"
+```
+
+## pgweb
+
+[Github repository](https://github.com/sosedoff/pgweb)
+
+```
+- name: Install pgweb
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install pgweb"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "pgweb.yml"
 ```
 
 ## popeye
