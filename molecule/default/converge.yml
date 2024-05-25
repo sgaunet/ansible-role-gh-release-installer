@@ -4,6 +4,16 @@
   become: true
   tasks:
 
+    - name: "Install gdu"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "gdu.yml"
+
+    - name: "Install tbls"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "tbls.yml"
+
     - name: "Install pgweb"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
