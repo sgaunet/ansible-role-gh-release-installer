@@ -4,6 +4,11 @@
   become: true
   tasks:
 
+    - name: "Install kind"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "kind.yml"
+
     - name: "Install pgweb"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"

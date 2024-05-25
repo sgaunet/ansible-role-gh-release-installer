@@ -271,6 +271,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "kfilt.yml"
 ```
 
+## kind
+
+[Github repository](https://github.com/kubernetes-sigs/kind)
+
+```
+- name: Install kind
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kind"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "kind.yml"
+```
+
 ## lsd
 
 [Github repository](https://github.com/lsd-rs/lsd)
