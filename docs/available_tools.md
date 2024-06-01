@@ -466,6 +466,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "pre-commit.yml"
 ```
 
+## q
+
+[Github repository](https://github.com/natesales/q)
+
+```
+- name: Install q
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install q"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "q.yml"
+```
+
 ## stern
 
 [Github repository](https://github.com/stern/stern)
