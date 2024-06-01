@@ -316,6 +316,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "mdtohtml.yml"
 ```
 
+## moq
+
+[Github repository](https://github.com/matryer/moq)
+
+```
+- name: Install moq
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install moq"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "moq.yml"
+```
+
 ## nfpm
 
 [Github repository](https://github.com/goreleaser/nfpm)
