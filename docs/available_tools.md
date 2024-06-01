@@ -136,6 +136,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "gini.yml"
 ```
 
+## gitleaks
+
+[Github repository](https://github.com/gitleaks/gitleaks)
+
+```
+- name: Install gitleaks
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install gitleaks"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "gitleaks.yml"
+```
+
 ## gocrypt
 
 [Github repository](https://github.com/sgaunet/gocrypt)
