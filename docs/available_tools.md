@@ -1,5 +1,20 @@
 Here is a list of available tools that can be installed with self contained variables:
 
+## bandwhich
+
+[Github repository](https://github.com/imsnif/bandwhich)
+
+```
+- name: Install bandwhich
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install bandwhich"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "bandwhich.yml"
+```
+
 ## bat
 
 [Github repository](https://github.com/sharkdp/bat)
