@@ -226,6 +226,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "helm.yml"
 ```
 
+## helmchart-helper
+
+[Github repository](https://github.com/sgaunet/helmchart-helper)
+
+```
+- name: Install helmchart-helper
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install helmchart-helper"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "helmchart-helper.yml"
+```
+
 ## helmdocs
 
 [Github repository](https://github.com/norwoodj/helm-docs)
