@@ -481,6 +481,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "q.yml"
 ```
 
+## sqlc
+
+[Github repository](https://github.com/sqlc-dev/sqlc)
+
+```
+- name: Install sqlc
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install sqlc"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "sqlc.yml"
+```
+
 ## stern
 
 [Github repository](https://github.com/stern/stern)
