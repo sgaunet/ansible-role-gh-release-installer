@@ -151,6 +151,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "gocrypt.yml"
 ```
 
+## golangci-lint
+
+[Github repository](https://github.com/golangci/golangci-lint)
+
+```
+- name: Install golangci-lint
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install golangci-lint"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "golangci-lint.yml"
+```
+
 ## goreleaser
 
 [Github repository](https://github.com/goreleaser/goreleaser)
