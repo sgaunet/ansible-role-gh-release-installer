@@ -60,6 +60,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "chglog.yml"
 ```
 
+## delta
+
+[Github repository](https://github.com/dandavison/delta)
+
+```
+- name: Install delta
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install delta"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "delta.yml"
+```
+
 ## d2
 
 [Github repository](https://github.com/terrastruct/d2)
