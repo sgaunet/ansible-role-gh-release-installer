@@ -1,0 +1,12 @@
+---
+
+gh_role_installer_version: "latest"
+gh_role_installer_os: "Linux"
+gh_role_installer_arch: "x86_64"
+gh_role_installer_repository: "google/go-containerregistry"
+gh_role_installer_release: "https://github.com/{{ gh_role_installer_repository }}/releases/download/v{{ version_to_install }}/go-containerregistry_{{ gh_role_installer_os }}_{{ gh_role_installer_arch }}.tar.gz"
+gh_role_installer_release_is_archive: true
+gh_role_installer_binary_name: "crane"
+gh_role_installer_cmd_to_get_version: "crane version  | cut -d' ' -f2"
+gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
+gh_role_installer_binary_path: "/usr/local/bin/{{ gh_role_installer_binary_name }}"

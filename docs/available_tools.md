@@ -60,6 +60,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "chglog.yml"
 ```
 
+## crane
+
+[Github repository](https://github.com/google/go-containerregistry)
+
+```
+- name: Install crane
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install crane"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "crane.yml"
+```
+
 ## delta
 
 [Github repository](https://github.com/dandavison/delta)
