@@ -166,6 +166,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "gitleaks.yml"
 ```
 
+## grype
+
+[Github repository](https://github.com/anchore/grype)
+
+```
+- name: Install grype
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install grype"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "grype.yml"
+```
+
 ## gocrypt
 
 [Github repository](https://github.com/sgaunet/gocrypt)
