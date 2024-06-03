@@ -586,6 +586,20 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "task.yml"
 ```
 
+## usql
+
+[Github repository](https://github.com/xo/usql)
+
+```
+- name: Install usql
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install usql"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "usql.yml"
+```
 
 ## vhs
 
