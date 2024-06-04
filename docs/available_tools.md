@@ -90,6 +90,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "crane.yml"
 ```
 
+## dasel
+
+[Github repository](https://github.com/TomWright/dasel)
+
+```
+- name: Install dasel
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install dasel"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "dasel.yml"
+```
+
 ## delta
 
 [Github repository](https://github.com/dandavison/delta)
