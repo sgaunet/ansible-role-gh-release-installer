@@ -286,6 +286,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "gum.yml"
 ```
 
+## hadolint
+
+[Github repository](https://github.com/hadolint/hadolint)
+
+```
+- name: Install hadolint
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install hadolint"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "hadolint.yml"
+```
+
 ## helm
 
 [Github repository](https://github.com/helm/helm)

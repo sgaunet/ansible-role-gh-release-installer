@@ -4,6 +4,11 @@
   become: true
   tasks:
 
+    - name: "Install hadolint"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "hadolint.yml"
+
     - name: "Install kor"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
