@@ -421,6 +421,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "k9s.yml"
 ```
 
+## kconf
+
+[Github repository](https://github.com/particledecay/kconf)
+
+```
+- name: Install kconf
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kconf"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "kconf.yml"
+```
+
 ## kfilt
 
 [Github repository](https://github.com/ryane/kfilt)
