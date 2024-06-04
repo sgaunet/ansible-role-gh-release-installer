@@ -691,6 +691,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "vals.yml"
 ```
 
+## venom
+
+[Github repository](https://github.com/ovh/venom)
+
+```
+- name: Install venom
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install venom"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "venom.yml"
+```
+
 ## vhs
 
 [Github repository](https://github.com/charmbracelet/vhs)
