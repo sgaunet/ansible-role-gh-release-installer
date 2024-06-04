@@ -496,6 +496,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "krew.yml"
 ```
 
+## kube-capacity
+
+[Github repository](https://github.com/robscott/kube-capacity)
+
+```
+- name: Install kube-capacity
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kube-capacity"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "kube-capacity.yml"
+```
+
 ## lsd
 
 [Github repository](https://github.com/lsd-rs/lsd)
