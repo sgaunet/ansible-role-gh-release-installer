@@ -1,5 +1,20 @@
 Here is a list of available tools that can be installed with self contained variables:
 
+## act
+
+[Github repository](https://github.com/nektos/act)
+
+```
+- name: Install act
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install act"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "act.yml"
+```
+
 ## bandwhich
 
 [Github repository](https://github.com/imsnif/bandwhich)
