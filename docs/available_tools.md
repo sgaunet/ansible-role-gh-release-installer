@@ -616,6 +616,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "usql.yml"
 ```
 
+## vals
+
+[Github repository](https://github.com/helmfile/vals)
+
+```
+- name: Install vals
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install vals"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "vals.yml"
+```
+
 ## vhs
 
 [Github repository](https://github.com/charmbracelet/vhs)
