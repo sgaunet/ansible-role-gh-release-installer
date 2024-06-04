@@ -421,6 +421,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "kind.yml"
 ```
 
+## kor
+
+[Github repository](https://github.com/yonahd/kor)
+
+```
+- name: Install kor
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kor"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "kor.yml"
+```
+
 ## lsd
 
 [Github repository](https://github.com/lsd-rs/lsd)
