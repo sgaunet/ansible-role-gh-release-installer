@@ -105,6 +105,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "delta.yml"
 ```
 
+## dive
+
+[Github repository](https://github.com/wagoodman/dive)
+
+```
+- name: Install dive
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install dive"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "dive.yml"
+```
+
 ## d2
 
 [Github repository](https://github.com/terrastruct/d2)
