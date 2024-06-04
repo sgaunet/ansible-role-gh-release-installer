@@ -466,6 +466,21 @@ Here is a list of available tools that can be installed with self contained vari
         defaults_from: "kor.yml"
 ```
 
+## krew
+
+[Github repository](https://github.com/kubernetes-sigs/krew)
+
+```
+- name: Install krew
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install krew"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "krew.yml"
+```
+
 ## lsd
 
 [Github repository](https://github.com/lsd-rs/lsd)
