@@ -1,0 +1,14 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install crane"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "crane.yml"
+
+    - name: sleep for 1 second to avoid errors
+      ansible.builtin.wait_for:
+        timeout: 1
+
