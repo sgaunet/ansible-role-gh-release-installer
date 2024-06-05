@@ -2,7 +2,7 @@
 name: CI-task
 'on':
   schedule:
-    - cron: "22 17 * * 1"
+    - cron: "3 19 * * 5"
 
 defaults:
   run:

@@ -2,7 +2,7 @@
 name: CI-gocryptfs
 'on':
   schedule:
-    - cron: "57 4 * * 5"
+    - cron: "40 17 * * 1"
 
 defaults:
   run:

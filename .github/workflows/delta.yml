@@ -2,7 +2,7 @@
 name: CI-delta
 'on':
   schedule:
-    - cron: "31 5 * * 3"
+    - cron: "49 13 * * 1"
 
 defaults:
   run:

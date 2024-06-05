@@ -2,7 +2,7 @@
 name: CI-tbls
 'on':
   schedule:
-    - cron: "60 13 * * 5"
+    - cron: "30 8 * * 1"
 
 defaults:
   run:

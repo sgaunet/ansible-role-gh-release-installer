@@ -2,7 +2,7 @@
 name: CI-act
 'on':
   schedule:
-    - cron: "44 10 * * 3"
+    - cron: "17 13 * * 5"
 
 defaults:
   run:

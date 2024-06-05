@@ -2,7 +2,7 @@
 name: CI-gdu
 'on':
   schedule:
-    - cron: "1 23 * * 4"
+    - cron: "26 23 * * 4"
 
 defaults:
   run:

@@ -2,7 +2,7 @@
 name: CI-stern
 'on':
   schedule:
-    - cron: "45 24 * * 4"
+    - cron: "39 8 * * 4"
 
 defaults:
   run:

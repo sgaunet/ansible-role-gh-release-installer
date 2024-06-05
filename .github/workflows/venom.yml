@@ -2,7 +2,7 @@
 name: CI-venom
 'on':
   schedule:
-    - cron: "15 17 * * 3"
+    - cron: "55 12 * * 1"
 
 defaults:
   run:

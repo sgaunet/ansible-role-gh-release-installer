@@ -2,7 +2,7 @@
 name: CI-kube-linter
 'on':
   schedule:
-    - cron: "51 4 * * 2"
+    - cron: "3 22 * * 5"
 
 defaults:
   run:

@@ -2,7 +2,7 @@
 name: CI-kubent
 'on':
   schedule:
-    - cron: "46 7 * * 1"
+    - cron: "4 22 * * 5"
 
 defaults:
   run:

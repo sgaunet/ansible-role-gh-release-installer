@@ -2,7 +2,7 @@
 name: CI-bandwhich
 'on':
   schedule:
-    - cron: "23 18 * * 4"
+    - cron: "10 8 * * 3"
 
 defaults:
   run:

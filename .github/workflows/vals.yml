@@ -2,7 +2,7 @@
 name: CI-vals
 'on':
   schedule:
-    - cron: "42 6 * * 3"
+    - cron: "49 18 * * 4"
 
 defaults:
   run:

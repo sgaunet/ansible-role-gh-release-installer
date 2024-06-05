@@ -2,7 +2,7 @@
 name: CI-pastel
 'on':
   schedule:
-    - cron: "26 7 * * 3"
+    - cron: "4 7 * * 5"
 
 defaults:
   run:

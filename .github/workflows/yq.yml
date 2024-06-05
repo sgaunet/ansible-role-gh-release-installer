@@ -2,7 +2,7 @@
 name: CI-yq
 'on':
   schedule:
-    - cron: "30 7 * * 3"
+    - cron: "43 12 * * 4"
 
 defaults:
   run:

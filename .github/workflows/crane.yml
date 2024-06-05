@@ -2,7 +2,7 @@
 name: CI-crane
 'on':
   schedule:
-    - cron: "60 3 * * 3"
+    - cron: "39 2 * * 5"
 
 defaults:
   run:

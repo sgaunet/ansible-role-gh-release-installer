@@ -2,7 +2,7 @@
 name: CI-kube-capacity
 'on':
   schedule:
-    - cron: "55 3 * * 4"
+    - cron: "5 4 * * 4"
 
 defaults:
   run:

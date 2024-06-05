@@ -2,7 +2,7 @@
 name: CI-k6
 'on':
   schedule:
-    - cron: "28 20 * * 2"
+    - cron: "34 3 * * 3"
 
 defaults:
   run:

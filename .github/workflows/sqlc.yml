@@ -2,7 +2,7 @@
 name: CI-sqlc
 'on':
   schedule:
-    - cron: "26 15 * * 5"
+    - cron: "34 14 * * 5"
 
 defaults:
   run:

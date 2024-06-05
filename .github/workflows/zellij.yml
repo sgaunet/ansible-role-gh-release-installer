@@ -2,7 +2,7 @@
 name: CI-zellij
 'on':
   schedule:
-    - cron: "15 4 * * 3"
+    - cron: "35 9 * * 3"
 
 defaults:
   run:

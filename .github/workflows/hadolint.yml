@@ -2,7 +2,7 @@
 name: CI-hadolint
 'on':
   schedule:
-    - cron: "55 16 * * 5"
+    - cron: "23 10 * * 1"
 
 defaults:
   run:

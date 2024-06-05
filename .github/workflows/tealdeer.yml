@@ -2,7 +2,7 @@
 name: CI-tealdeer
 'on':
   schedule:
-    - cron: "55 18 * * 1"
+    - cron: "39 17 * * 1"
 
 defaults:
   run:

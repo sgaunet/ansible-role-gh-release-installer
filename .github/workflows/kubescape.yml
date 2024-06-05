@@ -2,7 +2,7 @@
 name: CI-kubescape
 'on':
   schedule:
-    - cron: "22 18 * * 1"
+    - cron: "46 10 * * 1"
 
 defaults:
   run:

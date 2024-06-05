@@ -2,7 +2,7 @@
 name: CI-popeye
 'on':
   schedule:
-    - cron: "19 6 * * 4"
+    - cron: "38 8 * * 5"
 
 defaults:
   run:

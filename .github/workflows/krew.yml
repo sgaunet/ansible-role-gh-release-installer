@@ -2,7 +2,7 @@
 name: CI-krew
 'on':
   schedule:
-    - cron: "5 7 * * 1"
+    - cron: "38 19 * * 2"
 
 defaults:
   run:

@@ -2,7 +2,7 @@
 name: CI-gitleaks
 'on':
   schedule:
-    - cron: "21 1 * * 4"
+    - cron: "29 22 * * 3"
 
 defaults:
   run:

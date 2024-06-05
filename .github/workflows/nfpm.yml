@@ -2,7 +2,7 @@
 name: CI-nfpm
 'on':
   schedule:
-    - cron: "32 13 * * 4"
+    - cron: "51 23 * * 3"
 
 defaults:
   run:

@@ -2,7 +2,7 @@
 name: CI-kor
 'on':
   schedule:
-    - cron: "35 1 * * 5"
+    - cron: "32 13 * * 5"
 
 defaults:
   run:

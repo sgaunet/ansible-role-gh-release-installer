@@ -2,7 +2,7 @@
 name: CI-helmfile
 'on':
   schedule:
-    - cron: "38 22 * * 5"
+    - cron: "54 16 * * 1"
 
 defaults:
   run:

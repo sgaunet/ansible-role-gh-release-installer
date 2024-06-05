@@ -2,7 +2,7 @@
 name: CI-q
 'on':
   schedule:
-    - cron: "13 2 * * 1"
+    - cron: "10 14 * * 5"
 
 defaults:
   run:

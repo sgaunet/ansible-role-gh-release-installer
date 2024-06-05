@@ -2,7 +2,7 @@
 name: CI-viddy
 'on':
   schedule:
-    - cron: "25 18 * * 3"
+    - cron: "22 21 * * 4"
 
 defaults:
   run:

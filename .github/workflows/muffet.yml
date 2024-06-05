@@ -2,7 +2,7 @@
 name: CI-muffet
 'on':
   schedule:
-    - cron: "20 19 * * 3"
+    - cron: "5 9 * * 5"
 
 defaults:
   run:

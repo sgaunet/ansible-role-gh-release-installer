@@ -2,7 +2,7 @@
 name: CI-kubeshark
 'on':
   schedule:
-    - cron: "45 10 * * 4"
+    - cron: "47 10 * * 1"
 
 defaults:
   run:

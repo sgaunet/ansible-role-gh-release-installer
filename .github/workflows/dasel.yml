@@ -2,7 +2,7 @@
 name: CI-dasel
 'on':
   schedule:
-    - cron: "18 21 * * 4"
+    - cron: "26 8 * * 5"
 
 defaults:
   run:

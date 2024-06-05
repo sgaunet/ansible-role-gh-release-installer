@@ -2,7 +2,7 @@
 name: CI-tspin
 'on':
   schedule:
-    - cron: "3 6 * * 5"
+    - cron: "16 6 * * 4"
 
 defaults:
   run:

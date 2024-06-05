@@ -2,7 +2,7 @@
 name: CI-helmchart-helper
 'on':
   schedule:
-    - cron: "34 19 * * 1"
+    - cron: "4 19 * * 2"
 
 defaults:
   run:

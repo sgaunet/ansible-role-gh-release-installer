@@ -2,7 +2,7 @@
 name: CI-pre-commit
 'on':
   schedule:
-    - cron: "43 9 * * 4"
+    - cron: "53 7 * * 2"
 
 defaults:
   run:

@@ -2,7 +2,7 @@
 name: CI-k9s
 'on':
   schedule:
-    - cron: "30 8 * * 1"
+    - cron: "8 21 * * 5"
 
 defaults:
   run:

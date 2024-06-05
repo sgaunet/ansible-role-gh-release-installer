@@ -2,7 +2,7 @@
 name: CI-main
 'on':
   schedule:
-    - cron: "21 4 * * 5"
+    - cron: "53 10 * * 2"
 
 defaults:
   run:

@@ -2,7 +2,7 @@
 name: CI-lsd
 'on':
   schedule:
-    - cron: "56 14 * * 4"
+    - cron: "56 11 * * 3"
 
 defaults:
   run:

@@ -2,7 +2,7 @@
 name: CI-eksctl
 'on':
   schedule:
-    - cron: "44 4 * * 1"
+    - cron: "36 19 * * 3"
 
 defaults:
   run:

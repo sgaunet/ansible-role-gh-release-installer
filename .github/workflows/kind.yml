@@ -2,7 +2,7 @@
 name: CI-kind
 'on':
   schedule:
-    - cron: "33 1 * * 1"
+    - cron: "43 22 * * 2"
 
 defaults:
   run:

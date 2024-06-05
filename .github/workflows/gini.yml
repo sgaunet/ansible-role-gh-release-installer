@@ -2,7 +2,7 @@
 name: CI-gini
 'on':
   schedule:
-    - cron: "45 21 * * 2"
+    - cron: "56 2 * * 5"
 
 defaults:
   run:

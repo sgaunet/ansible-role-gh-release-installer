@@ -2,7 +2,7 @@
 name: CI-vhs
 'on':
   schedule:
-    - cron: "18 9 * * 5"
+    - cron: "36 13 * * 3"
 
 defaults:
   run:

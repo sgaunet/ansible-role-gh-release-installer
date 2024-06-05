@@ -2,7 +2,7 @@
 name: CI-pet
 'on':
   schedule:
-    - cron: "18 1 * * 2"
+    - cron: "56 12 * * 2"
 
 defaults:
   run:

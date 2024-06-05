@@ -2,7 +2,7 @@
 name: CI-kubectx
 'on':
   schedule:
-    - cron: "42 11 * * 5"
+    - cron: "22 15 * * 3"
 
 defaults:
   run:

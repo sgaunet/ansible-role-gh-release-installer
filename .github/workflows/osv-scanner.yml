@@ -2,7 +2,7 @@
 name: CI-osv-scanner
 'on':
   schedule:
-    - cron: "46 16 * * 4"
+    - cron: "20 17 * * 4"
 
 defaults:
   run:

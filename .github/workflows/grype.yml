@@ -2,7 +2,7 @@
 name: CI-grype
 'on':
   schedule:
-    - cron: "49 4 * * 4"
+    - cron: "29 2 * * 5"
 
 defaults:
   run:

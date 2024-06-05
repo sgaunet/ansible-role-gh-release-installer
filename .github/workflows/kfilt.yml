@@ -2,7 +2,7 @@
 name: CI-kfilt
 'on':
   schedule:
-    - cron: "20 13 * * 5"
+    - cron: "38 1 * * 2"
 
 defaults:
   run:

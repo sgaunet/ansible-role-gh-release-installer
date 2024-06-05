@@ -2,7 +2,7 @@
 name: CI-kubectl-ice
 'on':
   schedule:
-    - cron: "9 10 * * 5"
+    - cron: "15 11 * * 1"
 
 defaults:
   run:

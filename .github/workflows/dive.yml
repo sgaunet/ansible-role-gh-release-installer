@@ -2,7 +2,7 @@
 name: CI-dive
 'on':
   schedule:
-    - cron: "17 10 * * 1"
+    - cron: "28 12 * * 4"
 
 defaults:
   run:

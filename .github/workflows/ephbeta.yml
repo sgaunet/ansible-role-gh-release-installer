@@ -1,8 +1,8 @@
 ---
-name: CI-envtemplate
+name: CI-ephbeta
 'on':
   schedule:
-    - cron: "56 14 * * 5"
+    - cron: "48 21 * * 5"
 
 defaults:
   run:
@@ -42,7 +42,7 @@ jobs:
       - name: Run Molecule tests.
         run: |
           # molecule destroy
-          molecule test -s envtemplate
+          molecule test -s ephbeta
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PY_COLORS: '1'

@@ -2,7 +2,7 @@
 name: CI-pgweb
 'on':
   schedule:
-    - cron: "8 18 * * 2"
+    - cron: "34 1 * * 1"
 
 defaults:
   run:

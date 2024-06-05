@@ -2,7 +2,7 @@
 name: CI-bat
 'on':
   schedule:
-    - cron: "40 6 * * 5"
+    - cron: "36 15 * * 1"
 
 defaults:
   run:

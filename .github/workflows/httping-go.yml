@@ -2,7 +2,7 @@
 name: CI-httping-go
 'on':
   schedule:
-    - cron: "23 3 * * 5"
+    - cron: "43 9 * * 5"
 
 defaults:
   run:
