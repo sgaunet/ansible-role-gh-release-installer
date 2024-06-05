@@ -11,10 +11,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install act"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "act.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: act.yml
 ```
-
 ## bandwhich
 
 [Github repository](https://github.com/imsnif/bandwhich)
@@ -26,10 +25,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install bandwhich"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "bandwhich.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: bandwhich.yml
 ```
-
 ## bat
 
 [Github repository](https://github.com/sharkdp/bat)
@@ -41,10 +39,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install bat"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "bat.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: bat.yml
 ```
-
 ## calcdate
 
 [Github repository](https://github.com/sgaunet/calcdate)
@@ -56,10 +53,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install calcdate"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "calcdate.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: calcdate.yml
 ```
-
 ## chglog
 
 [Github repository](https://github.com/goreleaser/chglog)
@@ -71,10 +67,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install chglog"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "chglog.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: chglog.yml
 ```
-
 ## crane
 
 [Github repository](https://github.com/google/go-containerregistry)
@@ -86,55 +81,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install crane"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "crane.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: crane.yml
 ```
-
-## dasel
-
-[Github repository](https://github.com/TomWright/dasel)
-
-```
-- name: Install dasel
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install dasel"
-      ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "dasel.yml"
-```
-
-## delta
-
-[Github repository](https://github.com/dandavison/delta)
-
-```
-- name: Install delta
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install delta"
-      ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "delta.yml"
-```
-
-## dive
-
-[Github repository](https://github.com/wagoodman/dive)
-
-```
-- name: Install dive
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install dive"
-      ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "dive.yml"
-```
-
 ## d2
 
 [Github repository](https://github.com/terrastruct/d2)
@@ -146,10 +95,51 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install d2"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "d2.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: d2.yml
 ```
+## dasel
 
+[Github repository](https://github.com/TomWright/dasel)
+
+```
+- name: Install dasel
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install dasel"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: dasel.yml
+```
+## delta
+
+[Github repository](https://github.com/dandavison/delta)
+
+```
+- name: Install delta
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install delta"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: delta.yml
+```
+## dive
+
+[Github repository](https://github.com/wagoodman/dive)
+
+```
+- name: Install dive
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install dive"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: dive.yml
+```
 ## eksctl
 
 [Github repository](https://github.com/eksctl-io/eksctl)
@@ -161,10 +151,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install eksctl"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "eksctl.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: eksctl.yml
 ```
-
 ## ekspodlogs
 
 [Github repository](https://github.com/sgaunet/ekspodlogs)
@@ -176,10 +165,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install ekspodlogs"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "ekspodlogs.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: ekspodlogs.yml
 ```
-
 ## envtemplate
 
 [Github repository](https://github.com/sgaunet/envtemplate)
@@ -191,11 +179,37 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install envtemplate"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "envtemplate.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: envtemplate.yml
 ```
+## fx
 
+[Github repository](https://github.com/antonmedv/fx)
 
+```
+- name: Install fx
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install fx"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: fx.yml
+```
+## gdu
+
+[Github repository](https://github.com/dundee/gdu)
+
+```
+- name: Install gdu
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install gdu"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: gdu.yml
+```
 ## gini
 
 [Github repository](https://github.com/sgaunet/gini)
@@ -207,10 +221,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install gini"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "gini.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: gini.yml
 ```
-
 ## gitleaks
 
 [Github repository](https://github.com/gitleaks/gitleaks)
@@ -222,25 +235,23 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install gitleaks"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "gitleaks.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: gitleaks.yml
 ```
+## gocryptfs
 
-## grype
-
-[Github repository](https://github.com/anchore/grype)
+[Github repository](https://github.com/rfjakob/gocryptfs)
 
 ```
-- name: Install grype
+- name: Install gocryptfs
   hosts: all
   become: true
   tasks:
-    - name: "Install grype"
+    - name: "Install gocryptfs"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "grype.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: gocryptfs.yml
 ```
-
 ## gocrypt
 
 [Github repository](https://github.com/sgaunet/gocrypt)
@@ -252,10 +263,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install gocrypt"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "gocrypt.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: gocrypt.yml
 ```
-
 ## golangci-lint
 
 [Github repository](https://github.com/golangci/golangci-lint)
@@ -267,10 +277,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install golangci-lint"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "golangci-lint.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: golangci-lint.yml
 ```
-
 ## goreleaser
 
 [Github repository](https://github.com/goreleaser/goreleaser)
@@ -282,10 +291,23 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install goreleaser"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "goreleaser.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: goreleaser.yml
 ```
+## grype
 
+[Github repository](https://github.com/anchore/grype)
+
+```
+- name: Install grype
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install grype"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: grype.yml
+```
 ## gum
 
 [Github repository](https://github.com/charmbracelet/gum)
@@ -297,10 +319,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install gum"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "gum.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: gum.yml
 ```
-
 ## hadolint
 
 [Github repository](https://github.com/hadolint/hadolint)
@@ -312,25 +333,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install hadolint"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "hadolint.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: hadolint.yml
 ```
-
-## helm
-
-[Github repository](https://github.com/helm/helm)
-
-```
-- name: Install helm
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install helm"
-      ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "helm.yml"
-```
-
 ## helmchart-helper
 
 [Github repository](https://github.com/sgaunet/helmchart-helper)
@@ -342,10 +347,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install helmchart-helper"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "helmchart-helper.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: helmchart-helper.yml
 ```
-
 ## helmdocs
 
 [Github repository](https://github.com/norwoodj/helm-docs)
@@ -357,10 +361,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install helmdocs"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "helmdocs.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: helmdocs.yml
 ```
-
 ## helmfile
 
 [Github repository](https://github.com/helmfile/helmfile)
@@ -372,10 +375,51 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install helmfile"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "helmfile.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: helmfile.yml
 ```
+## helm
 
+[Github repository](https://github.com/helm/helm)
+
+```
+- name: Install helm
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install helm"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: helm.yml
+```
+## httping-go
+
+[Github repository](https://github.com/sgaunet/httping-go)
+
+```
+- name: Install httping-go
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install httping-go"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: httping-go.yml
+```
+## hyperfine
+
+[Github repository](https://github.com/sharkdp/hyperfine)
+
+```
+- name: Install hyperfine
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install hyperfine"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: hyperfine.yml
+```
 ## jwt-cli
 
 [Github repository](https://github.com/sgaunet/jwt-cli)
@@ -387,10 +431,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install jwt-cli"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "jwt-cli.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: jwt-cli.yml
 ```
-
 ## k6
 
 [Github repository](https://github.com/grafana/k6)
@@ -402,10 +445,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install k6"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "k6.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: k6.yml
 ```
-
 ## k9s
 
 [Github repository](https://github.com/derailed/k9s)
@@ -417,10 +459,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install k9s"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "k9s.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: k9s.yml
 ```
-
 ## kconf
 
 [Github repository](https://github.com/particledecay/kconf)
@@ -432,10 +473,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install kconf"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "kconf.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: kconf.yml
 ```
-
 ## kfilt
 
 [Github repository](https://github.com/ryane/kfilt)
@@ -447,10 +487,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install kfilt"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "kfilt.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: kfilt.yml
 ```
-
 ## kind
 
 [Github repository](https://github.com/kubernetes-sigs/kind)
@@ -462,10 +501,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install kind"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "kind.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: kind.yml
 ```
-
 ## kor
 
 [Github repository](https://github.com/yonahd/kor)
@@ -477,10 +515,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install kor"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "kor.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: kor.yml
 ```
-
 ## krew
 
 [Github repository](https://github.com/kubernetes-sigs/krew)
@@ -492,10 +529,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install krew"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "krew.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: krew.yml
 ```
-
 ## kube-capacity
 
 [Github repository](https://github.com/robscott/kube-capacity)
@@ -507,10 +543,121 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install kube-capacity"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "kube-capacity.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: kube-capacity.yml
 ```
+## kubectl-ice
 
+[Github repository](https://github.com/NimbleArchitect/kubectl-ice)
+
+```
+- name: Install kubectl-ice
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kubectl-ice"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: kubectl-ice.yml
+```
+## kubectx
+
+[Github repository](https://github.com/ahmetb/kubectx)
+
+```
+- name: Install kubectx
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kubectx"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: kubectx.yml
+```
+## kubefwd
+
+[Github repository](https://github.com/yonahd/kor)
+
+```
+- name: Install kubefwd
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kubefwd"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: kubefwd.yml
+```
+## kube-linter
+
+[Github repository](https://github.com/stackrox/kube-linter)
+
+```
+- name: Install kube-linter
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kube-linter"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: kube-linter.yml
+```
+## kubens
+
+[Github repository](https://github.com/ahmetb/kubectx)
+
+```
+- name: Install kubens
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kubens"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: kubens.yml
+```
+## kubent
+
+[Github repository](https://github.com/doitintl/kube-no-trouble)
+
+```
+- name: Install kubent
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kubent"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: kubent.yml
+```
+## kubescape
+
+[Github repository](https://github.com/kubescape/kubescape)
+
+```
+- name: Install kubescape
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kubescape"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: kubescape.yml
+```
+## kubeshark
+
+[Github repository](https://github.com/kubeshark/kubeshark)
+
+```
+- name: Install kubeshark
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kubeshark"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: kubeshark.yml
+```
 ## lsd
 
 [Github repository](https://github.com/lsd-rs/lsd)
@@ -522,10 +669,23 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install lsd"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "lsd.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: lsd.yml
 ```
+## main
 
+[Github repository](https://github.com/null)
+
+```
+- name: Install main
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install main"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: main.yml
+```
 ## mdtohtml
 
 [Github repository](https://github.com/sgaunet/mdtohtml)
@@ -537,10 +697,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install mdtohtml"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "mdtohtml.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: mdtohtml.yml
 ```
-
 ## moq
 
 [Github repository](https://github.com/matryer/moq)
@@ -552,10 +711,23 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install moq"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "moq.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: moq.yml
 ```
+## muffet
 
+[Github repository](https://github.com/raviqqe/muffet)
+
+```
+- name: Install muffet
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install muffet"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: muffet.yml
+```
 ## nfpm
 
 [Github repository](https://github.com/goreleaser/nfpm)
@@ -567,10 +739,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install nfpm"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "nfpm.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: nfpm.yml
 ```
-
 ## osv-scanner
 
 [Github repository](https://github.com/google/osv-scanner)
@@ -582,10 +753,23 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install osv-scanner"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "osv-scanner.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: osv-scanner.yml
 ```
+## pastel
 
+[Github repository](https://github.com/sharkdp/pastel)
+
+```
+- name: Install pastel
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install pastel"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: pastel.yml
+```
 ## pet
 
 [Github repository](https://github.com/knqyf263/pet)
@@ -597,10 +781,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install pet"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "pet.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: pet.yml
 ```
-
 ## pgweb
 
 [Github repository](https://github.com/sosedoff/pgweb)
@@ -612,10 +795,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install pgweb"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "pgweb.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: pgweb.yml
 ```
-
 ## popeye
 
 [Github repository](https://github.com/derailed/popeye)
@@ -627,10 +809,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install popeye"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "popeye.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: popeye.yml
 ```
-
 ## pre-commit
 
 [Github repository](https://github.com/pre-commit/pre-commit)
@@ -642,10 +823,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install pre-commit"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "pre-commit.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: pre-commit.yml
 ```
-
 ## q
 
 [Github repository](https://github.com/natesales/q)
@@ -657,10 +837,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install q"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "q.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: q.yml
 ```
-
 ## retry
 
 [Github repository](https://github.com/sgaunet/retry)
@@ -672,10 +851,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install retry"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "retry.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: retry.yml
 ```
-
 ## sqlc
 
 [Github repository](https://github.com/sqlc-dev/sqlc)
@@ -687,10 +865,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install sqlc"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "sqlc.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: sqlc.yml
 ```
-
 ## stern
 
 [Github repository](https://github.com/stern/stern)
@@ -702,10 +879,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install stern"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "stern.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: stern.yml
 ```
-
 ## task
 
 [Github repository](https://github.com/go-task/task)
@@ -717,10 +893,51 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install task"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "task.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: task.yml
 ```
+## tbls
 
+[Github repository](https://github.com/k1LoW/tbls)
+
+```
+- name: Install tbls
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install tbls"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: tbls.yml
+```
+## tealdeer
+
+[Github repository](https://github.com/dbrgn/tealdeer)
+
+```
+- name: Install tealdeer
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install tealdeer"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: tealdeer.yml
+```
+## tspin
+
+[Github repository](https://github.com/bensadeh/tailspin)
+
+```
+- name: Install tspin
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install tspin"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: tspin.yml
+```
 ## usql
 
 [Github repository](https://github.com/xo/usql)
@@ -732,10 +949,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install usql"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "usql.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: usql.yml
 ```
-
 ## vals
 
 [Github repository](https://github.com/helmfile/vals)
@@ -747,10 +963,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install vals"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "vals.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: vals.yml
 ```
-
 ## venom
 
 [Github repository](https://github.com/ovh/venom)
@@ -762,10 +977,9 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install venom"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "venom.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: venom.yml
 ```
-
 ## vhs
 
 [Github repository](https://github.com/charmbracelet/vhs)
@@ -777,10 +991,51 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install vhs"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "vhs.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: vhs.yml
 ```
+## viddy
 
+[Github repository](https://github.com/sachaos/viddy)
+
+```
+- name: Install viddy
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install viddy"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: viddy.yml
+```
+## vivid
+
+[Github repository](https://github.com/yonahd/kor)
+
+```
+- name: Install vivid
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install vivid"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: vivid.yml
+```
+## yq
+
+[Github repository](https://github.com/mikefarah/yq)
+
+```
+- name: Install yq
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install yq"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: yq.yml
+```
 ## zellij
 
 [Github repository](https://github.com/zellij-org/zellij)
@@ -792,6 +1047,20 @@ Here is a list of available tools that can be installed with self contained vari
   tasks:
     - name: "Install zellij"
       ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        defaults_from: "zellij.yml"
+        name: sgaunet.gh_role_installer
+        defaults_from: zellij.yml
+```
+## zenith
+
+[Github repository](https://github.com/bvaisvil/zenith)
+
+```
+- name: Install zenith
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install zenith"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: zenith.yml
 ```
