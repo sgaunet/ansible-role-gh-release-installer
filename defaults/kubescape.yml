@@ -1,0 +1,12 @@
+---
+
+gh_role_installer_version: "latest"
+gh_role_installer_os: "ubuntu"
+gh_role_installer_arch: ""
+gh_role_installer_repository: "kubescape/kubescape"
+gh_role_installer_release: "https://github.com/{{ gh_role_installer_repository }}/releases/download/v{{ version_to_install }}/kubescape-{{ gh_role_installer_os }}-latest"
+gh_role_installer_release_is_archive: false
+gh_role_installer_binary_name: "kubescape"
+gh_role_installer_cmd_to_get_version: 'kubescape version | sed "s#Your current version is: v##g" | sed "s# \[git enabled in build: true\]##g"'
+gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
+gh_role_installer_binary_path: "/usr/local/bin/{{ gh_role_installer_binary_name }}"
