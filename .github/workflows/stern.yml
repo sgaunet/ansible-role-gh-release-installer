@@ -1,0 +1,50 @@
+---
+name: CI-stern
+'on':
+  schedule:
+    - cron: "45 24 * * 4"
+
+defaults:
+  run:
+    working-directory: 'sgaunet.gh-release-installer'
+
+jobs:
+  molecule:
+    name: Molecule
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        distro:
+          - rockylinux9
+          # - rockylinux8
+          - ubuntu2204
+          # - ubuntu2004
+          - debian12
+          # - debian11
+          # - debian10
+          - fedora39
+
+    steps:
+      - name: Check out the codebase.
+        uses: actions/checkout@v4
+        with:
+          path: 'sgaunet.gh-release-installer'
+
+      - name: Set up Python 3.
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install test dependencies.
+        run: |
+          pip3 install -r requirements.txt
+
+      - name: Run Molecule tests.
+        run: |
+          # molecule destroy
+          molecule test -s stern
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PY_COLORS: '1'
+          ANSIBLE_FORCE_COLOR: '1'
+          MOLECULE_DISTRO: ${{ matrix.distro }}

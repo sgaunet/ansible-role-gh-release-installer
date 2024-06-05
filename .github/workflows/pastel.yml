@@ -1,41 +1,14 @@
 ---
-name: CI
+name: CI-pastel
 'on':
-  pull_request:
-  push:
-    branches:
-      - '*'
   schedule:
-    - cron: "30 6 * * 5"
+    - cron: "26 7 * * 3"
 
 defaults:
   run:
     working-directory: 'sgaunet.gh-release-installer'
 
 jobs:
-
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out the codebase.
-        uses: actions/checkout@v4
-        with:
-          path: 'sgaunet.gh-release-installer'
-
-      - name: Set up Python 3.
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
-      - name: Install test dependencies.
-        run: |
-          pip3 install -r requirements.txt
-
-      - name: Lint code.
-        run: |
-          ansible-lint
-
   molecule:
     name: Molecule
     runs-on: ubuntu-latest
@@ -69,7 +42,7 @@ jobs:
       - name: Run Molecule tests.
         run: |
           # molecule destroy
-          molecule test
+          molecule test -s pastel
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PY_COLORS: '1'
