@@ -3,8 +3,8 @@
   hosts: all
   become: true
   tasks:
-    - name: "Install viddy"
+    - name: "Install ephbeta"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "viddy.yml"
+        defaults_from: "ephbeta.yml"
 

@@ -8,7 +8,3 @@
         name: "sgaunet.gh_role_installer"
         defaults_from: "kubectx.yml"
 
-    - name: sleep for 1 second to avoid errors
-      ansible.builtin.wait_for:
-        timeout: 1
-

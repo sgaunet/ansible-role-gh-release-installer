@@ -29,10 +29,6 @@ do
     echo "        name: \"sgaunet.gh_role_installer\""
     echo "        defaults_from: \"$f\""
     echo ""
-    echo "    - name: sleep for 1 second to avoid errors"
-    echo "      ansible.builtin.wait_for:"
-    echo "        timeout: 1"
-    echo ""
   ) > "$output_file"
 
 
