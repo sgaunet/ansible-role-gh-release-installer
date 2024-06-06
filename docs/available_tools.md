@@ -602,20 +602,6 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: kube-linter.yml
 ```
-## kubens
-
-[Github repository](https://github.com/ahmetb/kubectx)
-
-```
-- name: Install kubens
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install kubens"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        defaults_from: kubens.yml
-```
 ## kubent
 
 [Github repository](https://github.com/doitintl/kube-no-trouble)
