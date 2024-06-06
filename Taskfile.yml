@@ -23,6 +23,13 @@ tasks:
       # - ansible-lint *.yml --skip-list name[template],meta-no-info,yaml[line-length],package-latest,latest[git]
       - ansible-lint .
 
+  gen:
+    desc: "generate doc/ci/molecule files"
+    cmds:
+      - ./gen-ci.sh
+      - ./gen-docs.sh
+      - ./gen-molecule-files.sh
+
   test:
     desc: "execute molecule tests"
     cmds:
@@ -38,3 +45,6 @@ tasks:
       - rm -rf ~/.ansible/roles/sgaunet.gh_role_installer
       - source venv/bin/activate && molecule destroy
       - source venv/bin/activate && molecule test
+
+# - source venv/bin/activate && molecule destroy -s yazi
+# - source venv/bin/activate && molecule test -s yazi
