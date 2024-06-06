@@ -952,6 +952,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: usql.yml
 ```
+## vale
+
+[Github repository](https://github.com/errata-ai/vale)
+
+```
+- name: Install vale
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install vale"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: vale.yml
+```
 ## vals
 
 [Github repository](https://github.com/helmfile/vals)
