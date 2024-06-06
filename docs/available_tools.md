@@ -126,6 +126,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: delta.yml
 ```
+## direnv
+
+[Github repository](https://github.com/direnv/direnv)
+
+```
+- name: Install direnv
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install direnv"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: direnv.yml
+```
 ## dive
 
 [Github repository](https://github.com/wagoodman/dive)
