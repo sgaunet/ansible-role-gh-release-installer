@@ -1,0 +1,116 @@
+---
+
+- name: Latest version of {{ gh_role_installer_repository }}
+  ansible.builtin.debug:
+    msg: "{{ project_info.content | from_json | json_query('tag_name') | replace('v', '') }}"
+  changed_when: false
+  check_mode: false
+
+- name: Set gh_role_installer_version if latest
+  ansible.builtin.set_fact:
+    version_to_install: "{{ project_info.content | from_json | json_query('tag_name') | replace('v', '') }}"
+    cacheable: true
+  changed_when: false
+  check_mode: false
+  when:
+    - gh_role_installer_version == "latest"
+
+- name: Set gh_role_installer_version not latest
+  ansible.builtin.set_fact:
+    version_to_install: "{{ gh_role_installer_version }}"
+    cacheable: true
+  changed_when: false
+  check_mode: false
+  when:
+    - gh_role_installer_version != "latest"
+
+- name: Version to install {{ gh_role_installer_repository }}
+  ansible.builtin.debug:
+    msg: "{{ version_to_install }}"
+
+- name: Get version of the binary actually installed ({{ gh_role_installer_repository }})
+  become: false
+  ansible.builtin.shell: "{{ gh_role_installer_cmd_to_get_version }}"
+  args:
+    executable: /bin/bash
+  register: gh_role_installer_version_client_installed
+  changed_when: false
+  failed_when: false
+  check_mode: false
+
+
+- name: Debug gh_role_installer_version_client_installed
+  ansible.builtin.debug:
+    var: gh_role_installer_version_client_installed.stdout
+  check_mode: false
+
+- name: Install the binary ({{ gh_role_installer_repository }})
+  when:
+    - not ansible_check_mode
+    - gh_role_installer_version_client_installed.stdout != version_to_install
+  block:
+    - name: Create a temporary directory if it does not exist
+      ansible.builtin.file:
+        path: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/"
+        state: directory
+        mode: '0755'
+
+    - name: Download the release ({{ gh_role_installer_repository }})
+      ansible.builtin.get_url:
+        url: "{{ gh_role_installer_release }}"
+        dest: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/"
+        mode: '0755'
+
+    - name: Get basename from URL
+      ansible.builtin.set_fact:
+        filename: "{{ gh_role_installer_release | urlsplit('path') | basename }}"
+
+    - name: Decompress the archive
+      ansible.builtin.unarchive:
+        src: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/{{ filename }}"
+        dest: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/"
+        remote_src: true
+      when:
+        - gh_role_installer_release_is_archive
+
+    - name: Find and install the binary {{ gh_role_installer_binary_name }}
+      ansible.builtin.find:
+        paths: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/"
+        patterns: "{{ gh_role_installer_binary_name }}"
+        recurse: true
+      register: gh_role_installer_binary
+      when:
+        - gh_role_installer_release_is_archive
+
+    - name: Debug gh_role_installer_binary
+      ansible.builtin.debug:
+        var: gh_role_installer_binary
+      when:
+        - gh_role_installer_release_is_archive
+
+    - name: Install the binary {{ gh_role_installer_binary_name }}
+      ansible.builtin.copy:
+        src: "{{ gh_role_installer_binary.files[0].path }}"
+        dest: "{{ gh_role_installer_binary_path }}"
+        owner: root
+        group: root
+        mode: "0755"
+        remote_src: true
+      when:
+        - gh_role_installer_release_is_archive
+
+    - name: Install the binary {{ gh_role_installer_binary_name }}
+      ansible.builtin.copy:
+        src: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/{{ filename }}"
+        dest: "{{ gh_role_installer_binary_path }}"
+        owner: root
+        group: root
+        mode: "0755"
+        remote_src: true
+      when:
+        - not gh_role_installer_release_is_archive
+
+    - name: Remove temporary directory
+      ansible.builtin.file:
+        path: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}"
+        state: absent
