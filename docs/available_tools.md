@@ -70,6 +70,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: chglog.yml
 ```
+## concourse
+
+[Github repository](https://github.com/concourse/concourse)
+
+```
+- name: Install concourse
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install concourse"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: concourse.yml
+```
 ## crane
 
 [Github repository](https://github.com/google/go-containerregistry)
@@ -266,6 +280,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: gitlab-stats.yml
 ```
+## gitlab-vars
+
+[Github repository](https://github.com/sgaunet/gitlab-vars)
+
+```
+- name: Install gitlab-vars
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install gitlab-vars"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: gitlab-vars.yml
+```
 ## gitleaks
 
 [Github repository](https://github.com/gitleaks/gitleaks)
@@ -461,6 +489,20 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         defaults_from: hyperfine.yml
+```
+## jiracli
+
+[Github repository](https://github.com/ankitpokhrel/jira-cli)
+
+```
+- name: Install jiracli
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install jiracli"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: jiracli.yml
 ```
 ## jwt-cli
 
@@ -1007,6 +1049,20 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         defaults_from: tspin.yml
+```
+## ttyd
+
+[Github repository](https://github.com/tsl0922/ttyd)
+
+```
+- name: Install ttyd
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install ttyd"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: ttyd.yml
 ```
 ## usql
 
