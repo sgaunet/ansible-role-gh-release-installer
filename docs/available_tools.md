@@ -238,6 +238,34 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: gini.yml
 ```
+## gitlab-issue-report
+
+[Github repository](https://github.com/sgaunet/gitlab-issue-report)
+
+```
+- name: Install gitlab-issue-report
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install gitlab-issue-report"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: gitlab-issue-report.yml
+```
+## gitlab-stats
+
+[Github repository](https://github.com/sgaunet/gitlab-stats)
+
+```
+- name: Install gitlab-stats
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install gitlab-stats"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: gitlab-stats.yml
+```
 ## gitleaks
 
 [Github repository](https://github.com/gitleaks/gitleaks)
@@ -854,6 +882,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: retry.yml
 ```
+## s5cmd
+
+[Github repository](https://github.com/peak/s5cmd)
+
+```
+- name: Install s5cmd
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install s5cmd"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: s5cmd.yml
+```
 ## sqlc
 
 [Github repository](https://github.com/sqlc-dev/sqlc)
@@ -923,6 +965,34 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         defaults_from: tealdeer.yml
+```
+## trivy
+
+[Github repository](https://github.com/aquasecurity/trivy)
+
+```
+- name: Install trivy
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install trivy"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: trivy.yml
+```
+## trufflehog
+
+[Github repository](https://github.com/trufflesecurity/trufflehog)
+
+```
+- name: Install trufflehog
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install trufflehog"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: trufflehog.yml
 ```
 ## tspin
 
