@@ -840,6 +840,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: osv-scanner.yml
 ```
+## packer
+
+[Github repository](https://github.com/hashicorp/packer)
+
+```
+- name: Install packer
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install packer"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: packer.yml
+```
 ## pastel
 
 [Github repository](https://github.com/sharkdp/pastel)

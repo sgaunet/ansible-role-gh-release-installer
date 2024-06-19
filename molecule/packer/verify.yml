@@ -1,0 +1,20 @@
+---
+
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Include default vars
+      ansible.builtin.include_vars:
+        file: '{{ lookup("env", "MOLECULE_PROJECT_DIRECTORY") }}/defaults/packer.yml'
+
+    - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
+      ansible.builtin.stat:
+        path: "{{ gh_role_installer_binary_path }}"
+      register: gh_role_installer_present
+    - name: Check binary is present {{ gh_role_installer_binary_name }}
+      ansible.builtin.assert:
+        that:
+          - gh_role_installer_present.stat.exists
+        fail_msg: "gh_role_installer not setup"
+        success_msg: "gh_role_installer is setup"
