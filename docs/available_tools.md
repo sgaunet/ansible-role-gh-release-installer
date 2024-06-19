@@ -1106,6 +1106,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: usql.yml
 ```
+## vagrant
+
+[Github repository](https://github.com/hashicorp/vagrant)
+
+```
+- name: Install vagrant
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install vagrant"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: vagrant.yml
+```
 ## vale
 
 [Github repository](https://github.com/errata-ai/vale)
