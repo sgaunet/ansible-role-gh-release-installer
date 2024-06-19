@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install devpod"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        defaults_from: "devpod.yml"

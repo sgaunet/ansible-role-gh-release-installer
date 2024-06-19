@@ -140,6 +140,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: delta.yml
 ```
+## devpod
+
+[Github repository](https://github.com/loft-sh/devpod)
+
+```
+- name: Install devpod
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install devpod"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: devpod.yml
+```
 ## direnv
 
 [Github repository](https://github.com/direnv/direnv)
