@@ -1036,6 +1036,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: tealdeer.yml
 ```
+## terraform
+
+[Github repository](https://github.com/hashicorp/terraform)
+
+```
+- name: Install terraform
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install terraform"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: terraform.yml
+```
 ## trivy
 
 [Github repository](https://github.com/aquasecurity/trivy)
