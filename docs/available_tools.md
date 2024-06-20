@@ -938,6 +938,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: q.yml
 ```
+## rclone
+
+[Github repository](https://github.com/rclone/rclone)
+
+```
+- name: Install rclone
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install rclone"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: rclone.yml
+```
 ## retry
 
 [Github repository](https://github.com/sgaunet/retry)
