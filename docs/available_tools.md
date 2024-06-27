@@ -224,6 +224,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: envtemplate.yml
 ```
+## ephbeta
+
+[Github repository](https://github.com/ephemeralfiles/eph-beta)
+
+```
+- name: Install ephbeta
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install ephbeta"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: ephbeta.yml
+```
 ## fx
 
 [Github repository](https://github.com/antonmedv/fx)
