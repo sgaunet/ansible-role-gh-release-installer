@@ -140,6 +140,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: delta.yml
 ```
+## devbox
+
+[Github repository](https://github.com/jetify-com/devbox)
+
+```
+- name: Install devbox
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install devbox"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: devbox.yml
+```
 ## devpod
 
 [Github repository](https://github.com/loft-sh/devpod)
@@ -223,20 +237,6 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         defaults_from: envtemplate.yml
-```
-## ephbeta
-
-[Github repository](https://github.com/ephemeralfiles/eph-beta)
-
-```
-- name: Install ephbeta
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install ephbeta"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        defaults_from: ephbeta.yml
 ```
 ## fx
 
