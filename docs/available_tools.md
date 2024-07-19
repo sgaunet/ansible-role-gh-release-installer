@@ -770,6 +770,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         defaults_from: kubeshark.yml
 ```
+## lazygit
+
+[Github repository](https://github.com/jesseduffield/lazygit)
+
+```
+- name: Install lazygit
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install lazygit"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        defaults_from: lazygit.yml
+```
 ## lsd
 
 [Github repository](https://github.com/lsd-rs/lsd)
@@ -783,20 +797,6 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         defaults_from: lsd.yml
-```
-## main
-
-[Github repository](https://github.com/null)
-
-```
-- name: Install main
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install main"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        defaults_from: main.yml
 ```
 ## mdtohtml
 
