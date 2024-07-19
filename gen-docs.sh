@@ -15,7 +15,7 @@ echo "Here is a list of available tools that can be installed with self containe
 echo "" >> $output_file
 
 
-find defaults -name '*.yml' | sort | while read -r doc
+find defaults -name '*.yml' | sort | grep -v main | while read -r doc
 do
   echo "Generating docs for $doc"
   repo=$(yq '.gh_role_installer_repository' "$doc")
@@ -38,5 +38,28 @@ do
     echo "        defaults_from: $f"
     echo '```'
   ) >> $output_file
+
+done
+
+badge_file="docs/badges.md"
+echo "# Pipeline status by app"  > $badge_file
+(
+  echo "" 
+  echo "Bad status do not indicate that the role won't work. It's often a question of version returned by the utility that is wrong." 
+  echo "Be patient, it will be fixed."
+  echo ""
+) >> $badge_file
+
+find defaults -name '*.yml' | sort | grep -v main | while read -r doc
+do
+  echo "Generating badges for $doc"
+  repo=$(yq '.gh_role_installer_repository' "$doc")
+  f=$(basename "$doc")
+  bin_name=$(echo "$f" | cut -d'.' -f1)
+
+  (
+    echo "[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-${bin_name}/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-${bin_name})"
+    # echo ""
+  ) >> $badge_file
 
 done
