@@ -6,4 +6,4 @@
     - name: "Install retry"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "retry.yml"
+        vars_from: "retry.yml"

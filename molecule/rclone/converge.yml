@@ -6,4 +6,4 @@
     - name: "Install rclone"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "rclone.yml"
+        vars_from: "rclone.yml"

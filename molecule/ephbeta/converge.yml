@@ -6,4 +6,4 @@
     - name: "Install ephbeta"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "ephbeta.yml"
+        vars_from: "ephbeta.yml"

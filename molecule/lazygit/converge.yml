@@ -6,4 +6,4 @@
     - name: "Install lazygit"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "lazygit.yml"
+        vars_from: "lazygit.yml"

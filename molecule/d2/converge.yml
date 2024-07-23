@@ -6,4 +6,4 @@
     - name: "Install d2"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "d2.yml"
+        vars_from: "d2.yml"

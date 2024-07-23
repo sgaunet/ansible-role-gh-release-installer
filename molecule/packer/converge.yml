@@ -6,4 +6,4 @@
     - name: "Install packer"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "packer.yml"
+        vars_from: "packer.yml"

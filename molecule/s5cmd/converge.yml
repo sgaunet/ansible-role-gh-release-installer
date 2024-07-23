@@ -6,4 +6,4 @@
     - name: "Install s5cmd"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "s5cmd.yml"
+        vars_from: "s5cmd.yml"

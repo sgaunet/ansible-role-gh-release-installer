@@ -6,4 +6,4 @@
     - name: "Install calcdate"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "calcdate.yml"
+        vars_from: "calcdate.yml"

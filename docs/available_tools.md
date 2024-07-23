@@ -12,7 +12,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install act"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: act.yml
+        vars_from: act.yml
 ```
 ## bandwhich
 
@@ -26,7 +26,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install bandwhich"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: bandwhich.yml
+        vars_from: bandwhich.yml
 ```
 ## bat
 
@@ -40,7 +40,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install bat"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: bat.yml
+        vars_from: bat.yml
 ```
 ## calcdate
 
@@ -54,7 +54,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install calcdate"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: calcdate.yml
+        vars_from: calcdate.yml
 ```
 ## chglog
 
@@ -68,7 +68,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install chglog"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: chglog.yml
+        vars_from: chglog.yml
 ```
 ## concourse
 
@@ -82,7 +82,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install concourse"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: concourse.yml
+        vars_from: concourse.yml
 ```
 ## crane
 
@@ -96,7 +96,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install crane"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: crane.yml
+        vars_from: crane.yml
 ```
 ## d2
 
@@ -110,7 +110,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install d2"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: d2.yml
+        vars_from: d2.yml
 ```
 ## dasel
 
@@ -124,7 +124,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install dasel"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: dasel.yml
+        vars_from: dasel.yml
 ```
 ## delta
 
@@ -138,7 +138,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install delta"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: delta.yml
+        vars_from: delta.yml
 ```
 ## devbox
 
@@ -152,7 +152,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install devbox"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: devbox.yml
+        vars_from: devbox.yml
 ```
 ## devpod
 
@@ -166,7 +166,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install devpod"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: devpod.yml
+        vars_from: devpod.yml
 ```
 ## direnv
 
@@ -180,7 +180,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install direnv"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: direnv.yml
+        vars_from: direnv.yml
 ```
 ## dive
 
@@ -194,7 +194,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install dive"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: dive.yml
+        vars_from: dive.yml
 ```
 ## eksctl
 
@@ -208,7 +208,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install eksctl"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: eksctl.yml
+        vars_from: eksctl.yml
 ```
 ## ekspodlogs
 
@@ -222,7 +222,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install ekspodlogs"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: ekspodlogs.yml
+        vars_from: ekspodlogs.yml
 ```
 ## envtemplate
 
@@ -236,7 +236,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install envtemplate"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: envtemplate.yml
+        vars_from: envtemplate.yml
 ```
 ## freeze
 
@@ -250,7 +250,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install freeze"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: freeze.yml
+        vars_from: freeze.yml
 ```
 ## fx
 
@@ -264,7 +264,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install fx"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: fx.yml
+        vars_from: fx.yml
 ```
 ## gdu
 
@@ -278,7 +278,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install gdu"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: gdu.yml
+        vars_from: gdu.yml
 ```
 ## gini
 
@@ -292,7 +292,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install gini"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: gini.yml
+        vars_from: gini.yml
 ```
 ## gitlab-issue-report
 
@@ -306,7 +306,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install gitlab-issue-report"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: gitlab-issue-report.yml
+        vars_from: gitlab-issue-report.yml
 ```
 ## gitlab-stats
 
@@ -320,7 +320,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install gitlab-stats"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: gitlab-stats.yml
+        vars_from: gitlab-stats.yml
 ```
 ## gitlab-vars
 
@@ -334,7 +334,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install gitlab-vars"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: gitlab-vars.yml
+        vars_from: gitlab-vars.yml
 ```
 ## gitleaks
 
@@ -348,7 +348,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install gitleaks"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: gitleaks.yml
+        vars_from: gitleaks.yml
 ```
 ## gocryptfs
 
@@ -362,7 +362,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install gocryptfs"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: gocryptfs.yml
+        vars_from: gocryptfs.yml
 ```
 ## gocrypt
 
@@ -376,7 +376,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install gocrypt"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: gocrypt.yml
+        vars_from: gocrypt.yml
 ```
 ## golangci-lint
 
@@ -390,7 +390,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install golangci-lint"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: golangci-lint.yml
+        vars_from: golangci-lint.yml
 ```
 ## goreleaser
 
@@ -404,7 +404,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install goreleaser"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: goreleaser.yml
+        vars_from: goreleaser.yml
 ```
 ## grype
 
@@ -418,7 +418,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install grype"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: grype.yml
+        vars_from: grype.yml
 ```
 ## gum
 
@@ -432,7 +432,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install gum"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: gum.yml
+        vars_from: gum.yml
 ```
 ## hadolint
 
@@ -446,7 +446,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install hadolint"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: hadolint.yml
+        vars_from: hadolint.yml
 ```
 ## helmchart-helper
 
@@ -460,7 +460,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install helmchart-helper"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: helmchart-helper.yml
+        vars_from: helmchart-helper.yml
 ```
 ## helmdocs
 
@@ -474,7 +474,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install helmdocs"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: helmdocs.yml
+        vars_from: helmdocs.yml
 ```
 ## helmfile
 
@@ -488,7 +488,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install helmfile"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: helmfile.yml
+        vars_from: helmfile.yml
 ```
 ## helm
 
@@ -502,7 +502,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install helm"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: helm.yml
+        vars_from: helm.yml
 ```
 ## httping-go
 
@@ -516,7 +516,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install httping-go"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: httping-go.yml
+        vars_from: httping-go.yml
 ```
 ## hyperfine
 
@@ -530,7 +530,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install hyperfine"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: hyperfine.yml
+        vars_from: hyperfine.yml
 ```
 ## jiracli
 
@@ -544,7 +544,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install jiracli"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: jiracli.yml
+        vars_from: jiracli.yml
 ```
 ## jwt-cli
 
@@ -558,7 +558,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install jwt-cli"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: jwt-cli.yml
+        vars_from: jwt-cli.yml
 ```
 ## k6
 
@@ -572,7 +572,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install k6"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: k6.yml
+        vars_from: k6.yml
 ```
 ## k9s
 
@@ -586,7 +586,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install k9s"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: k9s.yml
+        vars_from: k9s.yml
 ```
 ## kconf
 
@@ -600,7 +600,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install kconf"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: kconf.yml
+        vars_from: kconf.yml
 ```
 ## kfilt
 
@@ -614,7 +614,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install kfilt"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: kfilt.yml
+        vars_from: kfilt.yml
 ```
 ## kind
 
@@ -628,7 +628,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install kind"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: kind.yml
+        vars_from: kind.yml
 ```
 ## kor
 
@@ -642,7 +642,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install kor"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: kor.yml
+        vars_from: kor.yml
 ```
 ## krew
 
@@ -656,7 +656,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install krew"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: krew.yml
+        vars_from: krew.yml
 ```
 ## kube-capacity
 
@@ -670,7 +670,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install kube-capacity"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: kube-capacity.yml
+        vars_from: kube-capacity.yml
 ```
 ## kubectl-ice
 
@@ -684,7 +684,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install kubectl-ice"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: kubectl-ice.yml
+        vars_from: kubectl-ice.yml
 ```
 ## kubectx
 
@@ -698,7 +698,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install kubectx"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: kubectx.yml
+        vars_from: kubectx.yml
 ```
 ## kubefwd
 
@@ -712,7 +712,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install kubefwd"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: kubefwd.yml
+        vars_from: kubefwd.yml
 ```
 ## kube-linter
 
@@ -726,7 +726,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install kube-linter"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: kube-linter.yml
+        vars_from: kube-linter.yml
 ```
 ## kubent
 
@@ -740,7 +740,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install kubent"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: kubent.yml
+        vars_from: kubent.yml
 ```
 ## kubescape
 
@@ -754,7 +754,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install kubescape"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: kubescape.yml
+        vars_from: kubescape.yml
 ```
 ## kubeshark
 
@@ -768,7 +768,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install kubeshark"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: kubeshark.yml
+        vars_from: kubeshark.yml
 ```
 ## lazygit
 
@@ -782,7 +782,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install lazygit"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: lazygit.yml
+        vars_from: lazygit.yml
 ```
 ## lsd
 
@@ -796,7 +796,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install lsd"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: lsd.yml
+        vars_from: lsd.yml
 ```
 ## mdtohtml
 
@@ -810,7 +810,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install mdtohtml"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: mdtohtml.yml
+        vars_from: mdtohtml.yml
 ```
 ## moq
 
@@ -824,7 +824,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install moq"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: moq.yml
+        vars_from: moq.yml
 ```
 ## muffet
 
@@ -838,7 +838,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install muffet"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: muffet.yml
+        vars_from: muffet.yml
 ```
 ## nfpm
 
@@ -852,7 +852,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install nfpm"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: nfpm.yml
+        vars_from: nfpm.yml
 ```
 ## osv-scanner
 
@@ -866,7 +866,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install osv-scanner"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: osv-scanner.yml
+        vars_from: osv-scanner.yml
 ```
 ## packer
 
@@ -880,7 +880,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install packer"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: packer.yml
+        vars_from: packer.yml
 ```
 ## pastel
 
@@ -894,7 +894,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install pastel"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: pastel.yml
+        vars_from: pastel.yml
 ```
 ## pet
 
@@ -908,7 +908,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install pet"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: pet.yml
+        vars_from: pet.yml
 ```
 ## pgweb
 
@@ -922,7 +922,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install pgweb"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: pgweb.yml
+        vars_from: pgweb.yml
 ```
 ## popeye
 
@@ -936,7 +936,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install popeye"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: popeye.yml
+        vars_from: popeye.yml
 ```
 ## pre-commit
 
@@ -950,7 +950,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install pre-commit"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: pre-commit.yml
+        vars_from: pre-commit.yml
 ```
 ## q
 
@@ -964,7 +964,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install q"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: q.yml
+        vars_from: q.yml
 ```
 ## rclone
 
@@ -978,7 +978,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install rclone"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: rclone.yml
+        vars_from: rclone.yml
 ```
 ## retry
 
@@ -992,7 +992,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install retry"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: retry.yml
+        vars_from: retry.yml
 ```
 ## s5cmd
 
@@ -1006,7 +1006,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install s5cmd"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: s5cmd.yml
+        vars_from: s5cmd.yml
 ```
 ## sqlc
 
@@ -1020,7 +1020,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install sqlc"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: sqlc.yml
+        vars_from: sqlc.yml
 ```
 ## stern
 
@@ -1034,7 +1034,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install stern"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: stern.yml
+        vars_from: stern.yml
 ```
 ## task
 
@@ -1048,7 +1048,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install task"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: task.yml
+        vars_from: task.yml
 ```
 ## tbls
 
@@ -1062,7 +1062,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install tbls"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: tbls.yml
+        vars_from: tbls.yml
 ```
 ## tealdeer
 
@@ -1076,7 +1076,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install tealdeer"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: tealdeer.yml
+        vars_from: tealdeer.yml
 ```
 ## terraform
 
@@ -1090,7 +1090,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install terraform"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: terraform.yml
+        vars_from: terraform.yml
 ```
 ## trivy
 
@@ -1104,7 +1104,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install trivy"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: trivy.yml
+        vars_from: trivy.yml
 ```
 ## trufflehog
 
@@ -1118,7 +1118,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install trufflehog"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: trufflehog.yml
+        vars_from: trufflehog.yml
 ```
 ## tspin
 
@@ -1132,7 +1132,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install tspin"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: tspin.yml
+        vars_from: tspin.yml
 ```
 ## ttyd
 
@@ -1146,7 +1146,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install ttyd"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: ttyd.yml
+        vars_from: ttyd.yml
 ```
 ## usql
 
@@ -1160,7 +1160,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install usql"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: usql.yml
+        vars_from: usql.yml
 ```
 ## vagrant
 
@@ -1174,7 +1174,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install vagrant"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: vagrant.yml
+        vars_from: vagrant.yml
 ```
 ## vale
 
@@ -1188,7 +1188,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install vale"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: vale.yml
+        vars_from: vale.yml
 ```
 ## vals
 
@@ -1202,7 +1202,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install vals"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: vals.yml
+        vars_from: vals.yml
 ```
 ## venom
 
@@ -1216,7 +1216,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install venom"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: venom.yml
+        vars_from: venom.yml
 ```
 ## vhs
 
@@ -1230,7 +1230,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install vhs"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: vhs.yml
+        vars_from: vhs.yml
 ```
 ## viddy
 
@@ -1244,7 +1244,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install viddy"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: viddy.yml
+        vars_from: viddy.yml
 ```
 ## vivid
 
@@ -1258,7 +1258,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install vivid"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: vivid.yml
+        vars_from: vivid.yml
 ```
 ## yazi
 
@@ -1272,7 +1272,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install yazi"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: yazi.yml
+        vars_from: yazi.yml
 ```
 ## yq
 
@@ -1286,7 +1286,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install yq"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: yq.yml
+        vars_from: yq.yml
 ```
 ## zellij
 
@@ -1300,7 +1300,7 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install zellij"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: zellij.yml
+        vars_from: zellij.yml
 ```
 ## zenith
 
@@ -1314,5 +1314,5 @@ Here is a list of available tools that can be installed with self contained vari
     - name: "Install zenith"
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
-        defaults_from: zenith.yml
+        vars_from: zenith.yml
 ```

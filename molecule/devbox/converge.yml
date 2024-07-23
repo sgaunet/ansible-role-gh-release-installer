@@ -6,4 +6,4 @@
     - name: "Install devbox"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "devbox.yml"
+        vars_from: "devbox.yml"

@@ -6,4 +6,4 @@
     - name: "Install pgweb"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "pgweb.yml"
+        vars_from: "pgweb.yml"

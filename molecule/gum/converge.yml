@@ -6,4 +6,4 @@
     - name: "Install gum"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "gum.yml"
+        vars_from: "gum.yml"

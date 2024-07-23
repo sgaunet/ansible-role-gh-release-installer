@@ -6,4 +6,4 @@
     - name: "Install trivy"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "trivy.yml"
+        vars_from: "trivy.yml"

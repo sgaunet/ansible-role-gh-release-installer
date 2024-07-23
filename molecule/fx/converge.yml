@@ -6,4 +6,4 @@
     - name: "Install fx"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "fx.yml"
+        vars_from: "fx.yml"

@@ -6,4 +6,4 @@
     - name: "Install kube-capacity"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "kube-capacity.yml"
+        vars_from: "kube-capacity.yml"

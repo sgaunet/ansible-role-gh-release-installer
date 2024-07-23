@@ -6,4 +6,4 @@
     - name: "Install gitlab-issue-report"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "gitlab-issue-report.yml"
+        vars_from: "gitlab-issue-report.yml"

@@ -6,4 +6,4 @@
     - name: "Install kubectl-ice"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "kubectl-ice.yml"
+        vars_from: "kubectl-ice.yml"

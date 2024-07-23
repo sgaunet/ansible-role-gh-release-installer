@@ -6,4 +6,4 @@
     - name: "Install kor"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "kor.yml"
+        vars_from: "kor.yml"

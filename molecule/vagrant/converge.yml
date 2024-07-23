@@ -6,4 +6,4 @@
     - name: "Install vagrant"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "vagrant.yml"
+        vars_from: "vagrant.yml"

@@ -6,4 +6,4 @@
     - name: "Install devpod"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "devpod.yml"
+        vars_from: "devpod.yml"

@@ -6,4 +6,4 @@
     - name: "Install concourse"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "concourse.yml"
+        vars_from: "concourse.yml"

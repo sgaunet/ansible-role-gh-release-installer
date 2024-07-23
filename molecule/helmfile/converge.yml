@@ -6,4 +6,4 @@
     - name: "Install helmfile"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "helmfile.yml"
+        vars_from: "helmfile.yml"

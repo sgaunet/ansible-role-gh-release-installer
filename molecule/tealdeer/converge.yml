@@ -6,4 +6,4 @@
     - name: "Install tealdeer"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "tealdeer.yml"
+        vars_from: "tealdeer.yml"

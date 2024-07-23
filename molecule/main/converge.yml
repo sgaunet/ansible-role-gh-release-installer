@@ -6,4 +6,4 @@
     - name: "Install main"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "main.yml"
+        vars_from: "main.yml"

@@ -6,4 +6,4 @@
     - name: "Install kubeshark"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "kubeshark.yml"
+        vars_from: "kubeshark.yml"

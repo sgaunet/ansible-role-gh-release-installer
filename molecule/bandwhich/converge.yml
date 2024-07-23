@@ -6,4 +6,4 @@
     - name: "Install bandwhich"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "bandwhich.yml"
+        vars_from: "bandwhich.yml"

@@ -6,4 +6,4 @@
     - name: "Install venom"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "venom.yml"
+        vars_from: "venom.yml"
