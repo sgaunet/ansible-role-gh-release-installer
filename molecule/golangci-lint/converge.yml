@@ -6,4 +6,4 @@
     - name: "Install golangci-lint"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "golangci-lint.yml"
+        vars_from: "golangci-lint.yml"

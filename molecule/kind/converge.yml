@@ -6,4 +6,4 @@
     - name: "Install kind"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "kind.yml"
+        vars_from: "kind.yml"

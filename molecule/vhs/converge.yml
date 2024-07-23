@@ -6,4 +6,4 @@
     - name: "Install vhs"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "vhs.yml"
+        vars_from: "vhs.yml"

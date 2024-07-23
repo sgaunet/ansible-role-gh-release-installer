@@ -6,4 +6,4 @@
     - name: "Install kfilt"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "kfilt.yml"
+        vars_from: "kfilt.yml"

@@ -6,4 +6,4 @@
     - name: "Install helmchart-helper"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "helmchart-helper.yml"
+        vars_from: "helmchart-helper.yml"

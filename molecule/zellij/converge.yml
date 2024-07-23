@@ -6,4 +6,4 @@
     - name: "Install zellij"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "zellij.yml"
+        vars_from: "zellij.yml"

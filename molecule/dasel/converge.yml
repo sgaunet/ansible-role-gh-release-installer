@@ -6,4 +6,4 @@
     - name: "Install dasel"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "dasel.yml"
+        vars_from: "dasel.yml"

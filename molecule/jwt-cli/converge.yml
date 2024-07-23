@@ -6,4 +6,4 @@
     - name: "Install jwt-cli"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "jwt-cli.yml"
+        vars_from: "jwt-cli.yml"

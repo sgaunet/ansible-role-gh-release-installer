@@ -6,4 +6,4 @@
     - name: "Install kubent"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "kubent.yml"
+        vars_from: "kubent.yml"

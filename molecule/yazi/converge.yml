@@ -6,4 +6,4 @@
     - name: "Install yazi"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "yazi.yml"
+        vars_from: "yazi.yml"

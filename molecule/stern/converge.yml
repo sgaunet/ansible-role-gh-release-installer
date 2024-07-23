@@ -6,4 +6,4 @@
     - name: "Install stern"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "stern.yml"
+        vars_from: "stern.yml"

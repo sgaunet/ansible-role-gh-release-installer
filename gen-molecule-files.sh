@@ -27,7 +27,7 @@ do
     echo "    - name: \"Install ${bin_name}\""
     echo "      ansible.builtin.include_role:"
     echo "        name: \"sgaunet.gh_role_installer\""
-    echo "        defaults_from: \"$f\""
+    echo "        vars_from: \"$f\""
   ) > "$output_file"
 
 

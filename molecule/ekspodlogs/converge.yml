@@ -6,4 +6,4 @@
     - name: "Install ekspodlogs"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "ekspodlogs.yml"
+        vars_from: "ekspodlogs.yml"

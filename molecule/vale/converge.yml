@@ -6,4 +6,4 @@
     - name: "Install vale"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "vale.yml"
+        vars_from: "vale.yml"

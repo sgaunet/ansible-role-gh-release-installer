@@ -6,4 +6,4 @@
     - name: "Install gitleaks"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "gitleaks.yml"
+        vars_from: "gitleaks.yml"

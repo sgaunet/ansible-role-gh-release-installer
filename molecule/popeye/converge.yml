@@ -6,4 +6,4 @@
     - name: "Install popeye"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "popeye.yml"
+        vars_from: "popeye.yml"

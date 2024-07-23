@@ -6,4 +6,4 @@
     - name: "Install bat"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "bat.yml"
+        vars_from: "bat.yml"

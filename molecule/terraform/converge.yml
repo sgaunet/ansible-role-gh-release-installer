@@ -6,4 +6,4 @@
     - name: "Install terraform"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "terraform.yml"
+        vars_from: "terraform.yml"

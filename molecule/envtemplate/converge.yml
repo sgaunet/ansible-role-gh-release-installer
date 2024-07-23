@@ -6,4 +6,4 @@
     - name: "Install envtemplate"
       ansible.builtin.include_role:
         name: "sgaunet.gh_role_installer"
-        defaults_from: "envtemplate.yml"
+        vars_from: "envtemplate.yml"
