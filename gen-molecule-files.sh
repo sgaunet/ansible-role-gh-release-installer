@@ -41,7 +41,7 @@ do
     echo "  tasks:"
     echo "    - name: Include default vars"
     echo "      ansible.builtin.include_vars:"
-    echo "        file: '{{ lookup(\"env\", \"MOLECULE_PROJECT_DIRECTORY\") }}/defaults/$f'"
+    echo "        file: '{{ lookup(\"env\", \"MOLECULE_PROJECT_DIRECTORY\") }}/vars/$f'"
     echo ""
     echo "    - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}"
     echo "      ansible.builtin.stat:"

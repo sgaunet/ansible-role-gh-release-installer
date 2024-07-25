@@ -6,7 +6,7 @@
   tasks:
     - name: Include default vars
       ansible.builtin.include_vars:
-        file: '{{ lookup("env", "MOLECULE_PROJECT_DIRECTORY") }}/defaults/bat.yml'
+        file: '{{ lookup("env", "MOLECULE_PROJECT_DIRECTORY") }}/vars/bat.yml'
 
     - name: Stat gh_role_installer {{ gh_role_installer_binary_name }}
       ansible.builtin.stat:
