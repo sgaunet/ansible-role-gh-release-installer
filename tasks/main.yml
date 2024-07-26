@@ -2,7 +2,12 @@
 
 - name: Ensure unzip is installed.
   ansible.builtin.package:
-    name: ["unzip", "bzip2"]
+    name: ["unzip"]
+    state: present
+
+- name: Ensure unzip is installed.
+  ansible.builtin.package:
+    name: [ "bzip2"]
     state: present
   # only for redhat distribution
   when: ansible_os_family == 'RedHat'
