@@ -238,6 +238,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: envtemplate.yml
 ```
+## eza
+
+[Github repository](https://github.com/eza-community/eza)
+
+```
+- name: Install eza
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install eza"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: eza.yml
+```
 ## freeze
 
 [Github repository](https://github.com/charmbracelet/freeze)
