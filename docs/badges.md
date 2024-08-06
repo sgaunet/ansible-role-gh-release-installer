@@ -20,6 +20,7 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-eksctl/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-eksctl)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-ekspodlogs/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-ekspodlogs)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-envtemplate/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-envtemplate)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-eza/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-eza)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-freeze/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-freeze)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-fx/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-fx)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-gdu/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-gdu)
