@@ -700,6 +700,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: kube-capacity.yml
 ```
+## kubecm
+
+[Github repository](https://github.com/sunny0826/kubecm)
+
+```
+- name: Install kubecm
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kubecm"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: kubecm.yml
+```
 ## kubectl-ice
 
 [Github repository](https://github.com/NimbleArchitect/kubectl-ice)

@@ -53,6 +53,7 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-kor/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-kor)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-krew/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-krew)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-kube-capacity/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-kube-capacity)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-kubecm/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-kubecm)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-kubectl-ice/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-kubectl-ice)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-kubectx/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-kubectx)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-kubefwd/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-kubefwd)
