@@ -15,7 +15,7 @@ echo "Here is a list of available tools that can be installed with self containe
 echo "" >> $output_file
 
 
-find defaults -name '*.yml' | sort | grep -v main | while read -r doc
+find vars -name '*.yml' | sort | grep -v main | while read -r doc
 do
   echo "Generating docs for $doc"
   repo=$(yq '.gh_role_installer_repository' "$doc")
@@ -50,7 +50,7 @@ echo "# Pipeline status by app"  > $badge_file
   echo ""
 ) >> $badge_file
 
-find defaults -name '*.yml' | sort | grep -v main | while read -r doc
+find vars -name '*.yml' | sort | grep -v main | while read -r doc
 do
   echo "Generating badges for $doc"
   repo=$(yq '.gh_role_installer_repository' "$doc")
