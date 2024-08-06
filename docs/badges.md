@@ -100,3 +100,4 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-yq/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-yq)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-zellij/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-zellij)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-zenith/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-zenith)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-zoxide/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-zoxide)

@@ -1358,3 +1358,17 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: zenith.yml
 ```
+## zoxide
+
+[Github repository](https://github.com/ajeetdsouza/zoxide)
+
+```
+- name: Install zoxide
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install zoxide"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: zoxide.yml
+```
