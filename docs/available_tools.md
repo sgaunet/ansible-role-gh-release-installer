@@ -280,6 +280,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: gdu.yml
 ```
+## gh
+
+[Github repository](https://github.com/cli/cli)
+
+```
+- name: Install gh
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install gh"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: gh.yml
+```
 ## gini
 
 [Github repository](https://github.com/sgaunet/gini)
