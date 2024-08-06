@@ -8,7 +8,7 @@ if [ ! -d docs ]; then
   exit 1
 fi
 
-find defaults -name '*.yml' | sort | grep -v main | while read -r doc
+find vars -name '*.yml' | sort | grep -v main | while read -r doc
 do
   f=$(basename "$doc")
   bin_name=$(echo "$f" | cut -d'.' -f1)
