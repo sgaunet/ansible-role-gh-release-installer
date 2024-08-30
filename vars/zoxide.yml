@@ -7,6 +7,6 @@ gh_role_installer_repository: "ajeetdsouza/zoxide"
 gh_role_installer_release: "https://github.com/{{ gh_role_installer_repository }}/releases/download/v{{ version_to_install }}/zoxide-{{ version_to_install }}-{{ gh_role_installer_arch }}-{{ gh_role_installer_os }}.tar.gz"
 gh_role_installer_release_is_archive: true
 gh_role_installer_binary_name: "zoxide"
-gh_role_installer_cmd_to_get_version: "zoxide -V | awk '{ print $1 }'"
+gh_role_installer_cmd_to_get_version: "zoxide -V | awk '{ print $2 }'"
 gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
 gh_role_installer_binary_path: "/usr/local/bin/{{ gh_role_installer_binary_name }}"
