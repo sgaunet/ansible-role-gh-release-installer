@@ -83,6 +83,7 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-task/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-task)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-tbls/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-tbls)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-tealdeer/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-tealdeer)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-termshot/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-termshot)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-terraform/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-terraform)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-trivy/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-trivy)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-trufflehog/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-trufflehog)
