@@ -518,6 +518,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: helmfile.yml
 ```
+## helmify
+
+[Github repository](https://github.com/arttor/helmify)
+
+```
+- name: Install helmify
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install helmify"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: helmify.yml
+```
 ## helm
 
 [Github repository](https://github.com/helm/helm)
