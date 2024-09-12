@@ -896,6 +896,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: nfpm.yml
 ```
+## opentofu
+
+[Github repository](https://github.com/opentofu/opentofu)
+
+```
+- name: Install opentofu
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install opentofu"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: opentofu.yml
+```
 ## osv-scanner
 
 [Github repository](https://github.com/google/osv-scanner)

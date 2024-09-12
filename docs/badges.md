@@ -67,6 +67,7 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-moq/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-moq)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-muffet/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-muffet)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-nfpm/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-nfpm)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-opentofu/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-opentofu)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-osv-scanner/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-osv-scanner)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-packer/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-packer)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-pastel/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-pastel)
