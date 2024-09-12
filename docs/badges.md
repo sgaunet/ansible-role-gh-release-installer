@@ -40,6 +40,7 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-helmchart-helper/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-helmchart-helper)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-helmdocs/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-helmdocs)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-helmfile/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-helmfile)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-helmify/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-helmify)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-helm/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-helm)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-httping-go/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-httping-go)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-hyperfine/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-hyperfine)
