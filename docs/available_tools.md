@@ -798,6 +798,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: kubescape.yml
 ```
+## kube-score
+
+[Github repository](https://github.com/zegl/kube-score)
+
+```
+- name: Install kube-score
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kube-score"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: kube-score.yml
+```
 ## kubeshark
 
 [Github repository](https://github.com/kubeshark/kubeshark)
