@@ -21,16 +21,16 @@
     msg: "{{ rate_limit.json.resources.core.remaining | int }}"
 
 - name: Get current Unix timestamp
-  set_fact:
+  ansible.builtin.set_fact:
     current_timestamp: "{{ ansible_date_time.epoch }}"
 
 - name: Calculate timeout
-  set_fact:
-    timeout: "{{ rate_limit.json.resources.core.reset | int - current_timestamp | int }}"
-    
+  ansible.builtin.set_fact:
+    gh_timeout: "{{ rate_limit.json.resources.core.reset | int - current_timestamp | int }}"
+
 - name: Wait until rate limit is reset
   ansible.builtin.wait_for:
-    timeout: "{{ timeout }}"
+    timeout: "{{ gh_timeout }}"
     state: started
     msg: "Waiting for rate limit to reset"
   delegate_to: localhost
