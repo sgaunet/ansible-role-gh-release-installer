@@ -1,8 +1,41 @@
 ---
 
-- name: Sleep for 5 seconds
+# - name: Sleep for 5 seconds
+#   ansible.builtin.wait_for:
+#     timeout: 5
+
+# Check rate limit
+- name: Check rate limit
+  ansible.builtin.uri:
+    url: "https://api.github.com/rate_limit"
+    timeout: 60
+    headers:
+      Authorization: "Bearer {{ github_token }}"
+      X-GitHub-Api-Version: "2022-11-28"
+    return_content: true
+  register: rate_limit
+  changed_when: false
+  check_mode: false
+
+- name: Debug rate limit
+  ansible.builtin.debug:
+    msg: "{{ rate_limit.json.resources.core.remaining | int }}"
+
+- name: Get current Unix timestamp
+  ansible.builtin.set_fact:
+    current_timestamp: "{{ ansible_date_time.epoch }}"
+
+- name: Calculate timeout
+  ansible.builtin.set_fact:
+    gh_timeout: "{{ rate_limit.json.resources.core.reset | int - current_timestamp | int }}"
+
+- name: Wait until rate limit is reset
   ansible.builtin.wait_for:
-    timeout: 5
+    timeout: "{{ gh_timeout }}"
+    state: started
+    msg: "Waiting for rate limit to reset"
+  delegate_to: localhost
+  when: rate_limit.json.resources.core.remaining | int == 0
 
 # request the latest release from the github API using a token
 - name: Retrieve latest release information for github repository {{ gh_role_installer_repository }}
