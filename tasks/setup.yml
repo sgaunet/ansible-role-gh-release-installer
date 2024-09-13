@@ -1,10 +1,10 @@
 ---
 
-- name: Latest version of {{ gh_role_installer_repository }}
-  ansible.builtin.debug:
-    msg: "{{ project_info.content | from_json | json_query('tag_name') | replace('v', '') }}"
-  changed_when: false
-  check_mode: false
+# - name: Latest version of {{ gh_role_installer_repository }}
+#   ansible.builtin.debug:
+#     msg: "{{ project_info.content | from_json | json_query('tag_name') | replace('v', '') }}"
+#   changed_when: false
+#   check_mode: false
 
 - name: Set gh_role_installer_version if latest
   ansible.builtin.set_fact:
@@ -24,9 +24,9 @@
   when:
     - gh_role_installer_version != "latest"
 
-- name: Version to install {{ gh_role_installer_repository }}
-  ansible.builtin.debug:
-    msg: "{{ version_to_install }}"
+# - name: Version to install {{ gh_role_installer_repository }}
+#   ansible.builtin.debug:
+#     msg: "{{ version_to_install }}"
 
 - name: Get version of the binary actually installed ({{ gh_role_installer_repository }})
   become: false
@@ -39,10 +39,10 @@
   check_mode: false
 
 
-- name: Debug gh_role_installer_version_client_installed
-  ansible.builtin.debug:
-    var: gh_role_installer_version_client_installed.stdout
-  check_mode: false
+# - name: Debug gh_role_installer_version_client_installed
+#   ansible.builtin.debug:
+#     var: gh_role_installer_version_client_installed.stdout
+#   check_mode: false
 
 - name: Install the binary ({{ gh_role_installer_repository }})
   when:
@@ -82,11 +82,11 @@
       when:
         - gh_role_installer_release_is_archive
 
-    - name: Debug gh_role_installer_binary
-      ansible.builtin.debug:
-        var: gh_role_installer_binary
-      when:
-        - gh_role_installer_release_is_archive
+    # - name: Debug gh_role_installer_binary
+    #   ansible.builtin.debug:
+    #     var: gh_role_installer_binary
+    #   when:
+    #     - gh_role_installer_release_is_archive
 
     - name: Install the binary {{ gh_role_installer_binary_name }}
       ansible.builtin.copy:
