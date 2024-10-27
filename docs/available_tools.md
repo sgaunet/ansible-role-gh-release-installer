@@ -378,6 +378,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: gitleaks.yml
 ```
+## git-town
+
+[Github repository](https://github.com/git-town/git-town)
+
+```
+- name: Install git-town
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install git-town"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: git-town.yml
+```
 ## gocryptfs
 
 [Github repository](https://github.com/rfjakob/gocryptfs)
