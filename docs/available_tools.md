@@ -392,6 +392,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: git-town.yml
 ```
+## glow
+
+[Github repository](https://github.com/charmbracelet/glow)
+
+```
+- name: Install glow
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install glow"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: glow.yml
+```
 ## gocryptfs
 
 [Github repository](https://github.com/rfjakob/gocryptfs)
