@@ -31,6 +31,7 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-gitlab-vars/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-gitlab-vars)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-gitleaks/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-gitleaks)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-git-town/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-git-town)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-glow/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-glow)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-gocryptfs/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-gocryptfs)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-gocrypt/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-gocrypt)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-golangci-lint/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-golangci-lint)
