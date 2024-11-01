@@ -448,6 +448,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: golangci-lint.yml
 ```
+## gomplate
+
+[Github repository](https://github.com/hairyhenderson/gomplate)
+
+```
+- name: Install gomplate
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install gomplate"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: gomplate.yml
+```
 ## goreleaser
 
 [Github repository](https://github.com/goreleaser/goreleaser)
