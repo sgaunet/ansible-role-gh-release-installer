@@ -1428,6 +1428,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: yq.yml
 ```
+## zabbix-cli
+
+[Github repository](https://github.com/sgaunet/zabbix-cli)
+
+```
+- name: Install zabbix-cli
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install zabbix-cli"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: zabbix-cli.yml
+```
 ## zellij
 
 [Github repository](https://github.com/zellij-org/zellij)
