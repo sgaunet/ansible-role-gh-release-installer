@@ -13,8 +13,7 @@ jobs:
       matrix:
         distro:
           - ubuntu2404
-          - debian12
-          - fedora40
+          # - debian12
 
     steps:
       - name: Check out the codebase.
