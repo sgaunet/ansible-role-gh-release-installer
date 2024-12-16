@@ -1,21 +1,11 @@
 ---
 # https://taskfile.dev
 version: '3'
-# vars:
-#   key: value
 tasks:
   default:
     desc: "List tasks"
     cmds:
       - task -a
-
-  prereq:
-    desc: "creates venv and install prerequisites"
-    preconditions:
-      - test ! -d venv
-    cmds:
-      - python3 -m venv venv
-      - source venv/bin/activate && pip install -r requirements.txt
 
   linter:
     desc: "execute linter"
@@ -29,22 +19,3 @@ tasks:
       - ./gen-ci.sh
       - ./gen-docs.sh
       - ./gen-molecule-files.sh
-
-  test:
-    desc: "execute molecule tests"
-    cmds:
-      - rm -rf ~/.ansible/roles/sgaunet.gh_role_installer
-      - source venv/bin/activate && molecule destroy
-      - source venv/bin/activate && molecule test
-
-  test-ubuntu2204:
-    desc: "execute molecule tests on ubuntu2204"
-    env:
-      MOLECULE_DISTRO: ubuntu2204
-    cmds:
-      - rm -rf ~/.ansible/roles/sgaunet.gh_role_installer
-      - source venv/bin/activate && molecule destroy
-      - source venv/bin/activate && molecule test
-
-# - source venv/bin/activate && molecule destroy -s yazi
-# - source venv/bin/activate && molecule test -s yazi

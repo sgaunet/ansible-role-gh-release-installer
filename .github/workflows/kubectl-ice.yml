@@ -2,7 +2,7 @@
 name: CI-kubectl-ice
 'on':
   schedule:
-    - cron: "15 11 * * 1"
+    - cron: "17 9 * * 1"
 
 defaults:
   run:
@@ -15,34 +15,19 @@ jobs:
     strategy:
       matrix:
         distro:
-          - rockylinux9
-          # - rockylinux8
           - ubuntu2204
-          # - ubuntu2004
-          - debian12
-          # - debian11
-          # - debian10
-          - fedora39
+          # - debian12
 
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v4
-        with:
-          path: 'sgaunet.gh-release-installer'
 
-      - name: Set up Python 3.
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install test dependencies.
-        run: |
-          pip3 install -r requirements.txt
+      - name: Install devbox
+        uses: jetify-com/devbox-install-action@v0.11.0
 
       - name: Run Molecule tests.
         run: |
-          # molecule destroy
-          molecule test -s kubectl-ice
+          devbox run -- molecule test -s kubectl-ice
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PY_COLORS: '1'

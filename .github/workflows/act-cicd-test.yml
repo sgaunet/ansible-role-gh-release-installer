@@ -1,12 +1,9 @@
 ---
-name: CI-kconf
-'on':
-  schedule:
-    - cron: "44 6 * * 2"
-
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+name: CI-TEST-act
+on:
+  push:
+    branches:
+      - cicd/use-devbox
 
 jobs:
   molecule:
@@ -15,7 +12,7 @@ jobs:
     strategy:
       matrix:
         distro:
-          - ubuntu2204
+          - ubuntu2404
           # - debian12
 
     steps:
@@ -27,7 +24,8 @@ jobs:
 
       - name: Run Molecule tests.
         run: |
-          devbox run -- molecule test -s kconf
+          # molecule destroy
+          devbox run -- molecule test -s act
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PY_COLORS: '1'
