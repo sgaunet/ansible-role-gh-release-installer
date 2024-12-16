@@ -33,6 +33,8 @@ jobs:
 
       - name: Install devbox
         uses: jetify-com/devbox-install-action@v0.11.0
+        with:
+          path: 'sgaunet.gh-release-installer'
 
       - name: Run Molecule tests.
         run: |
