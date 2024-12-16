@@ -14,7 +14,7 @@ jobs:
         distro:
           - ubuntu2404
           - debian12
-          - fedora41
+          - fedora40
 
     steps:
       - name: Check out the codebase.
