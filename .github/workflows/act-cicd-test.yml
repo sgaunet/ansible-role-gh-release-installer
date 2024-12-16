@@ -3,7 +3,7 @@ name: CI-TEST-act
 on:
   push:
     branches:
-      - '*'
+      - cicd/use-devbox
 
 defaults:
   run:
