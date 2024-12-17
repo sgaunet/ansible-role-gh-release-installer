@@ -4,9 +4,7 @@ name: CI-jiracli
   schedule:
     - cron: "11 21 * * 3"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

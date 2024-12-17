@@ -4,9 +4,7 @@ name: CI-muffet
   schedule:
     - cron: "7 21 * * 1"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

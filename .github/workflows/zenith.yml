@@ -4,9 +4,7 @@ name: CI-zenith
   schedule:
     - cron: "44 4 * * 3"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

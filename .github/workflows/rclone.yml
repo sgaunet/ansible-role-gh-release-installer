@@ -4,9 +4,7 @@ name: CI-rclone
   schedule:
     - cron: "41 6 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

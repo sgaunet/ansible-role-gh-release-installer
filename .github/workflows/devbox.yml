@@ -4,9 +4,7 @@ name: CI-devbox
   schedule:
     - cron: "18 14 * * 5"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

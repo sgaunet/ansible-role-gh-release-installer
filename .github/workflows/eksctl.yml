@@ -4,9 +4,7 @@ name: CI-eksctl
   schedule:
     - cron: "15 16 * * 1"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

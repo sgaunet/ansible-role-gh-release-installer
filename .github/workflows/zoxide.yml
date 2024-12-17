@@ -4,9 +4,7 @@ name: CI-zoxide
   schedule:
     - cron: "45 7 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

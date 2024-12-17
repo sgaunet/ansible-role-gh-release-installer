@@ -4,9 +4,7 @@ name: CI-s5cmd
   schedule:
     - cron: "40 16 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

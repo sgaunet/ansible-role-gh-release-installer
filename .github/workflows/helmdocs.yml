@@ -4,9 +4,7 @@ name: CI-helmdocs
   schedule:
     - cron: "29 17 * * 5"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

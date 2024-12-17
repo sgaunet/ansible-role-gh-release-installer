@@ -4,9 +4,7 @@ name: CI-popeye
   schedule:
     - cron: "51 8 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

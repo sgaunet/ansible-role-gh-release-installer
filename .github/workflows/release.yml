@@ -11,9 +11,7 @@ name: Release
     tags:
       - '*'
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
 

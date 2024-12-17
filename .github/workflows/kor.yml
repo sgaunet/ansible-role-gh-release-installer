@@ -4,9 +4,7 @@ name: CI-kor
   schedule:
     - cron: "33 1 * * 2"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

@@ -4,9 +4,7 @@ name: CI-direnv
   schedule:
     - cron: "10 13 * * 1"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

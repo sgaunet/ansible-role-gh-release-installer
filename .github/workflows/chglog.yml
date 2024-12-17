@@ -4,9 +4,7 @@ name: CI-chglog
   schedule:
     - cron: "34 19 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

@@ -4,9 +4,7 @@ name: CI-tspin
   schedule:
     - cron: "27 16 * * 3"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

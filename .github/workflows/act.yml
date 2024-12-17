@@ -4,9 +4,7 @@ name: CI-act
   schedule:
     - cron: "50 11 * * 5"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

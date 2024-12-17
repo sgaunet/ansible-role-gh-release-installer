@@ -4,9 +4,7 @@ name: CI-kubeshark
   schedule:
     - cron: "32 22 * * 5"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

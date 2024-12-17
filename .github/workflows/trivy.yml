@@ -4,9 +4,7 @@ name: CI-trivy
   schedule:
     - cron: "37 20 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

@@ -4,9 +4,7 @@ name: CI-httping-go
   schedule:
     - cron: "3 11 * * 2"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

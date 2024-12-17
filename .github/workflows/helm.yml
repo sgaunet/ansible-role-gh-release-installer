@@ -4,9 +4,7 @@ name: CI-helm
   schedule:
     - cron: "39 15 * * 2"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

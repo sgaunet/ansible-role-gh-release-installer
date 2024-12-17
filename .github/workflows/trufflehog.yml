@@ -4,9 +4,7 @@ name: CI-trufflehog
   schedule:
     - cron: "48 11 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

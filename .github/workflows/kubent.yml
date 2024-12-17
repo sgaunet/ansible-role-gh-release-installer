@@ -4,9 +4,7 @@ name: CI-kubent
   schedule:
     - cron: "7 7 * * 1"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

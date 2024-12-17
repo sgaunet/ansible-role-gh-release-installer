@@ -4,9 +4,7 @@ name: CI-jwt-cli
   schedule:
     - cron: "21 19 * * 5"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

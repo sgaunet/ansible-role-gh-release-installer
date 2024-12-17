@@ -4,9 +4,7 @@ name: CI-dasel
   schedule:
     - cron: "11 11 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

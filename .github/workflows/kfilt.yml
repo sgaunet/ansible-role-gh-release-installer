@@ -4,9 +4,7 @@ name: CI-kfilt
   schedule:
     - cron: "36 20 * * 1"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

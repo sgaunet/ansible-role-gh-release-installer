@@ -4,9 +4,7 @@ name: CI-gocryptfs
   schedule:
     - cron: "45 18 * * 3"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

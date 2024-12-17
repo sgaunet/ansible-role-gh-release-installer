@@ -4,9 +4,7 @@ name: CI-zellij
   schedule:
     - cron: "4 11 * * 2"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

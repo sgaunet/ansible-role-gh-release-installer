@@ -4,9 +4,7 @@ name: CI-kubectx
   schedule:
     - cron: "55 13 * * 5"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

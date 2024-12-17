@@ -4,9 +4,7 @@ name: CI-opentofu
   schedule:
     - cron: "24 2 * * 1"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

@@ -4,9 +4,7 @@ name: CI-goreleaser
   schedule:
     - cron: "42 16 * * 2"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

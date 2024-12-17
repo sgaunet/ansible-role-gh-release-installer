@@ -4,9 +4,7 @@ name: CI-pgweb
   schedule:
     - cron: "55 23 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

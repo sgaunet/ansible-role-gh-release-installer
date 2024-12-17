@@ -4,9 +4,7 @@ name: CI-BINNAME
   schedule:
     - cron: "RANDOM_MIN RANDOM_HOUR * * RANDOM_DAY"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

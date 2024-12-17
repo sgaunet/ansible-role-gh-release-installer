@@ -4,9 +4,7 @@ name: CI-nfpm
   schedule:
     - cron: "54 16 * * 5"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

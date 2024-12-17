@@ -4,9 +4,7 @@ name: CI-hadolint
   schedule:
     - cron: "53 10 * * 2"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

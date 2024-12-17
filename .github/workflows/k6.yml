@@ -4,9 +4,7 @@ name: CI-k6
   schedule:
     - cron: "43 6 * * 5"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

@@ -4,9 +4,7 @@ name: CI-retry
   schedule:
     - cron: "24 20 * * 2"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

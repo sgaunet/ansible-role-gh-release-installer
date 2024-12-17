@@ -4,9 +4,7 @@ name: CI-eza
   schedule:
     - cron: "15 20 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

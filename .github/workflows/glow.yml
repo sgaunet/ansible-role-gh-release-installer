@@ -4,9 +4,7 @@ name: CI-glow
   schedule:
     - cron: "17 16 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

@@ -4,9 +4,7 @@ name: CI-pet
   schedule:
     - cron: "17 20 * * 5"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

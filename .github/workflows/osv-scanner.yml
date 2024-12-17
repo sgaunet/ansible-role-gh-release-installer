@@ -4,9 +4,7 @@ name: CI-osv-scanner
   schedule:
     - cron: "5 10 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

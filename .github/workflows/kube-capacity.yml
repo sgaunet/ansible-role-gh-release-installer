@@ -4,9 +4,7 @@ name: CI-kube-capacity
   schedule:
     - cron: "38 17 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

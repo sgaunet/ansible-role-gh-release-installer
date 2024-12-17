@@ -4,9 +4,7 @@ name: CI-kubectl-ice
   schedule:
     - cron: "17 9 * * 1"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

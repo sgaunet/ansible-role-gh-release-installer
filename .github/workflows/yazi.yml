@@ -4,9 +4,7 @@ name: CI-yazi
   schedule:
     - cron: "26 10 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

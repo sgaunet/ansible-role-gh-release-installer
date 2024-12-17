@@ -4,9 +4,7 @@ name: CI-kubefwd
   schedule:
     - cron: "29 4 * * 3"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

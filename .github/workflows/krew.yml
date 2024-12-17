@@ -4,9 +4,7 @@ name: CI-krew
   schedule:
     - cron: "48 19 * * 1"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

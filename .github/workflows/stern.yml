@@ -4,9 +4,7 @@ name: CI-stern
   schedule:
     - cron: "7 6 * * 2"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

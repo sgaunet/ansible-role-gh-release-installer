@@ -4,9 +4,7 @@ name: CI-vivid
   schedule:
     - cron: "48 23 * * 3"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

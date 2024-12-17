@@ -4,9 +4,7 @@ name: CI-gitlab-vars
   schedule:
     - cron: "21 7 * * 5"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

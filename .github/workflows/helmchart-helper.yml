@@ -4,9 +4,7 @@ name: CI-helmchart-helper
   schedule:
     - cron: "12 8 * * 5"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

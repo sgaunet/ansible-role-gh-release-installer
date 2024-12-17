@@ -4,9 +4,7 @@ name: CI-mdtohtml
   schedule:
     - cron: "1 9 * * 1"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

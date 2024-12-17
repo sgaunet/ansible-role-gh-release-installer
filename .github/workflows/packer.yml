@@ -4,9 +4,7 @@ name: CI-packer
   schedule:
     - cron: "34 6 * * 1"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

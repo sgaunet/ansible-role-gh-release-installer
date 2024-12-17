@@ -4,9 +4,7 @@ name: CI-calcdate
   schedule:
     - cron: "47 8 * * 5"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

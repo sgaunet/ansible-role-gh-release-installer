@@ -4,9 +4,7 @@ name: CI-gh
   schedule:
     - cron: "26 5 * * 3"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

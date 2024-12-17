@@ -4,9 +4,7 @@ name: CI-zabbix-cli
   schedule:
     - cron: "10 13 * * 3"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

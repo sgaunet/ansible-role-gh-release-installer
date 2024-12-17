@@ -4,9 +4,7 @@ name: CI-grype
   schedule:
     - cron: "51 12 * * 1"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

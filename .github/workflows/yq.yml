@@ -4,9 +4,7 @@ name: CI-yq
   schedule:
     - cron: "17 9 * * 3"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

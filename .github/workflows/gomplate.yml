@@ -4,9 +4,7 @@ name: CI-gomplate
   schedule:
     - cron: "14 7 * * 2"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

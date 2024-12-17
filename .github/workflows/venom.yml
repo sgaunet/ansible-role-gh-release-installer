@@ -4,9 +4,7 @@ name: CI-venom
   schedule:
     - cron: "8 8 * * 5"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

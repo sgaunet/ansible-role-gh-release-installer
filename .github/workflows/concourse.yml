@@ -4,9 +4,7 @@ name: CI-concourse
   schedule:
     - cron: "56 16 * * 1"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

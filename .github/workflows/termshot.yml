@@ -4,9 +4,7 @@ name: CI-termshot
   schedule:
     - cron: "18 21 * * 4"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

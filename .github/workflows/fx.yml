@@ -4,9 +4,7 @@ name: CI-fx
   schedule:
     - cron: "54 16 * * 2"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:

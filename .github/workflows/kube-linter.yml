@@ -4,9 +4,7 @@ name: CI-kube-linter
   schedule:
     - cron: "22 21 * * 2"
 
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+
 
 jobs:
   molecule:
