@@ -1120,6 +1120,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: retry.yml
 ```
+## rsql
+
+[Github repository](https://github.com/theseus-rs/rsql)
+
+```
+- name: Install rsql
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install rsql"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: rsql.yml
+```
 ## s5cmd
 
 [Github repository](https://github.com/peak/s5cmd)
