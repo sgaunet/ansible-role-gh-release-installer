@@ -62,6 +62,23 @@ None.
 
 The role contains also variables to install miscelleanous tools. [See the list of available tools in this documentation.](docs/available_tools.md)
 
+## Add a new tool
+
+* Write the vars to setup the tool in `vars/toolname.yml`
+* Generate the molecule test with `./gen-molecule-files.sh`
+* Generate the documentation with `./gen-docs.sh`
+* Generate the CI with `./gen-ci.sh`
+* Generate the taskfile to test tool with `./gen-taskfile-tests.sh`
+* Test the tool with `task -t Taskfile-tests.yml test-toolname`
+
+## Tests
+
+All tools are tested with molecule. You can run the tests with the following command:
+
+```bash
+task -t Taskfile-tests.yml test-<tool-name>
+```
+
 ## License
 
 MIT
