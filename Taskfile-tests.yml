@@ -1,0 +1,648 @@
+---
+# https://taskfile.dev
+version: '3'
+tasks:
+  default:
+    desc: "List tasks"
+    cmds:
+      - task -a
+
+  all:
+    desc: "Test all"
+    cmds:
+      - task: test-act
+      - task: test-bandwhich
+      - task: test-bat
+      - task: test-calcdate
+      - task: test-chglog
+      - task: test-concourse
+      - task: test-crane
+      - task: test-d2
+      - task: test-dasel
+      - task: test-delta
+      - task: test-devbox
+      - task: test-devpod
+      - task: test-direnv
+      - task: test-dive
+      - task: test-eksctl
+      - task: test-ekspodlogs
+      - task: test-envtemplate
+      - task: test-eza
+      - task: test-freeze
+      - task: test-fx
+      - task: test-gdu
+      - task: test-gh
+      - task: test-gini
+      - task: test-gitlab-issue-report
+      - task: test-gitlab-stats
+      - task: test-gitlab-vars
+      - task: test-gitleaks
+      - task: test-git-town
+      - task: test-glow
+      - task: test-gocryptfs
+      - task: test-gocrypt
+      - task: test-golangci-lint
+      - task: test-gomplate
+      - task: test-goreleaser
+      - task: test-grype
+      - task: test-gum
+      - task: test-hadolint
+      - task: test-helmchart-helper
+      - task: test-helmdocs
+      - task: test-helmfile
+      - task: test-helmify
+      - task: test-helm
+      - task: test-httping-go
+      - task: test-hyperfine
+      - task: test-jiracli
+      - task: test-jwt-cli
+      - task: test-k6
+      - task: test-k9s
+      - task: test-kconf
+      - task: test-kfilt
+      - task: test-kind
+      - task: test-kor
+      - task: test-krew
+      - task: test-kube-capacity
+      - task: test-kubecm
+      - task: test-kubectl-ice
+      - task: test-kubectx
+      - task: test-kubefwd
+      - task: test-kube-linter
+      - task: test-kubent
+      - task: test-kubescape
+      - task: test-kube-score
+      - task: test-kubeshark
+      - task: test-lazygit
+      - task: test-lsd
+      - task: test-mdtohtml
+      - task: test-moq
+      - task: test-muffet
+      - task: test-nfpm
+      - task: test-opentofu
+      - task: test-osv-scanner
+      - task: test-packer
+      - task: test-pastel
+      - task: test-pet
+      - task: test-pgweb
+      - task: test-popeye
+      - task: test-pre-commit
+      - task: test-q
+      - task: test-rclone
+      - task: test-retry
+      - task: test-rsql
+      - task: test-s5cmd
+      - task: test-sqlc
+      - task: test-stern
+      - task: test-task
+      - task: test-tbls
+      - task: test-tealdeer
+      - task: test-termshot
+      - task: test-terraform
+      - task: test-trivy
+      - task: test-trufflehog
+      - task: test-tspin
+      - task: test-ttyd
+      - task: test-usql
+      - task: test-vale
+      - task: test-vals
+      - task: test-venom
+      - task: test-vhs
+      - task: test-viddy
+      - task: test-vivid
+      - task: test-yazi
+      - task: test-yq
+      - task: test-zabbix-cli
+      - task: test-zellij
+      - task: test-zenith
+      - task: test-zoxide
+  test-act:
+    desc: "Run tests for act"
+    cmds:
+      - echo "Running tests for act"
+      - devbox run -- molecule test -s act
+  test-bandwhich:
+    desc: "Run tests for bandwhich"
+    cmds:
+      - echo "Running tests for bandwhich"
+      - devbox run -- molecule test -s bandwhich
+  test-bat:
+    desc: "Run tests for bat"
+    cmds:
+      - echo "Running tests for bat"
+      - devbox run -- molecule test -s bat
+  test-calcdate:
+    desc: "Run tests for calcdate"
+    cmds:
+      - echo "Running tests for calcdate"
+      - devbox run -- molecule test -s calcdate
+  test-chglog:
+    desc: "Run tests for chglog"
+    cmds:
+      - echo "Running tests for chglog"
+      - devbox run -- molecule test -s chglog
+  test-concourse:
+    desc: "Run tests for concourse"
+    cmds:
+      - echo "Running tests for concourse"
+      - devbox run -- molecule test -s concourse
+  test-crane:
+    desc: "Run tests for crane"
+    cmds:
+      - echo "Running tests for crane"
+      - devbox run -- molecule test -s crane
+  test-d2:
+    desc: "Run tests for d2"
+    cmds:
+      - echo "Running tests for d2"
+      - devbox run -- molecule test -s d2
+  test-dasel:
+    desc: "Run tests for dasel"
+    cmds:
+      - echo "Running tests for dasel"
+      - devbox run -- molecule test -s dasel
+  test-delta:
+    desc: "Run tests for delta"
+    cmds:
+      - echo "Running tests for delta"
+      - devbox run -- molecule test -s delta
+  test-devbox:
+    desc: "Run tests for devbox"
+    cmds:
+      - echo "Running tests for devbox"
+      - devbox run -- molecule test -s devbox
+  test-devpod:
+    desc: "Run tests for devpod"
+    cmds:
+      - echo "Running tests for devpod"
+      - devbox run -- molecule test -s devpod
+  test-direnv:
+    desc: "Run tests for direnv"
+    cmds:
+      - echo "Running tests for direnv"
+      - devbox run -- molecule test -s direnv
+  test-dive:
+    desc: "Run tests for dive"
+    cmds:
+      - echo "Running tests for dive"
+      - devbox run -- molecule test -s dive
+  test-eksctl:
+    desc: "Run tests for eksctl"
+    cmds:
+      - echo "Running tests for eksctl"
+      - devbox run -- molecule test -s eksctl
+  test-ekspodlogs:
+    desc: "Run tests for ekspodlogs"
+    cmds:
+      - echo "Running tests for ekspodlogs"
+      - devbox run -- molecule test -s ekspodlogs
+  test-envtemplate:
+    desc: "Run tests for envtemplate"
+    cmds:
+      - echo "Running tests for envtemplate"
+      - devbox run -- molecule test -s envtemplate
+  test-eza:
+    desc: "Run tests for eza"
+    cmds:
+      - echo "Running tests for eza"
+      - devbox run -- molecule test -s eza
+  test-freeze:
+    desc: "Run tests for freeze"
+    cmds:
+      - echo "Running tests for freeze"
+      - devbox run -- molecule test -s freeze
+  test-fx:
+    desc: "Run tests for fx"
+    cmds:
+      - echo "Running tests for fx"
+      - devbox run -- molecule test -s fx
+  test-gdu:
+    desc: "Run tests for gdu"
+    cmds:
+      - echo "Running tests for gdu"
+      - devbox run -- molecule test -s gdu
+  test-gh:
+    desc: "Run tests for gh"
+    cmds:
+      - echo "Running tests for gh"
+      - devbox run -- molecule test -s gh
+  test-gini:
+    desc: "Run tests for gini"
+    cmds:
+      - echo "Running tests for gini"
+      - devbox run -- molecule test -s gini
+  test-gitlab-issue-report:
+    desc: "Run tests for gitlab-issue-report"
+    cmds:
+      - echo "Running tests for gitlab-issue-report"
+      - devbox run -- molecule test -s gitlab-issue-report
+  test-gitlab-stats:
+    desc: "Run tests for gitlab-stats"
+    cmds:
+      - echo "Running tests for gitlab-stats"
+      - devbox run -- molecule test -s gitlab-stats
+  test-gitlab-vars:
+    desc: "Run tests for gitlab-vars"
+    cmds:
+      - echo "Running tests for gitlab-vars"
+      - devbox run -- molecule test -s gitlab-vars
+  test-gitleaks:
+    desc: "Run tests for gitleaks"
+    cmds:
+      - echo "Running tests for gitleaks"
+      - devbox run -- molecule test -s gitleaks
+  test-git-town:
+    desc: "Run tests for git-town"
+    cmds:
+      - echo "Running tests for git-town"
+      - devbox run -- molecule test -s git-town
+  test-glow:
+    desc: "Run tests for glow"
+    cmds:
+      - echo "Running tests for glow"
+      - devbox run -- molecule test -s glow
+  test-gocryptfs:
+    desc: "Run tests for gocryptfs"
+    cmds:
+      - echo "Running tests for gocryptfs"
+      - devbox run -- molecule test -s gocryptfs
+  test-gocrypt:
+    desc: "Run tests for gocrypt"
+    cmds:
+      - echo "Running tests for gocrypt"
+      - devbox run -- molecule test -s gocrypt
+  test-golangci-lint:
+    desc: "Run tests for golangci-lint"
+    cmds:
+      - echo "Running tests for golangci-lint"
+      - devbox run -- molecule test -s golangci-lint
+  test-gomplate:
+    desc: "Run tests for gomplate"
+    cmds:
+      - echo "Running tests for gomplate"
+      - devbox run -- molecule test -s gomplate
+  test-goreleaser:
+    desc: "Run tests for goreleaser"
+    cmds:
+      - echo "Running tests for goreleaser"
+      - devbox run -- molecule test -s goreleaser
+  test-grype:
+    desc: "Run tests for grype"
+    cmds:
+      - echo "Running tests for grype"
+      - devbox run -- molecule test -s grype
+  test-gum:
+    desc: "Run tests for gum"
+    cmds:
+      - echo "Running tests for gum"
+      - devbox run -- molecule test -s gum
+  test-hadolint:
+    desc: "Run tests for hadolint"
+    cmds:
+      - echo "Running tests for hadolint"
+      - devbox run -- molecule test -s hadolint
+  test-helmchart-helper:
+    desc: "Run tests for helmchart-helper"
+    cmds:
+      - echo "Running tests for helmchart-helper"
+      - devbox run -- molecule test -s helmchart-helper
+  test-helmdocs:
+    desc: "Run tests for helmdocs"
+    cmds:
+      - echo "Running tests for helmdocs"
+      - devbox run -- molecule test -s helmdocs
+  test-helmfile:
+    desc: "Run tests for helmfile"
+    cmds:
+      - echo "Running tests for helmfile"
+      - devbox run -- molecule test -s helmfile
+  test-helmify:
+    desc: "Run tests for helmify"
+    cmds:
+      - echo "Running tests for helmify"
+      - devbox run -- molecule test -s helmify
+  test-helm:
+    desc: "Run tests for helm"
+    cmds:
+      - echo "Running tests for helm"
+      - devbox run -- molecule test -s helm
+  test-httping-go:
+    desc: "Run tests for httping-go"
+    cmds:
+      - echo "Running tests for httping-go"
+      - devbox run -- molecule test -s httping-go
+  test-hyperfine:
+    desc: "Run tests for hyperfine"
+    cmds:
+      - echo "Running tests for hyperfine"
+      - devbox run -- molecule test -s hyperfine
+  test-jiracli:
+    desc: "Run tests for jiracli"
+    cmds:
+      - echo "Running tests for jiracli"
+      - devbox run -- molecule test -s jiracli
+  test-jwt-cli:
+    desc: "Run tests for jwt-cli"
+    cmds:
+      - echo "Running tests for jwt-cli"
+      - devbox run -- molecule test -s jwt-cli
+  test-k6:
+    desc: "Run tests for k6"
+    cmds:
+      - echo "Running tests for k6"
+      - devbox run -- molecule test -s k6
+  test-k9s:
+    desc: "Run tests for k9s"
+    cmds:
+      - echo "Running tests for k9s"
+      - devbox run -- molecule test -s k9s
+  test-kconf:
+    desc: "Run tests for kconf"
+    cmds:
+      - echo "Running tests for kconf"
+      - devbox run -- molecule test -s kconf
+  test-kfilt:
+    desc: "Run tests for kfilt"
+    cmds:
+      - echo "Running tests for kfilt"
+      - devbox run -- molecule test -s kfilt
+  test-kind:
+    desc: "Run tests for kind"
+    cmds:
+      - echo "Running tests for kind"
+      - devbox run -- molecule test -s kind
+  test-kor:
+    desc: "Run tests for kor"
+    cmds:
+      - echo "Running tests for kor"
+      - devbox run -- molecule test -s kor
+  test-krew:
+    desc: "Run tests for krew"
+    cmds:
+      - echo "Running tests for krew"
+      - devbox run -- molecule test -s krew
+  test-kube-capacity:
+    desc: "Run tests for kube-capacity"
+    cmds:
+      - echo "Running tests for kube-capacity"
+      - devbox run -- molecule test -s kube-capacity
+  test-kubecm:
+    desc: "Run tests for kubecm"
+    cmds:
+      - echo "Running tests for kubecm"
+      - devbox run -- molecule test -s kubecm
+  test-kubectl-ice:
+    desc: "Run tests for kubectl-ice"
+    cmds:
+      - echo "Running tests for kubectl-ice"
+      - devbox run -- molecule test -s kubectl-ice
+  test-kubectx:
+    desc: "Run tests for kubectx"
+    cmds:
+      - echo "Running tests for kubectx"
+      - devbox run -- molecule test -s kubectx
+  test-kubefwd:
+    desc: "Run tests for kubefwd"
+    cmds:
+      - echo "Running tests for kubefwd"
+      - devbox run -- molecule test -s kubefwd
+  test-kube-linter:
+    desc: "Run tests for kube-linter"
+    cmds:
+      - echo "Running tests for kube-linter"
+      - devbox run -- molecule test -s kube-linter
+  test-kubent:
+    desc: "Run tests for kubent"
+    cmds:
+      - echo "Running tests for kubent"
+      - devbox run -- molecule test -s kubent
+  test-kubescape:
+    desc: "Run tests for kubescape"
+    cmds:
+      - echo "Running tests for kubescape"
+      - devbox run -- molecule test -s kubescape
+  test-kube-score:
+    desc: "Run tests for kube-score"
+    cmds:
+      - echo "Running tests for kube-score"
+      - devbox run -- molecule test -s kube-score
+  test-kubeshark:
+    desc: "Run tests for kubeshark"
+    cmds:
+      - echo "Running tests for kubeshark"
+      - devbox run -- molecule test -s kubeshark
+  test-lazygit:
+    desc: "Run tests for lazygit"
+    cmds:
+      - echo "Running tests for lazygit"
+      - devbox run -- molecule test -s lazygit
+  test-lsd:
+    desc: "Run tests for lsd"
+    cmds:
+      - echo "Running tests for lsd"
+      - devbox run -- molecule test -s lsd
+  test-mdtohtml:
+    desc: "Run tests for mdtohtml"
+    cmds:
+      - echo "Running tests for mdtohtml"
+      - devbox run -- molecule test -s mdtohtml
+  test-moq:
+    desc: "Run tests for moq"
+    cmds:
+      - echo "Running tests for moq"
+      - devbox run -- molecule test -s moq
+  test-muffet:
+    desc: "Run tests for muffet"
+    cmds:
+      - echo "Running tests for muffet"
+      - devbox run -- molecule test -s muffet
+  test-nfpm:
+    desc: "Run tests for nfpm"
+    cmds:
+      - echo "Running tests for nfpm"
+      - devbox run -- molecule test -s nfpm
+  test-opentofu:
+    desc: "Run tests for opentofu"
+    cmds:
+      - echo "Running tests for opentofu"
+      - devbox run -- molecule test -s opentofu
+  test-osv-scanner:
+    desc: "Run tests for osv-scanner"
+    cmds:
+      - echo "Running tests for osv-scanner"
+      - devbox run -- molecule test -s osv-scanner
+  test-packer:
+    desc: "Run tests for packer"
+    cmds:
+      - echo "Running tests for packer"
+      - devbox run -- molecule test -s packer
+  test-pastel:
+    desc: "Run tests for pastel"
+    cmds:
+      - echo "Running tests for pastel"
+      - devbox run -- molecule test -s pastel
+  test-pet:
+    desc: "Run tests for pet"
+    cmds:
+      - echo "Running tests for pet"
+      - devbox run -- molecule test -s pet
+  test-pgweb:
+    desc: "Run tests for pgweb"
+    cmds:
+      - echo "Running tests for pgweb"
+      - devbox run -- molecule test -s pgweb
+  test-popeye:
+    desc: "Run tests for popeye"
+    cmds:
+      - echo "Running tests for popeye"
+      - devbox run -- molecule test -s popeye
+  test-pre-commit:
+    desc: "Run tests for pre-commit"
+    cmds:
+      - echo "Running tests for pre-commit"
+      - devbox run -- molecule test -s pre-commit
+  test-q:
+    desc: "Run tests for q"
+    cmds:
+      - echo "Running tests for q"
+      - devbox run -- molecule test -s q
+  test-rclone:
+    desc: "Run tests for rclone"
+    cmds:
+      - echo "Running tests for rclone"
+      - devbox run -- molecule test -s rclone
+  test-retry:
+    desc: "Run tests for retry"
+    cmds:
+      - echo "Running tests for retry"
+      - devbox run -- molecule test -s retry
+  test-rsql:
+    desc: "Run tests for rsql"
+    cmds:
+      - echo "Running tests for rsql"
+      - devbox run -- molecule test -s rsql
+  test-s5cmd:
+    desc: "Run tests for s5cmd"
+    cmds:
+      - echo "Running tests for s5cmd"
+      - devbox run -- molecule test -s s5cmd
+  test-sqlc:
+    desc: "Run tests for sqlc"
+    cmds:
+      - echo "Running tests for sqlc"
+      - devbox run -- molecule test -s sqlc
+  test-stern:
+    desc: "Run tests for stern"
+    cmds:
+      - echo "Running tests for stern"
+      - devbox run -- molecule test -s stern
+  test-task:
+    desc: "Run tests for task"
+    cmds:
+      - echo "Running tests for task"
+      - devbox run -- molecule test -s task
+  test-tbls:
+    desc: "Run tests for tbls"
+    cmds:
+      - echo "Running tests for tbls"
+      - devbox run -- molecule test -s tbls
+  test-tealdeer:
+    desc: "Run tests for tealdeer"
+    cmds:
+      - echo "Running tests for tealdeer"
+      - devbox run -- molecule test -s tealdeer
+  test-termshot:
+    desc: "Run tests for termshot"
+    cmds:
+      - echo "Running tests for termshot"
+      - devbox run -- molecule test -s termshot
+  test-terraform:
+    desc: "Run tests for terraform"
+    cmds:
+      - echo "Running tests for terraform"
+      - devbox run -- molecule test -s terraform
+  test-trivy:
+    desc: "Run tests for trivy"
+    cmds:
+      - echo "Running tests for trivy"
+      - devbox run -- molecule test -s trivy
+  test-trufflehog:
+    desc: "Run tests for trufflehog"
+    cmds:
+      - echo "Running tests for trufflehog"
+      - devbox run -- molecule test -s trufflehog
+  test-tspin:
+    desc: "Run tests for tspin"
+    cmds:
+      - echo "Running tests for tspin"
+      - devbox run -- molecule test -s tspin
+  test-ttyd:
+    desc: "Run tests for ttyd"
+    cmds:
+      - echo "Running tests for ttyd"
+      - devbox run -- molecule test -s ttyd
+  test-usql:
+    desc: "Run tests for usql"
+    cmds:
+      - echo "Running tests for usql"
+      - devbox run -- molecule test -s usql
+  test-vale:
+    desc: "Run tests for vale"
+    cmds:
+      - echo "Running tests for vale"
+      - devbox run -- molecule test -s vale
+  test-vals:
+    desc: "Run tests for vals"
+    cmds:
+      - echo "Running tests for vals"
+      - devbox run -- molecule test -s vals
+  test-venom:
+    desc: "Run tests for venom"
+    cmds:
+      - echo "Running tests for venom"
+      - devbox run -- molecule test -s venom
+  test-vhs:
+    desc: "Run tests for vhs"
+    cmds:
+      - echo "Running tests for vhs"
+      - devbox run -- molecule test -s vhs
+  test-viddy:
+    desc: "Run tests for viddy"
+    cmds:
+      - echo "Running tests for viddy"
+      - devbox run -- molecule test -s viddy
+  test-vivid:
+    desc: "Run tests for vivid"
+    cmds:
+      - echo "Running tests for vivid"
+      - devbox run -- molecule test -s vivid
+  test-yazi:
+    desc: "Run tests for yazi"
+    cmds:
+      - echo "Running tests for yazi"
+      - devbox run -- molecule test -s yazi
+  test-yq:
+    desc: "Run tests for yq"
+    cmds:
+      - echo "Running tests for yq"
+      - devbox run -- molecule test -s yq
+  test-zabbix-cli:
+    desc: "Run tests for zabbix-cli"
+    cmds:
+      - echo "Running tests for zabbix-cli"
+      - devbox run -- molecule test -s zabbix-cli
+  test-zellij:
+    desc: "Run tests for zellij"
+    cmds:
+      - echo "Running tests for zellij"
+      - devbox run -- molecule test -s zellij
+  test-zenith:
+    desc: "Run tests for zenith"
+    cmds:
+      - echo "Running tests for zenith"
+      - devbox run -- molecule test -s zenith
+  test-zoxide:
+    desc: "Run tests for zoxide"
+    cmds:
+      - echo "Running tests for zoxide"
+      - devbox run -- molecule test -s zoxide
