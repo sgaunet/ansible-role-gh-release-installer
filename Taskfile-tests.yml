@@ -11,6 +11,7 @@ tasks:
     desc: "Test all"
     cmds:
       - task: test-act
+      - task: test-age
       - task: test-bandwhich
       - task: test-bat
       - task: test-calcdate
@@ -121,6 +122,11 @@ tasks:
     cmds:
       - echo "Running tests for act"
       - devbox run -- molecule test -s act
+  test-age:
+    desc: "Run tests for age"
+    cmds:
+      - echo "Running tests for age"
+      - devbox run -- molecule test -s age
   test-bandwhich:
     desc: "Run tests for bandwhich"
     cmds:

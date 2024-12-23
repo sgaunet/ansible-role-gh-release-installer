@@ -4,6 +4,7 @@ Bad status do not indicate that the role won't work. It's often a question of ve
 Be patient, it will be fixed.
 
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-act/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-act)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-age/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-age)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-bandwhich/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-bandwhich)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-bat/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-bat)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-calcdate/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-calcdate)
