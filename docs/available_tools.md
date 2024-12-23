@@ -14,6 +14,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: act.yml
 ```
+## age
+
+[Github repository](https://github.com/FiloSottile/age)
+
+```
+- name: Install age
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install age"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: age.yml
+```
 ## bandwhich
 
 [Github repository](https://github.com/imsnif/bandwhich)
