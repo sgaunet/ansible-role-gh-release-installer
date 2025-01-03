@@ -74,6 +74,7 @@ tasks:
       - task: test-kubescape
       - task: test-kube-score
       - task: test-kubeshark
+      - task: test-kubevpn
       - task: test-lazygit
       - task: test-lsd
       - task: test-mdtohtml
@@ -437,6 +438,11 @@ tasks:
     cmds:
       - echo "Running tests for kubeshark"
       - devbox run -- molecule test -s kubeshark
+  test-kubevpn:
+    desc: "Run tests for kubevpn"
+    cmds:
+      - echo "Running tests for kubevpn"
+      - devbox run -- molecule test -s kubevpn
   test-lazygit:
     desc: "Run tests for lazygit"
     cmds:

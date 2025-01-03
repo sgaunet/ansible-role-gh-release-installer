@@ -67,6 +67,7 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-kubescape/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-kubescape)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-kube-score/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-kube-score)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-kubeshark/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-kubeshark)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-kubevpn/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-kubevpn)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-lazygit/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-lazygit)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-lsd/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-lsd)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-mdtohtml/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-mdtohtml)
