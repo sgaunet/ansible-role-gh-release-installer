@@ -1430,7 +1430,7 @@ Here is a list of available tools that can be installed with self contained vari
 ```
 ## vivid
 
-[Github repository](https://github.com/yonahd/kor)
+[Github repository](https://github.com/sharkdp/vivid)
 
 ```
 - name: Install vivid
