@@ -814,7 +814,7 @@ Here is a list of available tools that can be installed with self contained vari
 ```
 ## kubefwd
 
-[Github repository](https://github.com/yonahd/kor)
+[Github repository](https://github.com/txn2/kubefwd)
 
 ```
 - name: Install kubefwd
