@@ -88,6 +88,7 @@ tasks:
       - task: test-pet
       - task: test-pgweb
       - task: test-popeye
+      - task: test-pplx
       - task: test-pre-commit
       - task: test-q
       - task: test-rclone
@@ -508,6 +509,11 @@ tasks:
     cmds:
       - echo "Running tests for popeye"
       - devbox run -- molecule test -s popeye
+  test-pplx:
+    desc: "Run tests for pplx"
+    cmds:
+      - echo "Running tests for pplx"
+      - devbox run -- molecule test -s pplx
   test-pre-commit:
     desc: "Run tests for pre-commit"
     cmds:

@@ -1092,6 +1092,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: popeye.yml
 ```
+## pplx
+
+[Github repository](https://github.com/sgaunet/pplx)
+
+```
+- name: Install pplx
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install pplx"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: pplx.yml
+```
 ## pre-commit
 
 [Github repository](https://github.com/pre-commit/pre-commit)
