@@ -78,6 +78,7 @@ tasks:
       - task: test-kubeshark
       - task: test-kubevpn
       - task: test-lazygit
+      - task: test-lnav
       - task: test-lsd
       - task: test-mdtohtml
       - task: test-moq
@@ -462,6 +463,11 @@ tasks:
     cmds:
       - echo "Running tests for lazygit"
       - devbox run -- molecule test -s lazygit
+  test-lnav:
+    desc: "Run tests for lnav"
+    cmds:
+      - echo "Running tests for lnav"
+      - devbox run -- molecule test -s lnav
   test-lsd:
     desc: "Run tests for lsd"
     cmds:
