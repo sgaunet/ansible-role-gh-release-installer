@@ -1246,6 +1246,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: stern.yml
 ```
+## superfile
+
+[Github repository](https://github.com/yorukot/superfile)
+
+```
+- name: Install superfile
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install superfile"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: superfile.yml
+```
 ## task
 
 [Github repository](https://github.com/go-task/task)
