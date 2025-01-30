@@ -28,6 +28,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: age.yml
 ```
+## ansible-summary
+
+[Github repository](https://github.com/sgaunet/ansible-summary)
+
+```
+- name: Install ansible-summary
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install ansible-summary"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: ansible-summary.yml
+```
 ## bandwhich
 
 [Github repository](https://github.com/imsnif/bandwhich)
