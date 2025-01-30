@@ -15,6 +15,7 @@ tasks:
       - task: test-ansible-summary
       - task: test-bandwhich
       - task: test-bat
+      - task: test-bore
       - task: test-calcdate
       - task: test-chglog
       - task: test-concourse
@@ -145,6 +146,11 @@ tasks:
     cmds:
       - echo "Running tests for bat"
       - devbox run -- molecule test -s bat
+  test-bore:
+    desc: "Run tests for bore"
+    cmds:
+      - echo "Running tests for bore"
+      - devbox run -- molecule test -s bore
   test-calcdate:
     desc: "Run tests for calcdate"
     cmds:
