@@ -99,6 +99,7 @@ tasks:
       - task: test-s5cmd
       - task: test-sqlc
       - task: test-stern
+      - task: test-superfile
       - task: test-task
       - task: test-tbls
       - task: test-tealdeer
@@ -566,6 +567,11 @@ tasks:
     cmds:
       - echo "Running tests for stern"
       - devbox run -- molecule test -s stern
+  test-superfile:
+    desc: "Run tests for superfile"
+    cmds:
+      - echo "Running tests for superfile"
+      - devbox run -- molecule test -s superfile
   test-task:
     desc: "Run tests for task"
     cmds:
