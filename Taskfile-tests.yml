@@ -93,6 +93,7 @@ tasks:
       - task: test-popeye
       - task: test-pplx
       - task: test-pre-commit
+      - task: test-procs
       - task: test-q
       - task: test-rclone
       - task: test-retry
@@ -538,6 +539,11 @@ tasks:
     cmds:
       - echo "Running tests for pre-commit"
       - devbox run -- molecule test -s pre-commit
+  test-procs:
+    desc: "Run tests for procs"
+    cmds:
+      - echo "Running tests for procs"
+      - devbox run -- molecule test -s procs
   test-q:
     desc: "Run tests for q"
     cmds:

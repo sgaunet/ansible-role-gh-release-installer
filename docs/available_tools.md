@@ -1162,6 +1162,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: pre-commit.yml
 ```
+## procs
+
+[Github repository](https://github.com/dalance/procs)
+
+```
+- name: Install procs
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install procs"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: procs.yml
+```
 ## q
 
 [Github repository](https://github.com/natesales/q)
