@@ -952,6 +952,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: lazygit.yml
 ```
+## lnav
+
+[Github repository](https://github.com/tstack/lnav)
+
+```
+- name: Install lnav
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install lnav"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: lnav.yml
+```
 ## lsd
 
 [Github repository](https://github.com/lsd-rs/lsd)
