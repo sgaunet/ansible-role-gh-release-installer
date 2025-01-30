@@ -70,6 +70,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: bat.yml
 ```
+## bore
+
+[Github repository](https://github.com/ekzhang/bore)
+
+```
+- name: Install bore
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install bore"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: bore.yml
+```
 ## calcdate
 
 [Github repository](https://github.com/sgaunet/calcdate)
