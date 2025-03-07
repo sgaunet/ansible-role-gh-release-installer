@@ -116,4 +116,5 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-zabbix-cli/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-zabbix-cli)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-zellij/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-zellij)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-zenith/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-zenith)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-zns/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-zns)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-zoxide/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-zoxide)
