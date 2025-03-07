@@ -123,6 +123,7 @@ tasks:
       - task: test-zabbix-cli
       - task: test-zellij
       - task: test-zenith
+      - task: test-zns
       - task: test-zoxide
   test-act:
     desc: "Run tests for act"
@@ -689,6 +690,11 @@ tasks:
     cmds:
       - echo "Running tests for zenith"
       - devbox run -- molecule test -s zenith
+  test-zns:
+    desc: "Run tests for zns"
+    cmds:
+      - echo "Running tests for zns"
+      - devbox run -- molecule test -s zns
   test-zoxide:
     desc: "Run tests for zoxide"
     cmds:
