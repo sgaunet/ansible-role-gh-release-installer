@@ -105,7 +105,6 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-tspin/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-tspin)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-ttyd/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-ttyd)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-usql/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-usql)
-[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-vagrant/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-vagrant)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-vale/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-vale)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-vals/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-vals)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-venom/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-venom)
