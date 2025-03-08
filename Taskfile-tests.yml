@@ -38,6 +38,7 @@ tasks:
       - task: test-gini
       - task: test-gitlab-issue-report
       - task: test-gitlab-stats
+      - task: test-gitlab-token-expiration
       - task: test-gitlab-vars
       - task: test-gitleaks
       - task: test-git-town
@@ -265,6 +266,11 @@ tasks:
     cmds:
       - echo "Running tests for gitlab-stats"
       - devbox run -- molecule test -s gitlab-stats
+  test-gitlab-token-expiration:
+    desc: "Run tests for gitlab-token-expiration"
+    cmds:
+      - echo "Running tests for gitlab-token-expiration"
+      - devbox run -- molecule test -s gitlab-token-expiration
   test-gitlab-vars:
     desc: "Run tests for gitlab-vars"
     cmds:

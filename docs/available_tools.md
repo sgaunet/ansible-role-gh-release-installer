@@ -392,6 +392,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: gitlab-stats.yml
 ```
+## gitlab-token-expiration
+
+[Github repository](https://github.com/sgaunet/gitlab-token-expiration)
+
+```
+- name: Install gitlab-token-expiration
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install gitlab-token-expiration"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: gitlab-token-expiration.yml
+```
 ## gitlab-vars
 
 [Github repository](https://github.com/sgaunet/gitlab-vars)
