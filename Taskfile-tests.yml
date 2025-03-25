@@ -92,6 +92,7 @@ tasks:
       - task: test-pet
       - task: test-pgweb
       - task: test-popeye
+      - task: test-pop
       - task: test-pplx
       - task: test-pre-commit
       - task: test-procs
@@ -536,6 +537,11 @@ tasks:
     cmds:
       - echo "Running tests for popeye"
       - devbox run -- molecule test -s popeye
+  test-pop:
+    desc: "Run tests for pop"
+    cmds:
+      - echo "Running tests for pop"
+      - devbox run -- molecule test -s pop
   test-pplx:
     desc: "Run tests for pplx"
     cmds:
