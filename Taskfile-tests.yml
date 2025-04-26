@@ -120,6 +120,7 @@ tasks:
       - task: test-vhs
       - task: test-viddy
       - task: test-vivid
+      - task: test-wait4x
       - task: test-yazi
       - task: test-yq
       - task: test-zabbix-cli
@@ -677,6 +678,11 @@ tasks:
     cmds:
       - echo "Running tests for vivid"
       - devbox run -- molecule test -s vivid
+  test-wait4x:
+    desc: "Run tests for wait4x"
+    cmds:
+      - echo "Running tests for wait4x"
+      - devbox run -- molecule test -s wait4x
   test-yazi:
     desc: "Run tests for yazi"
     cmds:
