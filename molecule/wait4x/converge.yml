@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install wait4x"
+      ansible.builtin.include_role:
+        name: "sgaunet.gh_role_installer"
+        vars_from: "wait4x.yml"
