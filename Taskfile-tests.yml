@@ -29,7 +29,6 @@ tasks:
       - task: test-dive
       - task: test-eksctl
       - task: test-ekspodlogs
-      - task: test-envtemplate
       - task: test-eza
       - task: test-freeze
       - task: test-fx
@@ -223,11 +222,6 @@ tasks:
     cmds:
       - echo "Running tests for ekspodlogs"
       - devbox run -- molecule test -s ekspodlogs
-  test-envtemplate:
-    desc: "Run tests for envtemplate"
-    cmds:
-      - echo "Running tests for envtemplate"
-      - devbox run -- molecule test -s envtemplate
   test-eza:
     desc: "Run tests for eza"
     cmds:
