@@ -1540,6 +1540,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: wait4x.yml
 ```
+## xan
+
+[Github repository](https://github.com/medialab/xan)
+
+```
+- name: Install xan
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install xan"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: xan.yml
+```
 ## yazi
 
 [Github repository](https://github.com/sxyazi/yazi)
