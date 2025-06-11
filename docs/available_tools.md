@@ -266,20 +266,6 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: ekspodlogs.yml
 ```
-## envtemplate
-
-[Github repository](https://github.com/sgaunet/envtemplate)
-
-```
-- name: Install envtemplate
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install envtemplate"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        vars_from: envtemplate.yml
-```
 ## eza
 
 [Github repository](https://github.com/eza-community/eza)
