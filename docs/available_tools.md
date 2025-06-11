@@ -938,6 +938,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: kubevpn.yml
 ```
+## kubie
+
+[Github repository](https://github.com/sbstp/kubie)
+
+```
+- name: Install kubie
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kubie"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: kubie.yml
+```
 ## lazygit
 
 [Github repository](https://github.com/jesseduffield/lazygit)
