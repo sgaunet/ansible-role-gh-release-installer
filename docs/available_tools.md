@@ -364,6 +364,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: gitlab-issue-report.yml
 ```
+## gitlab-mcp
+
+[Github repository](https://github.com/sgaunet/gitlab-mcp)
+
+```
+- name: Install gitlab-mcp
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install gitlab-mcp"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: gitlab-mcp.yml
+```
 ## gitlab-stats
 
 [Github repository](https://github.com/sgaunet/gitlab-stats)

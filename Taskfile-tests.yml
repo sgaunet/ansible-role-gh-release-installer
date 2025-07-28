@@ -36,6 +36,7 @@ tasks:
       - task: test-gh
       - task: test-gini
       - task: test-gitlab-issue-report
+      - task: test-gitlab-mcp
       - task: test-gitlab-stats
       - task: test-gitlab-token-expiration
       - task: test-gitleaks
@@ -257,6 +258,11 @@ tasks:
     cmds:
       - echo "Running tests for gitlab-issue-report"
       - devbox run -- molecule test -s gitlab-issue-report
+  test-gitlab-mcp:
+    desc: "Run tests for gitlab-mcp"
+    cmds:
+      - echo "Running tests for gitlab-mcp"
+      - devbox run -- molecule test -s gitlab-mcp
   test-gitlab-stats:
     desc: "Run tests for gitlab-stats"
     cmds:
