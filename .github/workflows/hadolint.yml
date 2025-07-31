@@ -2,9 +2,7 @@
 name: CI-hadolint
 'on':
   schedule:
-    - cron: "53 10 * * 2"
-
-
+    - cron: "20 23 15 * *"
 
 jobs:
   molecule:

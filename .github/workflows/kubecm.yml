@@ -2,9 +2,7 @@
 name: CI-kubecm
 'on':
   schedule:
-    - cron: "58 1 * * 3"
-
-
+    - cron: "25 17 15 * *"
 
 jobs:
   molecule:

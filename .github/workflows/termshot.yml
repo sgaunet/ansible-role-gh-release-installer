@@ -2,9 +2,7 @@
 name: CI-termshot
 'on':
   schedule:
-    - cron: "18 21 * * 4"
-
-
+    - cron: "1 11 15 * *"
 
 jobs:
   molecule:

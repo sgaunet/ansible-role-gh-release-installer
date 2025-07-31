@@ -2,9 +2,7 @@
 name: CI-httping-go
 'on':
   schedule:
-    - cron: "3 11 * * 2"
-
-
+    - cron: "25 21 15 * *"
 
 jobs:
   molecule:

@@ -2,9 +2,7 @@
 name: CI-devpod
 'on':
   schedule:
-    - cron: "29 10 * * 2"
-
-
+    - cron: "54 13 15 * *"
 
 jobs:
   molecule:

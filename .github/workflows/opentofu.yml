@@ -2,9 +2,7 @@
 name: CI-opentofu
 'on':
   schedule:
-    - cron: "24 2 * * 1"
-
-
+    - cron: "8 4 15 * *"
 
 jobs:
   molecule:

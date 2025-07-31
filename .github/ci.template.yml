@@ -2,9 +2,7 @@
 name: CI-BINNAME
 'on':
   schedule:
-    - cron: "RANDOM_MIN RANDOM_HOUR * * RANDOM_DAY"
-
-
+    - cron: "RANDOM_MIN RANDOM_HOUR 15 * *"
 
 jobs:
   molecule:

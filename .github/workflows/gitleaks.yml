@@ -2,9 +2,7 @@
 name: CI-gitleaks
 'on':
   schedule:
-    - cron: "30 8 * * 5"
-
-
+    - cron: "46 2 15 * *"
 
 jobs:
   molecule:

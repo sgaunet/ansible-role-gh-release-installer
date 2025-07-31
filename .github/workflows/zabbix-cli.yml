@@ -2,9 +2,7 @@
 name: CI-zabbix-cli
 'on':
   schedule:
-    - cron: "10 13 * * 3"
-
-
+    - cron: "46 18 15 * *"
 
 jobs:
   molecule:

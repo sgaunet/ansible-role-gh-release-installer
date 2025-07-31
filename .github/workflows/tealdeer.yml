@@ -2,9 +2,7 @@
 name: CI-tealdeer
 'on':
   schedule:
-    - cron: "38 2 * * 5"
-
-
+    - cron: "10 12 15 * *"
 
 jobs:
   molecule:

@@ -2,9 +2,7 @@
 name: CI-ansible-summary
 'on':
   schedule:
-    - cron: "47 3 * * 4"
-
-
+    - cron: "18 1 15 * *"
 
 jobs:
   molecule:

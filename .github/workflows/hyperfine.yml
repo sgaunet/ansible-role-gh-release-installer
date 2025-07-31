@@ -2,9 +2,7 @@
 name: CI-hyperfine
 'on':
   schedule:
-    - cron: "23 5 * * 2"
-
-
+    - cron: "12 9 15 * *"
 
 jobs:
   molecule:

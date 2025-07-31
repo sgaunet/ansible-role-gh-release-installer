@@ -2,9 +2,7 @@
 name: CI-direnv
 'on':
   schedule:
-    - cron: "10 13 * * 1"
-
-
+    - cron: "40 14 15 * *"
 
 jobs:
   molecule:

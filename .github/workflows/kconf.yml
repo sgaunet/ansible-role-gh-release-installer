@@ -2,9 +2,7 @@
 name: CI-kconf
 'on':
   schedule:
-    - cron: "44 6 * * 2"
-
-
+    - cron: "1 2 15 * *"
 
 jobs:
   molecule:

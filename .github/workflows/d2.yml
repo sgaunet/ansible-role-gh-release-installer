@@ -2,9 +2,7 @@
 name: CI-d2
 'on':
   schedule:
-    - cron: "55 12 * * 2"
-
-
+    - cron: "24 20 15 * *"
 
 jobs:
   molecule:

@@ -2,9 +2,7 @@
 name: CI-gini
 'on':
   schedule:
-    - cron: "55 8 * * 4"
-
-
+    - cron: "18 2 15 * *"
 
 jobs:
   molecule:

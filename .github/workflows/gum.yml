@@ -2,9 +2,7 @@
 name: CI-gum
 'on':
   schedule:
-    - cron: "27 23 * * 4"
-
-
+    - cron: "32 5 15 * *"
 
 jobs:
   molecule:

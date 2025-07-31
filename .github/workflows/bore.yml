@@ -2,9 +2,7 @@
 name: CI-bore
 'on':
   schedule:
-    - cron: "17 11 * * 4"
-
-
+    - cron: "58 14 15 * *"
 
 jobs:
   molecule:

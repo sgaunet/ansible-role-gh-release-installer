@@ -2,9 +2,7 @@
 name: CI-pet
 'on':
   schedule:
-    - cron: "17 20 * * 5"
-
-
+    - cron: "19 18 15 * *"
 
 jobs:
   molecule:

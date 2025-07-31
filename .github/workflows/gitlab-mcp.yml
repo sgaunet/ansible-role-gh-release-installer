@@ -2,9 +2,7 @@
 name: CI-gitlab-mcp
 'on':
   schedule:
-    - cron: "32 21 * * 2"
-
-
+    - cron: "15 1 15 * *"
 
 jobs:
   molecule:

@@ -2,9 +2,7 @@
 name: CI-gocryptfs
 'on':
   schedule:
-    - cron: "45 18 * * 3"
-
-
+    - cron: "24 12 15 * *"
 
 jobs:
   molecule:

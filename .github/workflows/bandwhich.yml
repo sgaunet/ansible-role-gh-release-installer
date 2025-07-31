@@ -2,9 +2,7 @@
 name: CI-bandwhich
 'on':
   schedule:
-    - cron: "35 6 * * 1"
-
-
+    - cron: "16 3 15 * *"
 
 jobs:
   molecule:

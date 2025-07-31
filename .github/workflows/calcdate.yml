@@ -2,9 +2,7 @@
 name: CI-calcdate
 'on':
   schedule:
-    - cron: "47 8 * * 5"
-
-
+    - cron: "28 9 15 * *"
 
 jobs:
   molecule:

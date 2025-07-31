@@ -2,9 +2,7 @@
 name: CI-kubectl-ice
 'on':
   schedule:
-    - cron: "17 9 * * 1"
-
-
+    - cron: "45 4 15 * *"
 
 jobs:
   molecule:

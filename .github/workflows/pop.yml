@@ -2,9 +2,7 @@
 name: CI-pop
 'on':
   schedule:
-    - cron: "23 9 * * 4"
-
-
+    - cron: "18 19 15 * *"
 
 jobs:
   molecule:

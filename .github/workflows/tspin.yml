@@ -2,9 +2,7 @@
 name: CI-tspin
 'on':
   schedule:
-    - cron: "27 16 * * 3"
-
-
+    - cron: "45 6 15 * *"
 
 jobs:
   molecule:

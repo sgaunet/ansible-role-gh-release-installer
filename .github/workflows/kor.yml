@@ -2,9 +2,7 @@
 name: CI-kor
 'on':
   schedule:
-    - cron: "33 1 * * 2"
-
-
+    - cron: "33 2 15 * *"
 
 jobs:
   molecule:

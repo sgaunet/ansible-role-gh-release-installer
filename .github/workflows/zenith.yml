@@ -2,9 +2,7 @@
 name: CI-zenith
 'on':
   schedule:
-    - cron: "44 4 * * 3"
-
-
+    - cron: "17 8 15 * *"
 
 jobs:
   molecule:

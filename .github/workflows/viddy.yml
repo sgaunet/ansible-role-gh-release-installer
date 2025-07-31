@@ -2,9 +2,7 @@
 name: CI-viddy
 'on':
   schedule:
-    - cron: "44 5 * * 2"
-
-
+    - cron: "41 17 15 * *"
 
 jobs:
   molecule:

@@ -2,9 +2,7 @@
 name: CI-vivid
 'on':
   schedule:
-    - cron: "48 23 * * 3"
-
-
+    - cron: "36 3 15 * *"
 
 jobs:
   molecule:

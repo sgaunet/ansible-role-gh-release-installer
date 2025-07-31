@@ -2,9 +2,7 @@
 name: CI-eza
 'on':
   schedule:
-    - cron: "15 20 * * 4"
-
-
+    - cron: "19 18 15 * *"
 
 jobs:
   molecule:

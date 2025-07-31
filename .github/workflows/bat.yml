@@ -2,9 +2,7 @@
 name: CI-bat
 'on':
   schedule:
-    - cron: "48 3 * * 3"
-
-
+    - cron: "55 15 15 * *"
 
 jobs:
   molecule:

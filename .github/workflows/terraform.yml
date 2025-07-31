@@ -2,9 +2,7 @@
 name: CI-terraform
 'on':
   schedule:
-    - cron: "36 5 * * 4"
-
-
+    - cron: "2 23 15 * *"
 
 jobs:
   molecule:

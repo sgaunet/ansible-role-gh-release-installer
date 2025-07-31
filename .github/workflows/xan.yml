@@ -2,9 +2,7 @@
 name: CI-xan
 'on':
   schedule:
-    - cron: "39 3 * * 1"
-
-
+    - cron: "52 13 15 * *"
 
 jobs:
   molecule:

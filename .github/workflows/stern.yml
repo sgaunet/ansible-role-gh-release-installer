@@ -2,9 +2,7 @@
 name: CI-stern
 'on':
   schedule:
-    - cron: "7 6 * * 2"
-
-
+    - cron: "7 22 15 * *"
 
 jobs:
   molecule:

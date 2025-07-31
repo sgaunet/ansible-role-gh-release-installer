@@ -2,9 +2,7 @@
 name: CI-grype
 'on':
   schedule:
-    - cron: "51 12 * * 1"
-
-
+    - cron: "6 1 15 * *"
 
 jobs:
   molecule:

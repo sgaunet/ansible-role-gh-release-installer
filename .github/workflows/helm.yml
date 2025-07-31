@@ -2,9 +2,7 @@
 name: CI-helm
 'on':
   schedule:
-    - cron: "39 15 * * 2"
-
-
+    - cron: "20 6 15 * *"
 
 jobs:
   molecule:

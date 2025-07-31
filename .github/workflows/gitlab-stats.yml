@@ -2,9 +2,7 @@
 name: CI-gitlab-stats
 'on':
   schedule:
-    - cron: "42 1 * * 1"
-
-
+    - cron: "6 5 15 * *"
 
 jobs:
   molecule:

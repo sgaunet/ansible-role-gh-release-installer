@@ -2,9 +2,7 @@
 name: CI-kfilt
 'on':
   schedule:
-    - cron: "36 20 * * 1"
-
-
+    - cron: "13 3 15 * *"
 
 jobs:
   molecule:

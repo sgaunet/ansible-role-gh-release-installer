@@ -2,9 +2,7 @@
 name: CI-wait4x
 'on':
   schedule:
-    - cron: "48 4 * * 3"
-
-
+    - cron: "7 17 15 * *"
 
 jobs:
   molecule:

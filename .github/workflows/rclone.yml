@@ -2,9 +2,7 @@
 name: CI-rclone
 'on':
   schedule:
-    - cron: "41 6 * * 4"
-
-
+    - cron: "50 13 15 * *"
 
 jobs:
   molecule:

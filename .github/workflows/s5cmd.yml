@@ -2,9 +2,7 @@
 name: CI-s5cmd
 'on':
   schedule:
-    - cron: "40 16 * * 4"
-
-
+    - cron: "46 2 15 * *"
 
 jobs:
   molecule:

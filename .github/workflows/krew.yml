@@ -2,9 +2,7 @@
 name: CI-krew
 'on':
   schedule:
-    - cron: "48 19 * * 1"
-
-
+    - cron: "25 6 15 * *"
 
 jobs:
   molecule:

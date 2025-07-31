@@ -2,9 +2,7 @@
 name: CI-pastel
 'on':
   schedule:
-    - cron: "6 11 * * 5"
-
-
+    - cron: "20 20 15 * *"
 
 jobs:
   molecule:

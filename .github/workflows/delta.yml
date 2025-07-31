@@ -2,9 +2,7 @@
 name: CI-delta
 'on':
   schedule:
-    - cron: "27 5 * * 2"
-
-
+    - cron: "52 7 15 * *"
 
 jobs:
   molecule:

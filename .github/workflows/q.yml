@@ -2,9 +2,7 @@
 name: CI-q
 'on':
   schedule:
-    - cron: "48 13 * * 3"
-
-
+    - cron: "40 19 15 * *"
 
 jobs:
   molecule:

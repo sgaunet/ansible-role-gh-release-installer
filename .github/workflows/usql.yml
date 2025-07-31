@@ -2,9 +2,7 @@
 name: CI-usql
 'on':
   schedule:
-    - cron: "50 3 * * 2"
-
-
+    - cron: "42 8 15 * *"
 
 jobs:
   molecule:

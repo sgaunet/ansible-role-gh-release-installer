@@ -2,9 +2,7 @@
 name: CI-gitlab-token-expiration
 'on':
   schedule:
-    - cron: "20 15 * * 3"
-
-
+    - cron: "52 15 15 * *"
 
 jobs:
   molecule:

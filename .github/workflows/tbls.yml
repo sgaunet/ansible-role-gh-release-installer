@@ -2,9 +2,7 @@
 name: CI-tbls
 'on':
   schedule:
-    - cron: "13 1 * * 2"
-
-
+    - cron: "41 21 15 * *"
 
 jobs:
   molecule:

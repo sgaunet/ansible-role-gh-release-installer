@@ -2,9 +2,7 @@
 name: CI-dasel
 'on':
   schedule:
-    - cron: "11 11 * * 4"
-
-
+    - cron: "31 4 15 * *"
 
 jobs:
   molecule:
