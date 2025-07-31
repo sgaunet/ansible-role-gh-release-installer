@@ -2,9 +2,7 @@
 name: CI-trufflehog
 'on':
   schedule:
-    - cron: "48 11 * * 4"
-
-
+    - cron: "8 23 15 * *"
 
 jobs:
   molecule:

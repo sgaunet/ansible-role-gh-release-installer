@@ -2,9 +2,7 @@
 name: CI-crane
 'on':
   schedule:
-    - cron: "18 11 * * 2"
-
-
+    - cron: "46 5 15 * *"
 
 jobs:
   molecule:

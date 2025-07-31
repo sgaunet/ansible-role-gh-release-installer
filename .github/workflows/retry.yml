@@ -2,9 +2,7 @@
 name: CI-retry
 'on':
   schedule:
-    - cron: "24 20 * * 2"
-
-
+    - cron: "49 6 15 * *"
 
 jobs:
   molecule:

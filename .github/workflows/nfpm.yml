@@ -2,9 +2,7 @@
 name: CI-nfpm
 'on':
   schedule:
-    - cron: "54 16 * * 5"
-
-
+    - cron: "41 20 15 * *"
 
 jobs:
   molecule:

@@ -2,9 +2,7 @@
 name: CI-lnav
 'on':
   schedule:
-    - cron: "29 16 * * 4"
-
-
+    - cron: "18 17 15 * *"
 
 jobs:
   molecule:

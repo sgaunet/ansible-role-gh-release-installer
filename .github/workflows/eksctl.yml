@@ -2,9 +2,7 @@
 name: CI-eksctl
 'on':
   schedule:
-    - cron: "15 16 * * 1"
-
-
+    - cron: "31 11 15 * *"
 
 jobs:
   molecule:

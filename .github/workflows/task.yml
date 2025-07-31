@@ -2,9 +2,7 @@
 name: CI-task
 'on':
   schedule:
-    - cron: "47 14 * * 1"
-
-
+    - cron: "5 16 15 * *"
 
 jobs:
   molecule:

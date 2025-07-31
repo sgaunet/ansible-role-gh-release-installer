@@ -2,9 +2,7 @@
 name: CI-glow
 'on':
   schedule:
-    - cron: "17 16 * * 4"
-
-
+    - cron: "45 19 15 * *"
 
 jobs:
   molecule:

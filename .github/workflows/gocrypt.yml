@@ -2,9 +2,7 @@
 name: CI-gocrypt
 'on':
   schedule:
-    - cron: "3 17 * * 4"
-
-
+    - cron: "59 16 15 * *"
 
 jobs:
   molecule:

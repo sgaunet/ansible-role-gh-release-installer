@@ -2,9 +2,7 @@
 name: CI-act
 'on':
   schedule:
-    - cron: "50 11 * * 5"
-
-
+    - cron: "51 8 15 * *"
 
 jobs:
   molecule:

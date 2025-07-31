@@ -2,9 +2,7 @@
 name: CI-trivy
 'on':
   schedule:
-    - cron: "37 20 * * 4"
-
-
+    - cron: "6 19 15 * *"
 
 jobs:
   molecule:

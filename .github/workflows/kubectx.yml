@@ -2,9 +2,7 @@
 name: CI-kubectx
 'on':
   schedule:
-    - cron: "55 13 * * 5"
-
-
+    - cron: "56 23 15 * *"
 
 jobs:
   molecule:

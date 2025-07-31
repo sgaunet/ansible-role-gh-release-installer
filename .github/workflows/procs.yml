@@ -2,9 +2,7 @@
 name: CI-procs
 'on':
   schedule:
-    - cron: "54 5 * * 4"
-
-
+    - cron: "42 6 15 * *"
 
 jobs:
   molecule:

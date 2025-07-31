@@ -2,9 +2,7 @@
 name: CI-jiracli
 'on':
   schedule:
-    - cron: "11 21 * * 3"
-
-
+    - cron: "3 2 15 * *"
 
 jobs:
   molecule:

@@ -2,9 +2,7 @@
 name: CI-kube-capacity
 'on':
   schedule:
-    - cron: "38 17 * * 4"
-
-
+    - cron: "51 18 15 * *"
 
 jobs:
   molecule:

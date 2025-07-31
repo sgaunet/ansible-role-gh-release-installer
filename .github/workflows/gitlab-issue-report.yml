@@ -2,9 +2,7 @@
 name: CI-gitlab-issue-report
 'on':
   schedule:
-    - cron: "53 4 * * 2"
-
-
+    - cron: "9 23 15 * *"
 
 jobs:
   molecule:

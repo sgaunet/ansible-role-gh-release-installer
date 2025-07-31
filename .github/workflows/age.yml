@@ -2,9 +2,7 @@
 name: CI-age
 'on':
   schedule:
-    - cron: "59 18 * * 4"
-
-
+    - cron: "55 23 15 * *"
 
 jobs:
   molecule:

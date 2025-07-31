@@ -2,9 +2,7 @@
 name: CI-venom
 'on':
   schedule:
-    - cron: "8 8 * * 5"
-
-
+    - cron: "30 19 15 * *"
 
 jobs:
   molecule:

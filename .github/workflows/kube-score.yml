@@ -2,9 +2,7 @@
 name: CI-kube-score
 'on':
   schedule:
-    - cron: "7 22 * * 1"
-
-
+    - cron: "54 6 15 * *"
 
 jobs:
   molecule:

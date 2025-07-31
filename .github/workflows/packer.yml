@@ -2,9 +2,7 @@
 name: CI-packer
 'on':
   schedule:
-    - cron: "34 6 * * 1"
-
-
+    - cron: "9 3 15 * *"
 
 jobs:
   molecule:

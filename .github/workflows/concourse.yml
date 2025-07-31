@@ -2,9 +2,7 @@
 name: CI-concourse
 'on':
   schedule:
-    - cron: "56 16 * * 1"
-
-
+    - cron: "8 8 15 * *"
 
 jobs:
   molecule:

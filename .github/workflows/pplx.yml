@@ -2,9 +2,7 @@
 name: CI-pplx
 'on':
   schedule:
-    - cron: "16 8 * * 4"
-
-
+    - cron: "21 20 15 * *"
 
 jobs:
   molecule:

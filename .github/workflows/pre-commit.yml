@@ -2,9 +2,7 @@
 name: CI-pre-commit
 'on':
   schedule:
-    - cron: "21 16 * * 2"
-
-
+    - cron: "57 3 15 * *"
 
 jobs:
   molecule:

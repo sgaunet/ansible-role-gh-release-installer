@@ -2,9 +2,7 @@
 name: CI-git-town
 'on':
   schedule:
-    - cron: "28 2 * * 3"
-
-
+    - cron: "18 8 15 * *"
 
 jobs:
   molecule:

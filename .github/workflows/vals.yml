@@ -2,9 +2,7 @@
 name: CI-vals
 'on':
   schedule:
-    - cron: "27 16 * * 2"
-
-
+    - cron: "53 20 15 * *"
 
 jobs:
   molecule:

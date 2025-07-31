@@ -2,9 +2,7 @@
 name: CI-zellij
 'on':
   schedule:
-    - cron: "4 11 * * 2"
-
-
+    - cron: "44 23 15 * *"
 
 jobs:
   molecule:

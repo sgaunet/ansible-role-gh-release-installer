@@ -2,9 +2,7 @@
 name: CI-kubent
 'on':
   schedule:
-    - cron: "7 7 * * 1"
-
-
+    - cron: "55 23 15 * *"
 
 jobs:
   molecule:

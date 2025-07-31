@@ -2,9 +2,7 @@
 name: CI-kube-linter
 'on':
   schedule:
-    - cron: "22 21 * * 2"
-
-
+    - cron: "2 9 15 * *"
 
 jobs:
   molecule:

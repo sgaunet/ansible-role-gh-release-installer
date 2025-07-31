@@ -2,9 +2,7 @@
 name: CI-sqlc
 'on':
   schedule:
-    - cron: "43 12 * * 2"
-
-
+    - cron: "9 7 15 * *"
 
 jobs:
   molecule:

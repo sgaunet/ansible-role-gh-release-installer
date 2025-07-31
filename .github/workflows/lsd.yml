@@ -2,9 +2,7 @@
 name: CI-lsd
 'on':
   schedule:
-    - cron: "59 13 * * 1"
-
-
+    - cron: "6 20 15 * *"
 
 jobs:
   molecule:

@@ -2,9 +2,7 @@
 name: CI-lazygit
 'on':
   schedule:
-    - cron: "18 5 * * 2"
-
-
+    - cron: "35 20 15 * *"
 
 jobs:
   molecule:

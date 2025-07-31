@@ -2,9 +2,7 @@
 name: CI-superfile
 'on':
   schedule:
-    - cron: "37 8 * * 4"
-
-
+    - cron: "32 22 15 * *"
 
 jobs:
   molecule:

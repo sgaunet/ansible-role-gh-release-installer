@@ -2,9 +2,7 @@
 name: CI-helmfile
 'on':
   schedule:
-    - cron: "7 19 * * 5"
-
-
+    - cron: "50 18 15 * *"
 
 jobs:
   molecule:

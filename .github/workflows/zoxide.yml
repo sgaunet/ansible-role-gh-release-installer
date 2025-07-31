@@ -2,9 +2,7 @@
 name: CI-zoxide
 'on':
   schedule:
-    - cron: "45 7 * * 4"
-
-
+    - cron: "52 10 15 * *"
 
 jobs:
   molecule:

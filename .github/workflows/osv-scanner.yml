@@ -2,9 +2,7 @@
 name: CI-osv-scanner
 'on':
   schedule:
-    - cron: "5 10 * * 4"
-
-
+    - cron: "56 16 15 * *"
 
 jobs:
   molecule:

@@ -2,9 +2,7 @@
 name: CI-yq
 'on':
   schedule:
-    - cron: "17 9 * * 3"
-
-
+    - cron: "35 18 15 * *"
 
 jobs:
   molecule:

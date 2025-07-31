@@ -2,9 +2,7 @@
 name: CI-pgweb
 'on':
   schedule:
-    - cron: "55 23 * * 4"
-
-
+    - cron: "15 3 15 * *"
 
 jobs:
   molecule:

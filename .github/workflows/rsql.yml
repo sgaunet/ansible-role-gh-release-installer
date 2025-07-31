@@ -2,11 +2,7 @@
 name: CI-rsql
 'on':
   schedule:
-    - cron: "22 20 * * 2"
-
-defaults:
-  run:
-    working-directory: 'sgaunet.gh-release-installer'
+    - cron: "42 7 15 * *"
 
 jobs:
   molecule:

@@ -2,9 +2,7 @@
 name: CI-helmchart-helper
 'on':
   schedule:
-    - cron: "12 8 * * 5"
-
-
+    - cron: "25 7 15 * *"
 
 jobs:
   molecule:

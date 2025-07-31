@@ -2,9 +2,7 @@
 name: CI-goreleaser
 'on':
   schedule:
-    - cron: "42 16 * * 2"
-
-
+    - cron: "38 1 15 * *"
 
 jobs:
   molecule:
