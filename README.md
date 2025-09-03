@@ -1,6 +1,7 @@
 # Ansible Role: gh_role_installer
 
 [![GitHub release](https://img.shields.io/github/release/sgaunet/ansible-role-gh-release-installer.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 An Ansible Role that installs releases from github. It has been created to install binaries from github releases. **It is designed to setup only simple binary (coded with Go or rust) and not to install complex software.**
 
