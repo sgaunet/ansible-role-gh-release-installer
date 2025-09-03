@@ -1,7 +1,7 @@
 ---
 
 gh_role_installer_version: "latest"
-gh_role_installer_os: "Linux"
+gh_role_installer_os: "linux"
 gh_role_installer_arch: "x86_64"
 gh_role_installer_repository: "hadolint/hadolint"
 gh_role_installer_release: "https://github.com/{{ gh_role_installer_repository }}/releases/download/v{{ version_to_install }}/hadolint-{{ gh_role_installer_os }}-{{ gh_role_installer_arch }}"
