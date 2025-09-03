@@ -7,6 +7,6 @@ gh_role_installer_repository: "dbrgn/tealdeer"
 gh_role_installer_release: "https://github.com/{{ gh_role_installer_repository }}/releases/download/v{{ version_to_install }}/tealdeer-{{ gh_role_installer_os }}-{{ gh_role_installer_arch }}"
 gh_role_installer_release_is_archive: false
 gh_role_installer_binary_name: "tealdeer"
-gh_role_installer_cmd_to_get_version: "tealdeer --version  | sed  's/tealdeer //g'"
+gh_role_installer_cmd_to_get_version: "tealdeer -v  | sed  's/tealdeer //g'"
 gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
 gh_role_installer_binary_path: "/usr/local/bin/{{ gh_role_installer_binary_name }}"
