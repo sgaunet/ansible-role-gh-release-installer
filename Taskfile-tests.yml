@@ -13,6 +13,7 @@ tasks:
       - task: test-act
       - task: test-age
       - task: test-ansible-summary
+      - task: test-asdf
       - task: test-bandwhich
       - task: test-bat
       - task: test-bore
@@ -35,26 +36,26 @@ tasks:
       - task: test-gdu
       - task: test-gh
       - task: test-gini
-      - task: test-git-town
       - task: test-gitlab-issue-report
       - task: test-gitlab-mcp
       - task: test-gitlab-stats
       - task: test-gitlab-token-expiration
       - task: test-gitleaks
+      - task: test-git-town
       - task: test-glow
-      - task: test-gocrypt
       - task: test-gocryptfs
+      - task: test-gocrypt
       - task: test-golangci-lint
       - task: test-gomplate
       - task: test-goreleaser
       - task: test-grype
       - task: test-gum
       - task: test-hadolint
-      - task: test-helm
       - task: test-helmchart-helper
       - task: test-helmdocs
       - task: test-helmfile
       - task: test-helmify
+      - task: test-helm
       - task: test-httping-go
       - task: test-hyperfine
       - task: test-jiracli
@@ -67,14 +68,14 @@ tasks:
       - task: test-kor
       - task: test-krew
       - task: test-kube-capacity
-      - task: test-kube-linter
-      - task: test-kube-score
       - task: test-kubecm
       - task: test-kubectl-ice
       - task: test-kubectx
       - task: test-kubefwd
+      - task: test-kube-linter
       - task: test-kubent
       - task: test-kubescape
+      - task: test-kube-score
       - task: test-kubeshark
       - task: test-kubevpn
       - task: test-kubie
@@ -90,8 +91,8 @@ tasks:
       - task: test-pastel
       - task: test-pet
       - task: test-pgweb
-      - task: test-pop
       - task: test-popeye
+      - task: test-pop
       - task: test-pplx
       - task: test-pre-commit
       - task: test-procs
@@ -143,6 +144,11 @@ tasks:
     cmds:
       - echo "Running tests for ansible-summary"
       - devbox run -- molecule test -s ansible-summary
+  test-asdf:
+    desc: "Run tests for asdf"
+    cmds:
+      - echo "Running tests for asdf"
+      - devbox run -- molecule test -s asdf
   test-bandwhich:
     desc: "Run tests for bandwhich"
     cmds:
@@ -253,11 +259,6 @@ tasks:
     cmds:
       - echo "Running tests for gini"
       - devbox run -- molecule test -s gini
-  test-git-town:
-    desc: "Run tests for git-town"
-    cmds:
-      - echo "Running tests for git-town"
-      - devbox run -- molecule test -s git-town
   test-gitlab-issue-report:
     desc: "Run tests for gitlab-issue-report"
     cmds:
@@ -283,21 +284,26 @@ tasks:
     cmds:
       - echo "Running tests for gitleaks"
       - devbox run -- molecule test -s gitleaks
+  test-git-town:
+    desc: "Run tests for git-town"
+    cmds:
+      - echo "Running tests for git-town"
+      - devbox run -- molecule test -s git-town
   test-glow:
     desc: "Run tests for glow"
     cmds:
       - echo "Running tests for glow"
       - devbox run -- molecule test -s glow
-  test-gocrypt:
-    desc: "Run tests for gocrypt"
-    cmds:
-      - echo "Running tests for gocrypt"
-      - devbox run -- molecule test -s gocrypt
   test-gocryptfs:
     desc: "Run tests for gocryptfs"
     cmds:
       - echo "Running tests for gocryptfs"
       - devbox run -- molecule test -s gocryptfs
+  test-gocrypt:
+    desc: "Run tests for gocrypt"
+    cmds:
+      - echo "Running tests for gocrypt"
+      - devbox run -- molecule test -s gocrypt
   test-golangci-lint:
     desc: "Run tests for golangci-lint"
     cmds:
@@ -328,11 +334,6 @@ tasks:
     cmds:
       - echo "Running tests for hadolint"
       - devbox run -- molecule test -s hadolint
-  test-helm:
-    desc: "Run tests for helm"
-    cmds:
-      - echo "Running tests for helm"
-      - devbox run -- molecule test -s helm
   test-helmchart-helper:
     desc: "Run tests for helmchart-helper"
     cmds:
@@ -353,6 +354,11 @@ tasks:
     cmds:
       - echo "Running tests for helmify"
       - devbox run -- molecule test -s helmify
+  test-helm:
+    desc: "Run tests for helm"
+    cmds:
+      - echo "Running tests for helm"
+      - devbox run -- molecule test -s helm
   test-httping-go:
     desc: "Run tests for httping-go"
     cmds:
@@ -413,16 +419,6 @@ tasks:
     cmds:
       - echo "Running tests for kube-capacity"
       - devbox run -- molecule test -s kube-capacity
-  test-kube-linter:
-    desc: "Run tests for kube-linter"
-    cmds:
-      - echo "Running tests for kube-linter"
-      - devbox run -- molecule test -s kube-linter
-  test-kube-score:
-    desc: "Run tests for kube-score"
-    cmds:
-      - echo "Running tests for kube-score"
-      - devbox run -- molecule test -s kube-score
   test-kubecm:
     desc: "Run tests for kubecm"
     cmds:
@@ -443,6 +439,11 @@ tasks:
     cmds:
       - echo "Running tests for kubefwd"
       - devbox run -- molecule test -s kubefwd
+  test-kube-linter:
+    desc: "Run tests for kube-linter"
+    cmds:
+      - echo "Running tests for kube-linter"
+      - devbox run -- molecule test -s kube-linter
   test-kubent:
     desc: "Run tests for kubent"
     cmds:
@@ -453,6 +454,11 @@ tasks:
     cmds:
       - echo "Running tests for kubescape"
       - devbox run -- molecule test -s kubescape
+  test-kube-score:
+    desc: "Run tests for kube-score"
+    cmds:
+      - echo "Running tests for kube-score"
+      - devbox run -- molecule test -s kube-score
   test-kubeshark:
     desc: "Run tests for kubeshark"
     cmds:
@@ -528,16 +534,16 @@ tasks:
     cmds:
       - echo "Running tests for pgweb"
       - devbox run -- molecule test -s pgweb
-  test-pop:
-    desc: "Run tests for pop"
-    cmds:
-      - echo "Running tests for pop"
-      - devbox run -- molecule test -s pop
   test-popeye:
     desc: "Run tests for popeye"
     cmds:
       - echo "Running tests for popeye"
       - devbox run -- molecule test -s popeye
+  test-pop:
+    desc: "Run tests for pop"
+    cmds:
+      - echo "Running tests for pop"
+      - devbox run -- molecule test -s pop
   test-pplx:
     desc: "Run tests for pplx"
     cmds:
