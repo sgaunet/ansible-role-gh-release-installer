@@ -86,6 +86,7 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-pgweb/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-pgweb)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-popeye/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-popeye)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-pop/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-pop)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-postgresql-mcp/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-postgresql-mcp)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-pplx/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-pplx)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-pre-commit/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-pre-commit)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-procs/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-procs)

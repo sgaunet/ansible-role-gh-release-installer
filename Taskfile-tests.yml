@@ -93,6 +93,7 @@ tasks:
       - task: test-pgweb
       - task: test-popeye
       - task: test-pop
+      - task: test-postgresql-mcp
       - task: test-pplx
       - task: test-pre-commit
       - task: test-procs
@@ -544,6 +545,11 @@ tasks:
     cmds:
       - echo "Running tests for pop"
       - devbox run -- molecule test -s pop
+  test-postgresql-mcp:
+    desc: "Run tests for postgresql-mcp"
+    cmds:
+      - echo "Running tests for postgresql-mcp"
+      - devbox run -- molecule test -s postgresql-mcp
   test-pplx:
     desc: "Run tests for pplx"
     cmds:

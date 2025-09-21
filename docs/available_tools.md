@@ -1162,6 +1162,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: pop.yml
 ```
+## postgresql-mcp
+
+[Github repository](https://github.com/sgaunet/postgresql-mcp)
+
+```
+- name: Install postgresql-mcp
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install postgresql-mcp"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: postgresql-mcp.yml
+```
 ## pplx
 
 [Github repository](https://github.com/sgaunet/pplx)
