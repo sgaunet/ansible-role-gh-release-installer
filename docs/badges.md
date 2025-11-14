@@ -29,6 +29,7 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-gdu/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-gdu)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-gh/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-gh)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-gini/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-gini)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-gitcommit/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-gitcommit)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-gitlab-issue-report/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-gitlab-issue-report)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-gitlab-mcp/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-gitlab-mcp)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-gitlab-stats/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-gitlab-stats)

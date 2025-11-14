@@ -36,6 +36,7 @@ tasks:
       - task: test-gdu
       - task: test-gh
       - task: test-gini
+      - task: test-gitcommit
       - task: test-gitlab-issue-report
       - task: test-gitlab-mcp
       - task: test-gitlab-stats
@@ -260,6 +261,11 @@ tasks:
     cmds:
       - echo "Running tests for gini"
       - devbox run -- molecule test -s gini
+  test-gitcommit:
+    desc: "Run tests for gitcommit"
+    cmds:
+      - echo "Running tests for gitcommit"
+      - devbox run -- molecule test -s gitcommit
   test-gitlab-issue-report:
     desc: "Run tests for gitlab-issue-report"
     cmds:
