@@ -66,7 +66,6 @@ tasks:
       - task: test-kconf
       - task: test-kfilt
       - task: test-kind
-      - task: test-kor
       - task: test-krew
       - task: test-kube-capacity
       - task: test-kubecm
@@ -411,11 +410,6 @@ tasks:
     cmds:
       - echo "Running tests for kind"
       - devbox run -- molecule test -s kind
-  test-kor:
-    desc: "Run tests for kor"
-    cmds:
-      - echo "Running tests for kor"
-      - devbox run -- molecule test -s kor
   test-krew:
     desc: "Run tests for krew"
     cmds:

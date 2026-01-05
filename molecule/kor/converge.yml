@@ -1,9 +1,0 @@
----
-- name: Converge
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install kor"
-      ansible.builtin.include_role:
-        name: "sgaunet.gh_role_installer"
-        vars_from: "kor.yml"
