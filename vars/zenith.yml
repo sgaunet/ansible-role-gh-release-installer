@@ -1,10 +1,10 @@
 ---
 
 gh_role_installer_version: "latest"
-gh_role_installer_os: "unknown-linux-musl"
+gh_role_installer_os: "Linux-musl"
 gh_role_installer_arch: "x86_64"
 gh_role_installer_repository: "bvaisvil/zenith"
-gh_role_installer_release: "https://github.com/{{ gh_role_installer_repository }}/releases/download/{{ version_to_install }}/zenith.{{ gh_role_installer_arch }}-{{ gh_role_installer_os }}.tgz"
+gh_role_installer_release: "https://github.com/{{ gh_role_installer_repository }}/releases/download/{{ version_to_install }}/zenith-{{ gh_role_installer_os }}-{{ gh_role_installer_arch }}.tar.gz"
 gh_role_installer_release_is_archive: true
 gh_role_installer_binary_name: "zenith"
 gh_role_installer_cmd_to_get_version: "zenith -V | awk '{ print $2 }'"
