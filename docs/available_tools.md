@@ -784,20 +784,6 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: kind.yml
 ```
-## kor
-
-[Github repository](https://github.com/yonahd/kor)
-
-```
-- name: Install kor
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install kor"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        vars_from: kor.yml
-```
 ## krew
 
 [Github repository](https://github.com/kubernetes-sigs/krew)
