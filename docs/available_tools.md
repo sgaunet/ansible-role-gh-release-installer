@@ -126,20 +126,6 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: chglog.yml
 ```
-## concourse
-
-[Github repository](https://github.com/concourse/concourse)
-
-```
-- name: Install concourse
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install concourse"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        vars_from: concourse.yml
-```
 ## crane
 
 [Github repository](https://github.com/google/go-containerregistry)
@@ -686,20 +672,6 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: hyperfine.yml
 ```
-## jiracli
-
-[Github repository](https://github.com/ankitpokhrel/jira-cli)
-
-```
-- name: Install jiracli
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install jiracli"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        vars_from: jiracli.yml
-```
 ## jwt-cli
 
 [Github repository](https://github.com/sgaunet/jwt-cli)
@@ -881,20 +853,6 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         vars_from: kube-linter.yml
-```
-## kubent
-
-[Github repository](https://github.com/doitintl/kube-no-trouble)
-
-```
-- name: Install kubent
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install kubent"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        vars_from: kubent.yml
 ```
 ## kubescape
 
@@ -1329,6 +1287,20 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         vars_from: superfile.yml
+```
+## tailwindcss
+
+[Github repository](https://github.com/tailwindlabs/tailwindcss)
+
+```
+- name: Install tailwindcss
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install tailwindcss"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: tailwindcss.yml
 ```
 ## task
 

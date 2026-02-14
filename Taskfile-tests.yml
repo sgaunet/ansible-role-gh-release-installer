@@ -19,7 +19,6 @@ tasks:
       - task: test-bore
       - task: test-calcdate
       - task: test-chglog
-      - task: test-concourse
       - task: test-crane
       - task: test-d2
       - task: test-dasel
@@ -59,7 +58,6 @@ tasks:
       - task: test-helm
       - task: test-httping-go
       - task: test-hyperfine
-      - task: test-jiracli
       - task: test-jwt-cli
       - task: test-k6
       - task: test-k9s
@@ -73,7 +71,6 @@ tasks:
       - task: test-kubectx
       - task: test-kubefwd
       - task: test-kube-linter
-      - task: test-kubent
       - task: test-kubescape
       - task: test-kube-score
       - task: test-kubeshark
@@ -105,6 +102,7 @@ tasks:
       - task: test-sqlc
       - task: test-stern
       - task: test-superfile
+      - task: test-tailwindcss
       - task: test-task
       - task: test-tbls
       - task: test-tealdeer
@@ -175,11 +173,6 @@ tasks:
     cmds:
       - echo "Running tests for chglog"
       - devbox run -- molecule test -s chglog
-  test-concourse:
-    desc: "Run tests for concourse"
-    cmds:
-      - echo "Running tests for concourse"
-      - devbox run -- molecule test -s concourse
   test-crane:
     desc: "Run tests for crane"
     cmds:
@@ -375,11 +368,6 @@ tasks:
     cmds:
       - echo "Running tests for hyperfine"
       - devbox run -- molecule test -s hyperfine
-  test-jiracli:
-    desc: "Run tests for jiracli"
-    cmds:
-      - echo "Running tests for jiracli"
-      - devbox run -- molecule test -s jiracli
   test-jwt-cli:
     desc: "Run tests for jwt-cli"
     cmds:
@@ -445,11 +433,6 @@ tasks:
     cmds:
       - echo "Running tests for kube-linter"
       - devbox run -- molecule test -s kube-linter
-  test-kubent:
-    desc: "Run tests for kubent"
-    cmds:
-      - echo "Running tests for kubent"
-      - devbox run -- molecule test -s kubent
   test-kubescape:
     desc: "Run tests for kubescape"
     cmds:
@@ -605,6 +588,11 @@ tasks:
     cmds:
       - echo "Running tests for superfile"
       - devbox run -- molecule test -s superfile
+  test-tailwindcss:
+    desc: "Run tests for tailwindcss"
+    cmds:
+      - echo "Running tests for tailwindcss"
+      - devbox run -- molecule test -s tailwindcss
   test-task:
     desc: "Run tests for task"
     cmds:

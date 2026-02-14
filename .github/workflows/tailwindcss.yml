@@ -1,8 +1,8 @@
 ---
-name: CI-concourse
+name: CI-tailwindcss
 'on':
   schedule:
-    - cron: "8 8 15 * *"
+    - cron: "28 11 15 * *"
 
 jobs:
   molecule:
@@ -23,7 +23,7 @@ jobs:
 
       - name: Run Molecule tests.
         run: |
-          devbox run -- molecule test -s concourse
+          devbox run -- molecule test -s tailwindcss
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PY_COLORS: '1'
