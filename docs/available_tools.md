@@ -1526,6 +1526,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: wait4x.yml
 ```
+## witr
+
+[Github repository](https://github.com/pranshuparmar/witr)
+
+```
+- name: Install witr
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install witr"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: witr.yml
+```
 ## xan
 
 [Github repository](https://github.com/medialab/xan)
