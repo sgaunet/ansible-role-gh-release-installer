@@ -122,7 +122,6 @@ tasks:
       - task: test-xan
       - task: test-yazi
       - task: test-yq
-      - task: test-zabbix-cli
       - task: test-zellij
       - task: test-zenith
       - task: test-zns
@@ -687,11 +686,6 @@ tasks:
     cmds:
       - echo "Running tests for yq"
       - devbox run -- molecule test -s yq
-  test-zabbix-cli:
-    desc: "Run tests for zabbix-cli"
-    cmds:
-      - echo "Running tests for zabbix-cli"
-      - devbox run -- molecule test -s zabbix-cli
   test-zellij:
     desc: "Run tests for zellij"
     cmds:
