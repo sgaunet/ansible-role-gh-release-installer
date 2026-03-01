@@ -12,7 +12,6 @@ tasks:
     cmds:
       - task: test-act
       - task: test-age
-      - task: test-ansible-summary
       - task: test-asdf
       - task: test-bandwhich
       - task: test-bat
@@ -138,11 +137,6 @@ tasks:
     cmds:
       - echo "Running tests for age"
       - devbox run -- molecule test -s age
-  test-ansible-summary:
-    desc: "Run tests for ansible-summary"
-    cmds:
-      - echo "Running tests for ansible-summary"
-      - devbox run -- molecule test -s ansible-summary
   test-asdf:
     desc: "Run tests for asdf"
     cmds:
