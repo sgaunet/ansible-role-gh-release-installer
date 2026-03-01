@@ -119,6 +119,7 @@ tasks:
       - task: test-viddy
       - task: test-vivid
       - task: test-wait4x
+      - task: test-witr
       - task: test-xan
       - task: test-yazi
       - task: test-yq
@@ -671,6 +672,11 @@ tasks:
     cmds:
       - echo "Running tests for wait4x"
       - devbox run -- molecule test -s wait4x
+  test-witr:
+    desc: "Run tests for witr"
+    cmds:
+      - echo "Running tests for witr"
+      - devbox run -- molecule test -s witr
   test-xan:
     desc: "Run tests for xan"
     cmds:
