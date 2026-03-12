@@ -17,6 +17,7 @@ tasks:
       - task: test-bat
       - task: test-bore
       - task: test-calcdate
+      - task: test-chezmoi
       - task: test-chglog
       - task: test-crane
       - task: test-d2
@@ -26,6 +27,7 @@ tasks:
       - task: test-devpod
       - task: test-direnv
       - task: test-dive
+      - task: test-docker-agent
       - task: test-eksctl
       - task: test-ekspodlogs
       - task: test-eza
@@ -98,6 +100,7 @@ tasks:
       - task: test-retry
       - task: test-rsql
       - task: test-s5cmd
+      - task: test-sops
       - task: test-sqlc
       - task: test-stern
       - task: test-superfile
@@ -162,6 +165,11 @@ tasks:
     cmds:
       - echo "Running tests for calcdate"
       - devbox run -- molecule test -s calcdate
+  test-chezmoi:
+    desc: "Run tests for chezmoi"
+    cmds:
+      - echo "Running tests for chezmoi"
+      - devbox run -- molecule test -s chezmoi
   test-chglog:
     desc: "Run tests for chglog"
     cmds:
@@ -207,6 +215,11 @@ tasks:
     cmds:
       - echo "Running tests for dive"
       - devbox run -- molecule test -s dive
+  test-docker-agent:
+    desc: "Run tests for docker-agent"
+    cmds:
+      - echo "Running tests for docker-agent"
+      - devbox run -- molecule test -s docker-agent
   test-eksctl:
     desc: "Run tests for eksctl"
     cmds:
@@ -567,6 +580,11 @@ tasks:
     cmds:
       - echo "Running tests for s5cmd"
       - devbox run -- molecule test -s s5cmd
+  test-sops:
+    desc: "Run tests for sops"
+    cmds:
+      - echo "Running tests for sops"
+      - devbox run -- molecule test -s sops
   test-sqlc:
     desc: "Run tests for sqlc"
     cmds:
