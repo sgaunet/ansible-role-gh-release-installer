@@ -98,6 +98,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: calcdate.yml
 ```
+## chezmoi
+
+[Github repository](https://github.com/twpayne/chezmoi)
+
+```
+- name: Install chezmoi
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install chezmoi"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: chezmoi.yml
+```
 ## chglog
 
 [Github repository](https://github.com/goreleaser/chglog)
@@ -223,6 +237,20 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         vars_from: dive.yml
+```
+## docker-agent
+
+[Github repository](https://github.com/docker/docker-agent)
+
+```
+- name: Install docker-agent
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install docker-agent"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: docker-agent.yml
 ```
 ## eksctl
 
@@ -1231,6 +1259,20 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         vars_from: s5cmd.yml
+```
+## sops
+
+[Github repository](https://github.com/getsops/sops)
+
+```
+- name: Install sops
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install sops"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: sops.yml
 ```
 ## sqlc
 
