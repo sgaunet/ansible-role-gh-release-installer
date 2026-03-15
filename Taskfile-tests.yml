@@ -29,7 +29,6 @@ tasks:
       - task: test-dive
       - task: test-docker-agent
       - task: test-eksctl
-      - task: test-ekspodlogs
       - task: test-eza
       - task: test-freeze
       - task: test-fx
@@ -225,11 +224,6 @@ tasks:
     cmds:
       - echo "Running tests for eksctl"
       - devbox run -- molecule test -s eksctl
-  test-ekspodlogs:
-    desc: "Run tests for ekspodlogs"
-    cmds:
-      - echo "Running tests for ekspodlogs"
-      - devbox run -- molecule test -s ekspodlogs
   test-eza:
     desc: "Run tests for eza"
     cmds:
