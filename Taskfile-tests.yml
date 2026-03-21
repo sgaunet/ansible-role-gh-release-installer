@@ -80,6 +80,7 @@ tasks:
       - task: test-lnav
       - task: test-lsd
       - task: test-mdtohtml
+      - task: test-mise
       - task: test-muffet
       - task: test-nfpm
       - task: test-opentofu
@@ -479,6 +480,11 @@ tasks:
     cmds:
       - echo "Running tests for mdtohtml"
       - devbox run -- molecule test -s mdtohtml
+  test-mise:
+    desc: "Run tests for mise"
+    cmds:
+      - echo "Running tests for mise"
+      - devbox run -- molecule test -s mise
   test-muffet:
     desc: "Run tests for muffet"
     cmds:
