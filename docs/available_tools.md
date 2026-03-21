@@ -980,6 +980,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: mdtohtml.yml
 ```
+## mise
+
+[Github repository](https://github.com/jdx/mise)
+
+```
+- name: Install mise
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install mise"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: mise.yml
+```
 ## muffet
 
 [Github repository](https://github.com/raviqqe/muffet)
