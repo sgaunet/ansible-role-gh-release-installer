@@ -938,6 +938,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: lazygit.yml
 ```
+## llmfit
+
+[Github repository](https://github.com/AlexsJones/llmfit)
+
+```
+- name: Install llmfit
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install llmfit"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: llmfit.yml
+```
 ## lnav
 
 [Github repository](https://github.com/tstack/lnav)
