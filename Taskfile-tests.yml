@@ -77,6 +77,7 @@ tasks:
       - task: test-kubevpn
       - task: test-kubie
       - task: test-lazygit
+      - task: test-llamafile
       - task: test-llmfit
       - task: test-lnav
       - task: test-lsd
@@ -466,6 +467,11 @@ tasks:
     cmds:
       - echo "Running tests for lazygit"
       - devbox run -- molecule test -s lazygit
+  test-llamafile:
+    desc: "Run tests for llamafile"
+    cmds:
+      - echo "Running tests for llamafile"
+      - devbox run -- molecule test -s llamafile
   test-llmfit:
     desc: "Run tests for llmfit"
     cmds:
