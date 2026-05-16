@@ -99,6 +99,7 @@ tasks:
       - task: test-procs
       - task: test-q
       - task: test-rclone
+      - task: test-restic-age-key
       - task: test-retry
       - task: test-rsql
       - task: test-s5cmd
@@ -577,6 +578,11 @@ tasks:
     cmds:
       - echo "Running tests for rclone"
       - devbox run -- molecule test -s rclone
+  test-restic-age-key:
+    desc: "Run tests for restic-age-key"
+    cmds:
+      - echo "Running tests for restic-age-key"
+      - devbox run -- molecule test -s restic-age-key
   test-retry:
     desc: "Run tests for retry"
     cmds:

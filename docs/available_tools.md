@@ -1246,6 +1246,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: rclone.yml
 ```
+## restic-age-key
+
+[Github repository](https://github.com/sgaunet/restic-age-key)
+
+```
+- name: Install restic-age-key
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install restic-age-key"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: restic-age-key.yml
+```
 ## retry
 
 [Github repository](https://github.com/sgaunet/retry)
