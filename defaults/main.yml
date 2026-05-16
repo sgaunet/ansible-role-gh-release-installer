@@ -10,3 +10,5 @@
 # gh_role_installer_cmd_to_get_version: "jwt-cli version"
 gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', true) }}"
 gh_role_installer_binary_path: "/usr/local/bin/{{ gh_role_installer_binary_name }}"
+
+gh_role_installer_become: true
