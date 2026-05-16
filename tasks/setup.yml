@@ -55,6 +55,12 @@
         state: directory
         mode: '0755'
 
+    - name: Ensure the binary destination directory exists
+      ansible.builtin.file:
+        path: "{{ gh_role_installer_binary_path | dirname }}"
+        state: directory
+        mode: '0755'
+
     - name: Download the release ({{ gh_role_installer_repository }})
       ansible.builtin.get_url:
         url: "{{ gh_role_installer_release }}"

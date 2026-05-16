@@ -37,7 +37,7 @@ do
     echo ""
     echo "- name: Verify"
     echo "  hosts: all"
-    echo "  gather_facts: false"
+    echo "  gather_facts: true"
     echo "  tasks:"
     echo "    - name: Include default vars"
     echo "      ansible.builtin.include_vars:"
