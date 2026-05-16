@@ -60,6 +60,7 @@
         path: "{{ gh_role_installer_binary_path | dirname }}"
         state: directory
         mode: '0755'
+      become: "{{ gh_role_installer_become }}"
 
     - name: Download the release ({{ gh_role_installer_repository }})
       ansible.builtin.get_url:
@@ -98,10 +99,11 @@
       ansible.builtin.copy:
         src: "{{ gh_role_installer_binary.files[0].path }}"
         dest: "{{ gh_role_installer_binary_path }}"
-        owner: root
-        group: root
+        owner: "{{ gh_role_installer_owner | default(omit) }}"
+        group: "{{ gh_role_installer_group | default(omit) }}"
         mode: "0755"
         remote_src: true
+      become: "{{ gh_role_installer_become }}"
       when:
         - gh_role_installer_release_is_archive
 
@@ -109,10 +111,11 @@
       ansible.builtin.copy:
         src: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/{{ filename }}"
         dest: "{{ gh_role_installer_binary_path }}"
-        owner: root
-        group: root
+        owner: "{{ gh_role_installer_owner | default(omit) }}"
+        group: "{{ gh_role_installer_group | default(omit) }}"
         mode: "0755"
         remote_src: true
+      become: "{{ gh_role_installer_become }}"
       when:
         - not gh_role_installer_release_is_archive
 
