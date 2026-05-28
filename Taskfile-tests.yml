@@ -102,6 +102,7 @@ tasks:
       - task: test-restic-age-key
       - task: test-retry
       - task: test-rsql
+      - task: test-runq
       - task: test-s5cmd
       - task: test-sops
       - task: test-sqlc
@@ -593,6 +594,11 @@ tasks:
     cmds:
       - echo "Running tests for rsql"
       - devbox run -- molecule test -s rsql
+  test-runq:
+    desc: "Run tests for runq"
+    cmds:
+      - echo "Running tests for runq"
+      - devbox run -- molecule test -s runq
   test-s5cmd:
     desc: "Run tests for s5cmd"
     cmds:

@@ -1288,6 +1288,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: rsql.yml
 ```
+## runq
+
+[Github repository](https://github.com/sgaunet/runq)
+
+```
+- name: Install runq
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install runq"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: runq.yml
+```
 ## s5cmd
 
 [Github repository](https://github.com/peak/s5cmd)
