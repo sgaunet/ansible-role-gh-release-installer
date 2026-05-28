@@ -2,7 +2,7 @@
 
 - name: Verify
   hosts: all
-  gather_facts: false
+  gather_facts: true
   tasks:
     - name: Include default vars
       ansible.builtin.include_vars:
