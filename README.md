@@ -72,6 +72,22 @@ The role contains also variables to install miscelleanous tools. [See the list o
 * Generate the taskfile to test tool with `./gen-taskfile-tests.sh`
 * Test the tool with `task -t Taskfile-tests.yml test-toolname`
 
+## Development environment
+
+This repo uses [mise](https://mise.jdx.dev) to manage development dependencies. mise
+provides `task`, `python` and `uv`, and the Python testing stack (`ansible`, `molecule`
++ the docker driver, `ansible-lint`) is installed by `uv` into a project-local `.venv`
+from `requirements.txt`. After [installing mise](https://mise.jdx.dev/getting-started.html):
+
+```bash
+mise trust   # trust this repo's mise.toml
+mise install # install python/task/uv, then build .venv from requirements.txt
+```
+
+Tools are then available via `mise exec -- <cmd>` (or directly once your shell has mise
+activated) — e.g. `mise exec -- molecule --version`. Running molecule requires a working
+Docker daemon.
+
 ## Tests
 
 All tools are tested with molecule. You can run the tests with the following command:

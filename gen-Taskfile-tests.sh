@@ -26,6 +26,6 @@ do
   echo "    desc: \"Run tests for ${bin_name}\""
   echo "    cmds:"
   echo "      - echo \"Running tests for ${bin_name}\""
-  echo "      - devbox run -- molecule test -s ${bin_name}"
+  echo "      - mise exec -- molecule test -s ${bin_name}"
 ) >> Taskfile-tests.yml
 done

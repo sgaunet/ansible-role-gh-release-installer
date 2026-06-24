@@ -2,13 +2,13 @@
 
 # - name: Latest version of {{ gh_role_installer_repository }}
 #   ansible.builtin.debug:
-#     msg: "{{ project_info.content | from_json | json_query('tag_name') | replace('v', '') }}"
+#     msg: "{{ (project_info.content | from_json).tag_name | replace('v', '') }}"
 #   changed_when: false
 #   check_mode: false
 
 - name: Set gh_role_installer_version if latest
   ansible.builtin.set_fact:
-    version_to_install: "{{ project_info.content | from_json | json_query('tag_name') | replace('v', '') }}"
+    version_to_install: "{{ (project_info.content | from_json).tag_name | replace('v', '') }}"
     cacheable: true
   changed_when: false
   check_mode: false
