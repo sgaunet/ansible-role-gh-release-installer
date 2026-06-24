@@ -65,6 +65,7 @@ tasks:
       - task: test-kfilt
       - task: test-kind
       - task: test-krew
+      - task: test-ku
       - task: test-kube-capacity
       - task: test-kubecm
       - task: test-kubectl-ice
@@ -411,6 +412,11 @@ tasks:
     cmds:
       - echo "Running tests for krew"
       - mise exec -- molecule test -s krew
+  test-ku:
+    desc: "Run tests for ku"
+    cmds:
+      - echo "Running tests for ku"
+      - mise exec -- molecule test -s ku
   test-kube-capacity:
     desc: "Run tests for kube-capacity"
     cmds:
