@@ -1330,6 +1330,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: scaffold.yml
 ```
+## semver
+
+[Github repository](https://github.com/sgaunet/semver)
+
+```
+- name: Install semver
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install semver"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: semver.yml
+```
 ## sops
 
 [Github repository](https://github.com/getsops/sops)

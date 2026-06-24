@@ -98,6 +98,7 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-runq/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-runq)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-s5cmd/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-s5cmd)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-scaffold/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-scaffold)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-semver/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-semver)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-sops/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-sops)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-sqlc/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-sqlc)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-stern/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-stern)
