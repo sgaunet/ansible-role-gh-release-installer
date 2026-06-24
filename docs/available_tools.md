@@ -1316,6 +1316,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: s5cmd.yml
 ```
+## scaffold
+
+[Github repository](https://github.com/sgaunet/scaffold)
+
+```
+- name: Install scaffold
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install scaffold"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: scaffold.yml
+```
 ## sops
 
 [Github repository](https://github.com/getsops/sops)
