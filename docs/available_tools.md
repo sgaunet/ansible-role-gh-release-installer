@@ -350,6 +350,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: gini.yml
 ```
+## git-town
+
+[Github repository](https://github.com/git-town/git-town)
+
+```
+- name: Install git-town
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install git-town"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: git-town.yml
+```
 ## gitcommit
 
 [Github repository](https://github.com/sgaunet/gitcommit)
@@ -434,20 +448,6 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: gitleaks.yml
 ```
-## git-town
-
-[Github repository](https://github.com/git-town/git-town)
-
-```
-- name: Install git-town
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install git-town"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        vars_from: git-town.yml
-```
 ## glow
 
 [Github repository](https://github.com/charmbracelet/glow)
@@ -462,20 +462,6 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: glow.yml
 ```
-## gocryptfs
-
-[Github repository](https://github.com/rfjakob/gocryptfs)
-
-```
-- name: Install gocryptfs
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install gocryptfs"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        vars_from: gocryptfs.yml
-```
 ## gocrypt
 
 [Github repository](https://github.com/sgaunet/gocrypt)
@@ -489,6 +475,20 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         vars_from: gocrypt.yml
+```
+## gocryptfs
+
+[Github repository](https://github.com/rfjakob/gocryptfs)
+
+```
+- name: Install gocryptfs
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install gocryptfs"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: gocryptfs.yml
 ```
 ## golangci-lint
 
@@ -574,6 +574,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: hadolint.yml
 ```
+## helm
+
+[Github repository](https://github.com/helm/helm)
+
+```
+- name: Install helm
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install helm"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: helm.yml
+```
 ## helmchart-helper
 
 [Github repository](https://github.com/sgaunet/helmchart-helper)
@@ -629,20 +643,6 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         vars_from: helmify.yml
-```
-## helm
-
-[Github repository](https://github.com/helm/helm)
-
-```
-- name: Install helm
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install helm"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        vars_from: helm.yml
 ```
 ## httping-go
 
@@ -798,6 +798,34 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: kube-capacity.yml
 ```
+## kube-linter
+
+[Github repository](https://github.com/stackrox/kube-linter)
+
+```
+- name: Install kube-linter
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kube-linter"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: kube-linter.yml
+```
+## kube-score
+
+[Github repository](https://github.com/zegl/kube-score)
+
+```
+- name: Install kube-score
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install kube-score"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: kube-score.yml
+```
 ## kubecm
 
 [Github repository](https://github.com/sunny0826/kubecm)
@@ -854,20 +882,6 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: kubefwd.yml
 ```
-## kube-linter
-
-[Github repository](https://github.com/stackrox/kube-linter)
-
-```
-- name: Install kube-linter
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install kube-linter"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        vars_from: kube-linter.yml
-```
 ## kubescape
 
 [Github repository](https://github.com/kubescape/kubescape)
@@ -881,20 +895,6 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         vars_from: kubescape.yml
-```
-## kube-score
-
-[Github repository](https://github.com/zegl/kube-score)
-
-```
-- name: Install kube-score
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install kube-score"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        vars_from: kube-score.yml
 ```
 ## kubeshark
 
@@ -1148,20 +1148,6 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: pgweb.yml
 ```
-## popeye
-
-[Github repository](https://github.com/derailed/popeye)
-
-```
-- name: Install popeye
-  hosts: all
-  become: true
-  tasks:
-    - name: "Install popeye"
-      ansible.builtin.include_role:
-        name: sgaunet.gh_role_installer
-        vars_from: popeye.yml
-```
 ## pop
 
 [Github repository](https://github.com/charmbracelet/pop)
@@ -1175,6 +1161,20 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         vars_from: pop.yml
+```
+## popeye
+
+[Github repository](https://github.com/derailed/popeye)
+
+```
+- name: Install popeye
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install popeye"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: popeye.yml
 ```
 ## postgresql-mcp
 
@@ -1357,6 +1357,20 @@ Here is a list of available tools that can be installed with self contained vari
       ansible.builtin.include_role:
         name: sgaunet.gh_role_installer
         vars_from: semver.yml
+```
+## smolvm
+
+[Github repository](https://github.com/smol-machines/smolvm)
+
+```
+- name: Install smolvm
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install smolvm"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: smolvm.yml
 ```
 ## sops
 
