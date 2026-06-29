@@ -12,3 +12,12 @@ gh_role_installer_tmp_directory: "{{ lookup('env', 'TMPDIR') | default('/tmp', t
 gh_role_installer_binary_path: "/usr/local/bin/{{ gh_role_installer_binary_name }}"
 
 gh_role_installer_become: true
+
+# Set to true when the release archive is a self-contained bundle (a wrapper
+# script plus sibling binaries/libraries/assets that must stay together) rather
+# than a single binary. When true, the whole archive is extracted to
+# gh_role_installer_install_dir and gh_role_installer_binary_path is symlinked to
+# the wrapper inside it. Defaults to false (single-binary install).
+gh_role_installer_release_is_bundle: false
+# Permanent destination for bundle installs (ignored unless _is_bundle is true).
+gh_role_installer_install_dir: "/opt/{{ gh_role_installer_binary_name }}"

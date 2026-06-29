@@ -79,6 +79,7 @@
         remote_src: true
       when:
         - gh_role_installer_release_is_archive
+        - not gh_role_installer_release_is_bundle
 
     - name: Find and install the binary {{ gh_role_installer_binary_name }}
       ansible.builtin.find:
@@ -88,6 +89,7 @@
       register: gh_role_installer_binary
       when:
         - gh_role_installer_release_is_archive
+        - not gh_role_installer_release_is_bundle
 
     # - name: Debug gh_role_installer_binary
     #   ansible.builtin.debug:
@@ -106,6 +108,7 @@
       become: "{{ gh_role_installer_become }}"
       when:
         - gh_role_installer_release_is_archive
+        - not gh_role_installer_release_is_bundle
 
     - name: Install the binary {{ gh_role_installer_binary_name }}
       ansible.builtin.copy:
@@ -118,6 +121,36 @@
       become: "{{ gh_role_installer_become }}"
       when:
         - not gh_role_installer_release_is_archive
+
+    - name: Ensure bundle install directory exists ({{ gh_role_installer_binary_name }})
+      ansible.builtin.file:
+        path: "{{ gh_role_installer_install_dir }}"
+        state: directory
+        mode: '0755'
+      become: "{{ gh_role_installer_become }}"
+      when:
+        - gh_role_installer_release_is_bundle
+
+    - name: Extract the bundle into the install directory ({{ gh_role_installer_binary_name }})
+      ansible.builtin.unarchive:
+        src: "{{ gh_role_installer_tmp_directory }}/{{ gh_role_installer_binary_name }}/{{ filename }}"
+        dest: "{{ gh_role_installer_install_dir }}/"
+        remote_src: true
+        extra_opts:
+          - "--strip-components=1"
+      become: "{{ gh_role_installer_become }}"
+      when:
+        - gh_role_installer_release_is_bundle
+
+    - name: Symlink the bundle wrapper into the binary path ({{ gh_role_installer_binary_name }})
+      ansible.builtin.file:
+        src: "{{ gh_role_installer_install_dir }}/{{ gh_role_installer_binary_name }}"
+        dest: "{{ gh_role_installer_binary_path }}"
+        state: link
+        force: true
+      become: "{{ gh_role_installer_become }}"
+      when:
+        - gh_role_installer_release_is_bundle
 
     - name: Remove temporary directory
       ansible.builtin.file:

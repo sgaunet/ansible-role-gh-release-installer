@@ -35,27 +35,27 @@ tasks:
       - task: test-gdu
       - task: test-gh
       - task: test-gini
+      - task: test-git-town
       - task: test-gitcommit
       - task: test-gitlab-issue-report
       - task: test-gitlab-mcp
       - task: test-gitlab-stats
       - task: test-gitlab-token-expiration
       - task: test-gitleaks
-      - task: test-git-town
       - task: test-glow
-      - task: test-gocryptfs
       - task: test-gocrypt
+      - task: test-gocryptfs
       - task: test-golangci-lint
       - task: test-gomplate
       - task: test-goreleaser
       - task: test-grype
       - task: test-gum
       - task: test-hadolint
+      - task: test-helm
       - task: test-helmchart-helper
       - task: test-helmdocs
       - task: test-helmfile
       - task: test-helmify
-      - task: test-helm
       - task: test-httping-go
       - task: test-hyperfine
       - task: test-jwt-cli
@@ -67,13 +67,13 @@ tasks:
       - task: test-krew
       - task: test-ku
       - task: test-kube-capacity
+      - task: test-kube-linter
+      - task: test-kube-score
       - task: test-kubecm
       - task: test-kubectl-ice
       - task: test-kubectx
       - task: test-kubefwd
-      - task: test-kube-linter
       - task: test-kubescape
-      - task: test-kube-score
       - task: test-kubeshark
       - task: test-kubevpn
       - task: test-kubie
@@ -92,8 +92,8 @@ tasks:
       - task: test-pastel
       - task: test-pet
       - task: test-pgweb
-      - task: test-popeye
       - task: test-pop
+      - task: test-popeye
       - task: test-postgresql-mcp
       - task: test-pplx
       - task: test-pre-commit
@@ -107,6 +107,7 @@ tasks:
       - task: test-s5cmd
       - task: test-scaffold
       - task: test-semver
+      - task: test-smolvm
       - task: test-sops
       - task: test-sqlc
       - task: test-stern
@@ -262,6 +263,11 @@ tasks:
     cmds:
       - echo "Running tests for gini"
       - mise exec -- molecule test -s gini
+  test-git-town:
+    desc: "Run tests for git-town"
+    cmds:
+      - echo "Running tests for git-town"
+      - mise exec -- molecule test -s git-town
   test-gitcommit:
     desc: "Run tests for gitcommit"
     cmds:
@@ -292,26 +298,21 @@ tasks:
     cmds:
       - echo "Running tests for gitleaks"
       - mise exec -- molecule test -s gitleaks
-  test-git-town:
-    desc: "Run tests for git-town"
-    cmds:
-      - echo "Running tests for git-town"
-      - mise exec -- molecule test -s git-town
   test-glow:
     desc: "Run tests for glow"
     cmds:
       - echo "Running tests for glow"
       - mise exec -- molecule test -s glow
-  test-gocryptfs:
-    desc: "Run tests for gocryptfs"
-    cmds:
-      - echo "Running tests for gocryptfs"
-      - mise exec -- molecule test -s gocryptfs
   test-gocrypt:
     desc: "Run tests for gocrypt"
     cmds:
       - echo "Running tests for gocrypt"
       - mise exec -- molecule test -s gocrypt
+  test-gocryptfs:
+    desc: "Run tests for gocryptfs"
+    cmds:
+      - echo "Running tests for gocryptfs"
+      - mise exec -- molecule test -s gocryptfs
   test-golangci-lint:
     desc: "Run tests for golangci-lint"
     cmds:
@@ -342,6 +343,11 @@ tasks:
     cmds:
       - echo "Running tests for hadolint"
       - mise exec -- molecule test -s hadolint
+  test-helm:
+    desc: "Run tests for helm"
+    cmds:
+      - echo "Running tests for helm"
+      - mise exec -- molecule test -s helm
   test-helmchart-helper:
     desc: "Run tests for helmchart-helper"
     cmds:
@@ -362,11 +368,6 @@ tasks:
     cmds:
       - echo "Running tests for helmify"
       - mise exec -- molecule test -s helmify
-  test-helm:
-    desc: "Run tests for helm"
-    cmds:
-      - echo "Running tests for helm"
-      - mise exec -- molecule test -s helm
   test-httping-go:
     desc: "Run tests for httping-go"
     cmds:
@@ -422,6 +423,16 @@ tasks:
     cmds:
       - echo "Running tests for kube-capacity"
       - mise exec -- molecule test -s kube-capacity
+  test-kube-linter:
+    desc: "Run tests for kube-linter"
+    cmds:
+      - echo "Running tests for kube-linter"
+      - mise exec -- molecule test -s kube-linter
+  test-kube-score:
+    desc: "Run tests for kube-score"
+    cmds:
+      - echo "Running tests for kube-score"
+      - mise exec -- molecule test -s kube-score
   test-kubecm:
     desc: "Run tests for kubecm"
     cmds:
@@ -442,21 +453,11 @@ tasks:
     cmds:
       - echo "Running tests for kubefwd"
       - mise exec -- molecule test -s kubefwd
-  test-kube-linter:
-    desc: "Run tests for kube-linter"
-    cmds:
-      - echo "Running tests for kube-linter"
-      - mise exec -- molecule test -s kube-linter
   test-kubescape:
     desc: "Run tests for kubescape"
     cmds:
       - echo "Running tests for kubescape"
       - mise exec -- molecule test -s kubescape
-  test-kube-score:
-    desc: "Run tests for kube-score"
-    cmds:
-      - echo "Running tests for kube-score"
-      - mise exec -- molecule test -s kube-score
   test-kubeshark:
     desc: "Run tests for kubeshark"
     cmds:
@@ -547,16 +548,16 @@ tasks:
     cmds:
       - echo "Running tests for pgweb"
       - mise exec -- molecule test -s pgweb
-  test-popeye:
-    desc: "Run tests for popeye"
-    cmds:
-      - echo "Running tests for popeye"
-      - mise exec -- molecule test -s popeye
   test-pop:
     desc: "Run tests for pop"
     cmds:
       - echo "Running tests for pop"
       - mise exec -- molecule test -s pop
+  test-popeye:
+    desc: "Run tests for popeye"
+    cmds:
+      - echo "Running tests for popeye"
+      - mise exec -- molecule test -s popeye
   test-postgresql-mcp:
     desc: "Run tests for postgresql-mcp"
     cmds:
@@ -622,6 +623,11 @@ tasks:
     cmds:
       - echo "Running tests for semver"
       - mise exec -- molecule test -s semver
+  test-smolvm:
+    desc: "Run tests for smolvm"
+    cmds:
+      - echo "Running tests for smolvm"
+      - mise exec -- molecule test -s smolvm
   test-sops:
     desc: "Run tests for sops"
     cmds:
