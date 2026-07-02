@@ -68,7 +68,6 @@ The role contains also variables to install miscelleanous tools. [See the list o
 * Write the vars to setup the tool in `vars/toolname.yml`
 * Generate the molecule test with `./gen-molecule-files.sh`
 * Generate the documentation with `./gen-docs.sh`
-* Generate the CI with `./gen-ci.sh`
 * Generate the taskfile to test tool with `./gen-taskfile-tests.sh`
 * Test the tool with `task -t Taskfile-tests.yml test-toolname`
 
@@ -95,6 +94,13 @@ All tools are tested with molecule. You can run the tests with the following com
 ```bash
 task -t Taskfile-tests.yml test-<tool-name>
 ```
+
+Automated monthly CI runs of these tests for every tool have been removed: with ~130 tools,
+maintaining and triaging that many scheduled CI jobs was too much ongoing work. Instead, if a
+tool's installer breaks (e.g. because of an upstream release change), please
+[open an issue](https://github.com/sgaunet/ansible-role-gh-release-installer/issues).
+The workflow template used to generate those per-tool jobs is kept at
+`.github/ci.template.yml` in case scheduled CI is reinstated later.
 
 ## License
 
