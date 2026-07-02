@@ -105,7 +105,6 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-sqlc/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-sqlc)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-stern/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-stern)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-superfile/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-superfile)
-[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-tailwindcss/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-tailwindcss)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-task/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-task)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-tbls/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-tbls)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-tealdeer/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-tealdeer)
