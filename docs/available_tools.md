@@ -532,6 +532,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: goreleaser.yml
 ```
+## goshot
+
+[Github repository](https://github.com/watzon/goshot)
+
+```
+- name: Install goshot
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install goshot"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: goshot.yml
+```
 ## grype
 
 [Github repository](https://github.com/anchore/grype)

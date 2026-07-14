@@ -48,6 +48,7 @@ tasks:
       - task: test-golangci-lint
       - task: test-gomplate
       - task: test-goreleaser
+      - task: test-goshot
       - task: test-grype
       - task: test-gum
       - task: test-hadolint
@@ -327,6 +328,11 @@ tasks:
     cmds:
       - echo "Running tests for goreleaser"
       - mise exec -- molecule test -s goreleaser
+  test-goshot:
+    desc: "Run tests for goshot"
+    cmds:
+      - echo "Running tests for goshot"
+      - mise exec -- molecule test -s goshot
   test-grype:
     desc: "Run tests for grype"
     cmds:
