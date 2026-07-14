@@ -14,9 +14,8 @@ tasks:
       - ansible-lint .
 
   gen:
-    desc: "generate doc/ci/molecule files"
+    desc: "generate doc/molecule files"
     cmds:
-      - ./gen-ci.sh
       - ./gen-docs.sh
       - ./gen-molecule-files.sh
       - ./gen-Taskfile-tests.sh
