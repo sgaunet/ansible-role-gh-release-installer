@@ -57,6 +57,7 @@ tasks:
       - task: test-helmdocs
       - task: test-helmfile
       - task: test-helmify
+      - task: test-herdr
       - task: test-httping-go
       - task: test-hyperfine
       - task: test-jwt-cli
@@ -373,6 +374,11 @@ tasks:
     cmds:
       - echo "Running tests for helmify"
       - mise exec -- molecule test -s helmify
+  test-herdr:
+    desc: "Run tests for herdr"
+    cmds:
+      - echo "Running tests for herdr"
+      - mise exec -- molecule test -s herdr
   test-httping-go:
     desc: "Run tests for httping-go"
     cmds:

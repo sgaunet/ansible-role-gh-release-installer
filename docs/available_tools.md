@@ -658,6 +658,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: helmify.yml
 ```
+## herdr
+
+[Github repository](https://github.com/herdrdev/herdr)
+
+```
+- name: Install herdr
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install herdr"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: herdr.yml
+```
 ## httping-go
 
 [Github repository](https://github.com/sgaunet/httping-go)
