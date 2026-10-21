@@ -1666,6 +1666,20 @@ Here is a list of available tools that can be installed with self contained vari
         name: sgaunet.gh_role_installer
         vars_from: viddy.yml
 ```
+## vigie
+
+[Github repository](https://github.com/sgaunet/vigie)
+
+```
+- name: Install vigie
+  hosts: all
+  become: true
+  tasks:
+    - name: "Install vigie"
+      ansible.builtin.include_role:
+        name: sgaunet.gh_role_installer
+        vars_from: vigie.yml
+```
 ## vivid
 
 [Github repository](https://github.com/sharkdp/vivid)
