@@ -122,6 +122,7 @@ Be patient, it will be fixed.
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-venom/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-venom)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-vhs/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-vhs)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-viddy/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-viddy)
+[![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-vigie/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-vigie)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-vivid/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-vivid)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-wait4x/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-wait4x)
 [![CI](https://github.com/sgaunet/ansible-role-gh-release-installer/workflows/CI-witr/badge.svg)](https://github.com/sgaunet/ansible-role-gh-release-installer/actions?query=workflow%3ACI-witr)

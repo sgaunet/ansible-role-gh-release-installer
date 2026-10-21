@@ -129,6 +129,7 @@ tasks:
       - task: test-venom
       - task: test-vhs
       - task: test-viddy
+      - task: test-vigie
       - task: test-vivid
       - task: test-wait4x
       - task: test-witr
@@ -734,6 +735,11 @@ tasks:
     cmds:
       - echo "Running tests for viddy"
       - mise exec -- molecule test -s viddy
+  test-vigie:
+    desc: "Run tests for vigie"
+    cmds:
+      - echo "Running tests for vigie"
+      - mise exec -- molecule test -s vigie
   test-vivid:
     desc: "Run tests for vivid"
     cmds:
